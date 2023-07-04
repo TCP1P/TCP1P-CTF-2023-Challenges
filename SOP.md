@@ -58,3 +58,9 @@ Problemsetter akan melalui serangkaian tahapan dalam merancang challenge CTF:
 1. Problemsetter dan supervisor harus mematuhi semua persyaratan, prosedur, dan instruksi yang ditetapkan dalam SOP ini.
 2. Problemsetter dan supervisor harus menjaga kerahasiaan informasi dan menjaga keamanan challenge CTF yang dibuat.
 3. Problemsetter dan supervisor harus bekerja sama untuk mencapai tujuan event CTF yang sukses.
+
+# Catatan Untuk Probset
+- Format flag untuk CTF ini `TCP1P{.*}`.
+
+# Catatan Untuk Supervisor
+- Minimum soal setiap kategori 4 dan maksimal 8, terkecuali untuk kategori Beginer bisa bebas.
