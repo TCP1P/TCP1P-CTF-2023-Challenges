@@ -22,7 +22,7 @@ Setiap problemsetter akan diberi tugas untuk merancang challenge dalam satu atau
    h. Web
 
 ### Supervisor
-Setiap Supervisor akan bertugas untuk melakukan review pada challenge yang dibuat oleh problemsetter dengan mengikuti kriteria yang ada di [Kriteria.md](/README.md). Untuk setiap soal yang sudah diterima, supervisor wajib untuk mendatanya di google sheet berikut: [LINK](https://docs.google.com/spreadsheets/d/13cgB0gQIriOG9T1IfEcoAtaFxxyK_AtjpHezKM4F0w0/edit?usp=sharing)
+Setiap Supervisor akan bertugas untuk melakukan review pada challenge yang dibuat oleh problemsetter dengan mengikuti kriteria yang ada di [Kriteria.md](/Kriteria.md). Untuk setiap soal yang sudah diterima, supervisor wajib untuk mendatanya di google sheet berikut: [LINK](https://docs.google.com/spreadsheets/d/13cgB0gQIriOG9T1IfEcoAtaFxxyK_AtjpHezKM4F0w0/edit?usp=sharing)
 
 ## Tahapan Pembuatan Challenge CTF
 
@@ -30,7 +30,7 @@ Problemsetter akan melalui serangkaian tahapan dalam merancang challenge CTF:
 
 1. Inisiasi: Problemsetter akan meng-fork repositori yang ditentukan sebelum memulai pembuatan challenge.
 2. Pengembangan: Problemsetter akan membuat challenge yang relevan dengan kategori yang ditugaskan dalam folder yang sesuai dengan kategori tersebut.
-3. Penataan Folder: Problemsetter akan membuat folder challenge dengan mengikuti format yang sudah tertera di [Kriteria.md](/README.md).
+3. Penataan Folder: Problemsetter akan membuat folder challenge dengan mengikuti format yang sudah tertera di [Kriteria.md](/Kriteria.md).
 4. Pengujian: Problemsetter akan menguji challenge yang dibuat untuk memastikan kualitas dan tingkat kesulitannya sesuai.
 5. Pull Request: Setelah challenge selesai dibuat, problemsetter akan membuat pull request untuk menyerahkan challenge kepada supervisor yang ditugaskan.
 6. Revisi: Jika diperlukan, problemsetter akan melakukan revisi pada challenge berdasarkan umpan balik dari supervisor dalam kategori yang bersangkutan.
