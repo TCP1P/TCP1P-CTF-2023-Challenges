@@ -28,7 +28,7 @@ Setiap Supervisor akan bertugas untuk melakukan review pada challenge yang dibua
 
 Problemsetter akan melalui serangkaian tahapan dalam merancang challenge CTF:
 
-1. Inisiasi: Problemsetter akan meng-fork repositori yang ditentukan sebelum memulai pembuatan challenge.
+1. Inisiasi: Problemsetter akan meng-fork repositori yang ini sebelum memulai pembuatan challenge.
 2. Pengembangan: Problemsetter akan membuat challenge yang relevan dengan kategori yang ditugaskan dalam folder yang sesuai dengan kategori tersebut.
 3. Penataan Folder: Problemsetter akan membuat folder challenge dengan mengikuti format yang sudah tertera di [Kriteria.md](/Kriteria.md).
 4. Pengujian: Problemsetter akan menguji challenge yang dibuat untuk memastikan kualitas dan tingkat kesulitannya sesuai.
@@ -43,7 +43,7 @@ Problemsetter akan melalui serangkaian tahapan dalam merancang challenge CTF:
 
 ## Rangkaian Peninjauan Challenge
 
-1. Setelah selesai membuat challenge, problemsetter akan mengirimkan challenge tersebut kepada supervisor melalui pull request di repositori yang ditentukan, dengan mengetag username supervisor yang bertanggung jawab atas kategori tersebut.
+1. Setelah selesai membuat challenge, problemsetter akan mengirimkan challenge tersebut kepada supervisor melalui pull request di repositori ini, dengan mengetag username supervisor yang bertanggung jawab atas kategori tersebut.
 2. Supervisor akan mengevaluasi challenge berdasarkan kriteria yang telah ditetapkan untuk kategori tersebut yang bisa dilihat di [Kriteria.md](/Kriteria.md).
 3. Jika challenge memenuhi persyaratan dan standar yang ditetapkan, supervisor akan memberikan persetujuan dan melakukan merge terhadap pull request problemsetter yang bersangkutan.
 4. Jika challenge memiliki tingkat kesulitan yang rendah, supervisor akan menempatkannya dalam kategori "Beginner".
@@ -61,6 +61,7 @@ Problemsetter akan melalui serangkaian tahapan dalam merancang challenge CTF:
 
 # Catatan Untuk Probset
 - Format flag untuk CTF ini `TCP1P{.*}`.
+- Deadline pembuatan soal adalah 20 September 2023
 
 # Catatan Untuk Supervisor
 - Minimum soal setiap kategori 4 dan maksimal 8, terkecuali untuk kategori Beginer bisa bebas.
