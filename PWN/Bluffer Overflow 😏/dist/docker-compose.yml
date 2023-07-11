@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+    blufferoverflow:
+        build: blufferoverflow
+        ports:
+            - "1337:1337"
+        networks:
+            - net0
+        read_only: true
+        deploy:
+            resources:
+                limits:
+                    memory: 128M
+                    pids: 256
+            restart_policy:
+                condition: always
+                delay: 3s
+        cap_drop:
+            - ALL
+        command: "socat tcp-l:1337,fork,reuseaddr exec:/home/pwnuser/bluffer"
+
+networks:
+    net0:
