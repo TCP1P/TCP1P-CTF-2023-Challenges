@@ -11,7 +11,7 @@ The CTF challenges cover the following categories:
 - Forensics
 - Miscellaneous
 - Mobile
-- PWN (Binary Exploitation)
+- PWN
 - Reverse Engineering
 - Web
 

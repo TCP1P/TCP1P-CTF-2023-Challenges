@@ -2,8 +2,33 @@
 
 Berikut adalah kriteria yang harus dipenuhi dalam merancang dan mengevaluasi challenge Capture the Flag (CTF):
 
+## Kriteria Umum TCP1P CTF
+- Deskripsi dan hint di tulis dalam bahasa inggris.
+- Untuk soal yang membutuhkan hosting, wajib menggunakan docker compose. Contoh dari docker compose bisa di cek di `/Beginner/Un-Secure/dist/Un-Secure/`
+- Dalam CTF TCP1P, hindari penggunaan soal yang mengharuskan menebak (guessing).
+- Juga hindari penggunaan soal steganografi yang berhubungan dengan ciphertext. Namun, masih diperbolehkan jika soal steganografi berhubungan dengan pemulihan gambar, disk, zip, atau terkait dengan algoritma.
+- Format flag untuk CTF ini `TCP1P{.*}`.
+
 ## Format dan Struktur Soal
-...
+```
+<Category>/
+└── <Challenge Name>
+    ├── attachment // Berisikan attachment yang akan diberikan ke peserta
+    │   ├── file 1
+    │   ├── fchallengeile 2
+    │   └── file 3
+    ├── dist // Berisikan source code dari challenge
+    │   └── <Challenge Name>
+    │       ├── file 1
+    │       ├── file 1
+    │       └── file 3
+    ├── POC // Berisikan solver/writeup/POC untuk challenge
+    │   ├── file 1
+    │   ├── file 2
+    │   └── README.md // Berisikan writeup/POC challenge
+    └── README.md // Berisikan deskripsi, flag, dan hint challenge. Untuk referensi bisa di cek disini https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Beginner/Un-Secure
+```
+
 
 ## Tingkat Kesulitan
 Tingkat kesulitan akan dibagi menjadi 3, yaitu:
@@ -13,6 +38,7 @@ Soal ini akan berisi challenge dasar dalam CTF dan dapat dianggap sebagai tantan
 - Berisikan soal-soal dasar CTF.
 - Mudah untuk dikerjakan.
 - Sudah memiliki tutorial eksplotasi yang banyak diketahui.
+- Atau memiliki deksripsi dan hint yang membantu untuk mengerjakan soal sehingga soal lebih mudah untuk dikerjakan.
 
 ### Medium
 Challenge dengan tingkat kesulitan sedang, yang menguji pemahaman peserta yang lebih mendalam tentang konsep-konsep dalam CTF. Kriteria soal Medium sebagai berikut:
@@ -25,10 +51,6 @@ Challenge yang memiliki tingkat kesulitan tinggi dan membutuhkan pemahaman yang 
 - Pengeksploitasian teknik serangan yang sulit untuk dilakukan.
 - Pengeksploitasian teknik serangan yang sangat jarang diketahui.
 - Celah Pengeksplotasian sangat susah untuk di deteksi.
-
-## Kriteria Umum
-- Dalam CTF TCP1P, hindari penggunaan soal yang mengharuskan menebak (guessing).
-- Juga hindari penggunaan soal steganografi yang berhubungan dengan ciphertext. Namun, masih diperbolehkan jika soal steganografi berhubungan dengan pemulihan gambar, disk, zip, atau terkait dengan algoritma.
 
 ## Kriteria Soal Per Kategori
 ### 1. Beginner

@@ -60,7 +60,6 @@ Problemsetter akan melalui serangkaian tahapan dalam merancang challenge CTF:
 3. Problemsetter dan supervisor harus bekerja sama untuk mencapai tujuan event CTF yang sukses.
 
 # Catatan Untuk Probset
-- Format flag untuk CTF ini `TCP1P{.*}`.
 - Deadline pembuatan soal adalah 20 September 2023
 
 # Catatan Untuk Supervisor
