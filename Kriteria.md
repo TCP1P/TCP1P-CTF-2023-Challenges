@@ -76,13 +76,13 @@ kriteria berikut:
 
 #### Kriteria
 
-...
+<!-- Boleh ditambahkan oleh supervisor -->
 
 ### Forensics
 
 #### Kriteria
 
-...
+<!-- Boleh ditambahkan oleh supervisor -->
 
 ### Miscellaneous
 
@@ -101,19 +101,19 @@ dikategorikan dalam kategori-kategori lainnya.
 
 #### Kriteria
 
-...
+<!-- Boleh ditambahkan oleh supervisor -->
 
 ### 6. PWN (Binary Exploitation)
 
 #### Kriteria
 
-...
+<!-- Boleh ditambahkan oleh supervisor -->
 
 ### 7. Reverse Engineering
 
 #### Kriteria
 
-...
+<!-- Boleh ditambahkan oleh supervisor -->
 
 ### 8. Web
 

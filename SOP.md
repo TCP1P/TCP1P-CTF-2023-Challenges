@@ -28,12 +28,13 @@ Setiap Supervisor akan bertugas untuk melakukan review pada challenge yang dibua
 
 Problemsetter akan melalui serangkaian tahapan dalam merancang challenge CTF:
 
-1. Inisiasi: Problemsetter akan meng-fork repositori yang ini sebelum memulai pembuatan challenge.
-2. Pengembangan: Problemsetter akan membuat challenge yang relevan dengan kategori yang ditugaskan dalam folder yang sesuai dengan kategori tersebut.
-3. Penataan Folder: Problemsetter akan membuat folder challenge dengan mengikuti format yang sudah tertera di [Kriteria.md](/Kriteria.md).
-4. Pengujian: Problemsetter akan menguji challenge yang dibuat untuk memastikan kualitas dan tingkat kesulitannya sesuai.
-5. Pull Request: Setelah challenge selesai dibuat, problemsetter akan membuat pull request untuk menyerahkan challenge kepada supervisor yang ditugaskan.
-6. Revisi: Jika diperlukan, problemsetter akan melakukan revisi pada challenge berdasarkan umpan balik dari supervisor dalam kategori yang bersangkutan.
+1. Awal: Sebelum membuat challenge, problemsetter perlu untuk mengkonfirmasi konsep challenge yang akan dibuat. Hal ini agar tidak terjadi kemiripan konsep antar challenge.
+2. Inisiasi: Problemsetter akan meng-fork repositori yang ini sebelum memulai pembuatan challenge.
+3. Pengembangan: Problemsetter akan membuat challenge yang relevan dengan kategori yang ditugaskan dalam folder yang sesuai dengan kategori tersebut.
+4. Penataan Folder: Problemsetter akan membuat folder challenge dengan mengikuti format yang sudah tertera di [Kriteria.md](/Kriteria.md).
+5. Pengujian: Problemsetter akan menguji challenge yang dibuat untuk memastikan kualitas dan tingkat kesulitannya sesuai.
+6. Pull Request: Setelah challenge selesai dibuat, problemsetter akan membuat pull request untuk menyerahkan challenge kepada supervisor yang ditugaskan.
+7. Revisi: Jika diperlukan, problemsetter akan melakukan revisi pada challenge berdasarkan umpan balik dari supervisor dalam kategori yang bersangkutan.
 
 ## Hubungan dengan Supervisor
 
@@ -56,11 +57,10 @@ Problemsetter akan melalui serangkaian tahapan dalam merancang challenge CTF:
 ## Penutup
 
 1. Problemsetter dan supervisor harus mematuhi semua persyaratan, prosedur, dan instruksi yang ditetapkan dalam SOP ini.
-2. Problemsetter dan supervisor harus menjaga kerahasiaan informasi dan menjaga keamanan challenge CTF yang dibuat.
-3. Problemsetter dan supervisor harus bekerja sama untuk mencapai tujuan event CTF yang sukses.
+2. Problemsetter dan supervisor harus menjaga **kerahasiaan informasi** dan menjaga keamanan challenge CTF yang dibuat.
 
 # Catatan Untuk Probset
 - Deadline pembuatan soal adalah 20 September 2023
 
 # Catatan Untuk Supervisor
-- Minimum soal setiap kategori 4 dan maksimal 8, terkecuali untuk kategori Beginer bisa bebas.
+- Minimum soal setiap kategori 4 dan maksimal 8, terkecuali untuk kategori Misc bisa bebas.
