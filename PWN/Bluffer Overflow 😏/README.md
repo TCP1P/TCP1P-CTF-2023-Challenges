@@ -9,7 +9,7 @@ Difficulty : Easy
 
 Maybe it's your first time pwning? Can you overwrite the variable?
 
-[chall.c](https://drive.google.com/file/d/1VaDHn8tl1eZcxAo1wNxlBnqFRrLFI6Ot/view?usp=drive_link)
+[chall.c](/PWN/Bluffer%20Overflow%20%F0%9F%98%8F/attachment/chall.c)
 
 ## Hints
 
