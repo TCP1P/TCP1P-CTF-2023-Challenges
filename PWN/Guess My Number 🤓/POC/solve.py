@@ -8,7 +8,6 @@ libc.srand(1337)
 random = libc.rand()
 print(random)
 
-# io = process("./guessmynumber")
 io = remote("127.0.0.1", 7331)
 
 pay = random + 1337331 ^ 0xcafebabe
