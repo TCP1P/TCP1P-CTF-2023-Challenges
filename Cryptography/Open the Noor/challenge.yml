@@ -6,8 +6,12 @@ name: "Open the Noor"
 author: "Kisanak"
 category: Cryptography
 description: My boss made a "forgot password" feature only to hardcode password validation. I don't know how his mind works.
-value: 1000
-type: standard
+value: 0
+type: dynamic
+extra:
+    initial: 1000
+    decay: 20
+    minimum: 100
 
 # Flags specify answers that your challenge use. You should generally provide
 # at least one.

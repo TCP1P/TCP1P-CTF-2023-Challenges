@@ -6,8 +6,12 @@ name: "Spider Shambles"
 author: "Kisanak"
 category: Cryptography
 description: A completely ordinary file scrambler without any purpose of existence or something idk.
-value: 1000
-type: standard
+value: 0
+type: dynamic
+extra:
+    initial: 1000
+    decay: 20
+    minimum: 100
 
 # Flags specify answers that your challenge use. You should generally provide
 # at least one.
