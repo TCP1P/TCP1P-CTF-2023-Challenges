@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero is-fullheight">
+    <div class="login-page">
+        <div class="form">
+            <div class="column is-4 is-offset-4">
+                <h3 class="title">Sign Up bos</h3>
+                <div class="box">
+                    {% with messages = get_flashed_messages() %}  
+                        {% if messages %}  
+                            {% for message in messages %}  
+                                <p>{{ message }}</p>  
+                            {% endfor %}  
+                        {% endif %}  
+                    {% endwith %}  
+                    <form method="POST" action="/signup">
+                    <div class="field">
+                        <div class="control">
+                            <input class="input is-large" type="email" name="email" placeholder="Email" autofocus="">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <input class="input is-large" type="text" name="name" placeholder="Name" autofocus="">
+                        </div>
+                    </div>
+                        <div class="field">
+                            <div class="control">
+                                <input class="input is-large" type="password" name="password" placeholder="Password">
+                            </div>
+                        </div>
+                        <button class="button is-block is-info is-large is-fullwidth">Sign Up</button>
+                    </form>
+                    <p>already have account? <a href="{{ url_for('login') }}"> login here</a></p>     
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ImageHolder">
+        <img src="https://www.multipartner.com/themes/custom/multipartner/assets/imgs/composizioni/composizione-0/particles.gif" class="gif" width="1031" height="239" />
+    </div>
+</section>
+{% endblock %}

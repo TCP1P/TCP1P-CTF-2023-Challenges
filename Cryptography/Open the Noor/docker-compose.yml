@@ -1,0 +1,15 @@
+version: '3'
+services:
+  openthenoor:
+    build:
+      context: .
+    working_dir: /home/usero
+    container_name: openthenoor
+    restart: always
+    ports:
+      - "10003:10003"
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+      - 1.1.1.1
+      - 1.0.0.1

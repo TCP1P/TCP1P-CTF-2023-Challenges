@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero is-fullheight">
+    <div class="login-page">
+        <div class="form">
+            <div class="column is-4 is-offset-4">
+                <h3 class="title">Login here bos</h3>
+                    {% with messages = get_flashed_messages() %}  
+                        {% if messages %}  
+                            {% for message in messages %}  
+                                <p>{{ message }}</p>  
+                            {% endfor %}  
+                        {% endif %}  
+                    {% endwith %} 
+                <div class="box">
+                    <form method="POST" action="/login">
+                        <div class="field">
+                            <div class="control">
+                                <input class="input is-large" type="email" name="email" placeholder="Your Email" autofocus="">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <input class="input is-large" type="password" name="password" placeholder="Your Password">
+                            </div>
+                        </div>
+                        <button class="button is-block is-info is-large is-fullwidth">Login</button>
+                    </form>
+                    <p>don't have account? <a href="{{ url_for('signup') }}"> signup here</a></p>
+                </div>               
+            </div>
+        </div>
+    </div>
+    <div class="ImageHolder">
+        <img src="https://i.imgur.com/nGZGHfH.gif" class="gif" width="239" height="239" />
+    </div>
+</section>
+{% endblock %}

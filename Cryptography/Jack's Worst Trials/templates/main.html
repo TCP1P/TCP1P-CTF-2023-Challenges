@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<header>
+    <div class="header-left">
+        <a href="{{ url_for('index') }}" class="header-left-list">website yes</a>
+    </div>
+    <div class="header-right">
+        <a href="{{ url_for('logout') }}" class="header-right-list">Log Out</a>
+    </div>
+</header>
+    <img src="https://media.tenor.com/DbLIdKFZdesAAAAM/hello-hi.gif" class="gambardepan" alt="centered image" height="500" width="500">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            {% with messages = get_flashed_messages() %}  
+                {% if messages %}  
+                    {% for message in messages %}  
+                        <p class="hello">{{ message }}</p>  
+                    {% endfor %}  
+                {% endif %}  
+            {% endwith %}  
+        </div>
+    <h4>Too bad you are not admin :(((</h4> 
+    </div>
+</section>
+
+
+{% endblock %}

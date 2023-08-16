@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    height: 90px;
+    font-family: 'Gotham';
+}
+  
+.header-left {
+    float: left;
+    font-size: 29px;
+    padding: 20px 40px;
+    font-weight: bold;
+    color: white;
+
+}
+
+.header-left-list {
+    float: left;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+  
+.header-left-list:hover {
+    color: #32CD32
+} 
+
+.header-right {
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+  
+.header-right-list {
+    float: left;
+    color: #fff;
+    text-decoration: none;
+    padding: 33px 25px;
+    transition: all 0.2s;
+    
+}
+  
+.header-right-list:hover {
+    color: #32CD32
+} 
+
+body{
+	background-image: url('https://media.gettyimages.com/photos/white-grad-back-drop-v2-silver-picture-id1155889146?s=612x612');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ImageHolder{
+    text-align: center;
+}
+.gif{
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+button{
+    float:right;
+}
+hr {
+    padding:10px;
+}
+.gambardepan {
+    border: 10px solid transparent;
+    border-image: url(https://www.freepnglogos.com/uploads/golden-border-png/golden-border-gold-frame-border-png-gold-frame-border-png-clip-art-9.png) 50 stretch;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.top {
+    float: right;
+}
+.gambar1 {
+    float: right;
+    /*clear: both;
+    margin: 0px 0px 15px 15px;
+}
+
+.gambar2 {
+    float: left;
+    /*clear: both;*/
+    margin: 15px 15px 15px 15px;
+}
+ /* The animation code */
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
+.hello {
+	text-align: center;
+	font-size: 50px;
+}
+/* CSS Document */
+
+marquee {
+    margin-top: 5px;
+    width: 100%;
+}
+
+.runtext-container {
+background-color:#ddddff;
+*background-color:#ccf;
+background-image:-moz-linear-gradient(top,#ccf,#fff);
+background-image:-webkit-gradient(linear,0 0,0 100%,from(#ccf),to(#fff));
+background-image:-webkit-linear-gradient(top,#ccf,#fff);
+background-image:-o-linear-gradient(top,#ccf,#fff);
+background-image:linear-gradient(to bottom,#ccf,#fff);
+background-repeat:repeat-x;
+    border: 4px solid #000000;
+    box-shadow:0 5px 20px rgba(0, 0, 0, 0.9);
+
+width: 850px;
+overflow-x: hidden;
+overflow-y: visible;
+margin: 0 60px 0 30px;
+padding:0 3px 0 3px;
+}
+
+.main-runtext {margin: 0 auto;
+overflow: visible;
+position: relative;
+height: 40px;
+}
+
+.runtext-container .holder {
+position: relative;
+overflow: visible;
+display:inline;
+float:left;
+
+}
+
+.runtext-container .holder .text-container {
+    display:inline;
+}
+
+.runtext-container .holder a{
+    text-decoration: none;
+    font-weight: bold;
+    color:#ff0000;
+    text-shadow:0 -1px 0 rgba(0,0,0,0.25);
+    line-height: -0.5em;
+    font-size:16px;
+}
+
+.runtext-container .holder a:hover{
+    text-decoration: none;
+    color:#6600ff;
+}
+
+h4 {
+	text-align: center;
+}
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: #48c9b0;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  
+}
+
+.form input {
+  font-family: FontAwesome, "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+border-radius:10px;
+  
+}
+
+.form button {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  outline: 0;
+  background: #17a589;
+  width: 100%;
+  border: 0;
+border-radius:30px;
+  margin: 0px 0px 8px;
+  padding: 15px;
+  color: #FFFFFF;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  transition: all 0.2s;
+
+
+}
+.form button:hover,.form button:focus {
+  background: #148f77;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+}
+.form button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,13 @@
+version: "3"
+services:
+  flask:
+    build: ./
+    volumes:
+      - ./:/app
+    ports:
+      # public:local
+      - "10004:5000"
+    container_name: spidershamble
+    restart: always
+    environment:
+      - APP_NAME=spidershamble

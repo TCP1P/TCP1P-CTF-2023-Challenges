@@ -1,0 +1,15 @@
+version: '3'
+services:
+  finalconsensus:
+    build:
+      context: .
+    working_dir: /home/usero
+    container_name: finalconsensus
+    restart: always
+    ports:
+      - "10001:10001"
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+      - 1.1.1.1
+      - 1.0.0.1
