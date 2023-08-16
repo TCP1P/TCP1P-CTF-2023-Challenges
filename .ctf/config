@@ -3,4 +3,9 @@ url = https://ctf.tcp1p.com/
 access_token = ctfd_266e6bde4a6a40219b7d40af41f26cf95c9e3fc9d17532de6160576b95173f2b
 
 [challenges]
+./Cryptography/Final Consensus = ./Cryptography/Final Consensus
+./Cryptography/Open the Noor = ./Cryptography/Open the Noor
+./Cryptography/Spider Shambles = ./Cryptography/Spider Shambles
+./Cryptography/Jack's Worst Trials = ./Cryptography/Jack's Worst Trials
+./Web/Un Secure = ./Web/Un Secure
 
