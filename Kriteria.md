@@ -16,19 +16,21 @@ challenge Capture the Flag (CTF):
 
 ## Format dan Struktur Soal
 
+Kalian bisa menggunakan https://github.com/CTFd/ctfcli untuk menggenerate template berikut:
+
 ```
 <Category>/
 └── <Challenge Name>
-    ├── attachment // Berisikan attachment yang akan diberikan ke peserta
+    ├── dist // Berisikan attachment yang akan diberikan ke peserta
     │   ├── file 1
-    │   ├── fchallengeile 2
+    │   ├── file 2
     │   └── file 3
-    ├── dist // Berisikan source code dari challenge
+    ├── src // Berisikan source code dari challenge
     │   └── <Challenge Name>
     │       ├── file 1
     │       ├── file 1
     │       └── file 3
-    ├── POC // Berisikan solver/writeup/POC untuk challenge
+    ├── wrieup // Berisikan solver/writeup/POC untuk challenge
     │   ├── file 1
     │   ├── file 2
     │   └── README.md // Berisikan writeup/POC challenge
