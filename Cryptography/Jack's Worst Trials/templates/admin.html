@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <!-- /public_key.pem -->
+<header>
+    <div class="header-left">
+        <a href="{{ url_for('index') }}" class="header-left-list">website yes</a>
+    </div>
+    <div class="header-right">
+        <a href="{{ url_for('logout') }}" class="header-right-list">Log Out</a>
+    </div>
+</header>
+    <img src="https://c.tenor.com/tX_T48A14BwAAAAd/khaby-really.gif" class="gambardepan" alt="centered image" height="500" width="500">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            {% with messages = get_flashed_messages() %}  
+                {% if messages %}  
+                    {% for message in messages %}  
+                        <p class="hello">{{ message }}</p>  
+                    {% endfor %}  
+                {% endif %}  
+            {% endwith %}  
+        </div>
+    </div>
+    <div class="ImageHolder">
+        <img src="https://c.tenor.com/vHMD9o7RmfYAAAAC/snake-salute.gif" class="gif" width="100" height="100" />
+        <img src="https://c.tenor.com/vHMD9o7RmfYAAAAC/snake-salute.gif" class="gif" width="100" height="100" />
+        <img src="https://c.tenor.com/vHMD9o7RmfYAAAAC/snake-salute.gif" class="gif" width="100" height="100" />
+        <img src="https://c.tenor.com/vHMD9o7RmfYAAAAC/snake-salute.gif" class="gif" width="100" height="100" />
+        <img src="https://c.tenor.com/vHMD9o7RmfYAAAAC/snake-salute.gif" class="gif" width="100" height="100" />
+        <img src="https://c.tenor.com/vHMD9o7RmfYAAAAC/snake-salute.gif" class="gif" width="100" height="100" />
+        <img src="https://c.tenor.com/vHMD9o7RmfYAAAAC/snake-salute.gif" class="gif" width="100" height="100" />
+        <img src="https://c.tenor.com/vHMD9o7RmfYAAAAC/snake-salute.gif" class="gif" width="100" height="100" />
+        <img src="https://c.tenor.com/vHMD9o7RmfYAAAAC/snake-salute.gif" class="gif" width="100" height="100" />
+        <img src="https://c.tenor.com/vHMD9o7RmfYAAAAC/snake-salute.gif" class="gif" width="100" height="100" />
+        <img src="https://c.tenor.com/vHMD9o7RmfYAAAAC/snake-salute.gif" class="gif" width="100" height="100" />
+        <img src="https://c.tenor.com/vHMD9o7RmfYAAAAC/snake-salute.gif" class="gif" width="100" height="100" />
+        <img src="https://c.tenor.com/vHMD9o7RmfYAAAAC/snake-salute.gif" class="gif" width="100" height="100" />
+        <img src="https://c.tenor.com/vHMD9o7RmfYAAAAC/snake-salute.gif" class="gif" width="100" height="100" />
+        <img src="https://c.tenor.com/vHMD9o7RmfYAAAAC/snake-salute.gif" class="gif" width="100" height="100" />
+        <img src="https://c.tenor.com/vHMD9o7RmfYAAAAC/snake-salute.gif" class="gif" width="100" height="100" />
+    </div>
+</section>
+
+
+{% endblock %}

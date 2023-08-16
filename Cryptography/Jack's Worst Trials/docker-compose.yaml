@@ -1,0 +1,13 @@
+version: "3"
+services:
+  flask:
+    build: ./
+    volumes:
+      - ./:/app
+    ports:
+      # public:local
+      - "10002:5000"
+    container_name: jacksworst
+    restart: always
+    environment:
+      - APP_NAME=jacksworst

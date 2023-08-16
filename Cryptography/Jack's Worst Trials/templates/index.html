@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<header>
+    <div class="header-left">
+        <a href="{{ url_for('index') }}" class="header-left-list">website here</a>
+    </div>
+    <div class="header-right">
+        <a href="{{ url_for('login') }}" class="header-right-list">Login</a>
+        <a href="{{ url_for('signup') }}" class="header-right-list">Sign Up</a>
+    </div>
+</header>
+    <div class="ImageHolder">
+        <img src="https://c.tenor.com/EPLB9VPvzN0AAAAM/cat-cats.gif" class="gif" width="100" height="100" />
+        <img src="https://c.tenor.com/EPLB9VPvzN0AAAAM/cat-cats.gif" class="gif" width="100" height="100" />
+        <img src="https://c.tenor.com/EPLB9VPvzN0AAAAM/cat-cats.gif" class="gif" width="100" height="100" />
+        <img src="https://c.tenor.com/EPLB9VPvzN0AAAAM/cat-cats.gif" class="gif" width="100" height="100" />
+        <img src="https://c.tenor.com/EPLB9VPvzN0AAAAM/cat-cats.gif" class="gif" width="100" height="100" />
+        <img src="https://c.tenor.com/EPLB9VPvzN0AAAAM/cat-cats.gif" class="gif" width="100" height="100" />
+    </div>
+    <img src="{{ url_for('static',filename='img/offer.jpg') }}" class="gambardepan" alt="centered image" height="900" width="700">
+    <hr>
+    <img src="https://cdn.dribbble.com/users/58639/screenshots/3788063/936.jpg" class="gambar1" alt="centered image" height="200" width="200">
+    <img src="https://spng.pngfind.com/pngs/s/286-2864329_ironicmeme-ironic-png-sunglasses-emoji-smileyface-mens-valentines.png" class="gambar1" alt="centered image" height="200" width="200">
+    <img src="https://i.pinimg.com/originals/60/7f/ef/607fefca9fa3d8b0de1da8f1d3ffbaba.gif" class="gambar1" alt="centered image" height="200" width="200">
+    <img src="https://pbs.twimg.com/media/EtyPgsKVEAAIR9A.jpg" class="gambar2" alt="centered image" height="200" width="200">
+    <div class="runtext-container">
+<div class="main-runtext">
+<marquee direction="" onmouseover="this.stop();" onmouseout="this.start();">
+<div class="holder">
+    <div class="text-container">
+    &nbsp; &nbsp;<a data-fancybox-group="gallery" class="fancybox"  title="lorem lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut sodales libero. Fusce scelerisque orci turpis, vel porttitor diam fermentum quis. Proin lacinia, leo ut ullamcorper vestibulum, elit purus ornare est, in feugiat orci augue quis odio.</a>
+    </div>
+</div>
+
+</marquee>
+
+{% endblock %}

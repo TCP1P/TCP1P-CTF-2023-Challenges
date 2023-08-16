@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <!-- /public_key.pem -->
+<header>
+    <div class="header-left">
+        <a href="{{ url_for('index') }}" class="header-left-list">website yes</a>
+    </div>
+    <div class="header-right">
+        <a href="{{ url_for('logout') }}" class="header-right-list">Log Out</a>
+    </div>
+</header>
+    <img src="https://imgflip.com/s/meme/Laughing-Men-In-Suits.jpg" class="gambardepan" alt="centered image" height="500" width="500">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            {% with messages = get_flashed_messages() %}  
+                {% if messages %}  
+                    {% for message in messages %}  
+                        <p class="hello">{{ message }}</p>  
+                    {% endfor %}  
+                {% endif %}  
+            {% endwith %}  
+        </div>
+        <h4>get tf out</h4> 
+    </div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7101ZW0K5dgdTXKZGoB_-0lOXTYgaOdj7IGrEKd3RMxmCK5GReEPXIOwIfm2ZL_fhTuw&usqp=CAU" class="gambar2" alt="centered image" height="200" width="200">
+</section>
+
+
+{% endblock %}
