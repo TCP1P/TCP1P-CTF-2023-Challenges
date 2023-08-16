@@ -1,6 +1,6 @@
 [config]
 url = https://ctf.tcp1p.com/
-access_token = ctfd_e2e2fbf5f52242ad77f1cdc21869eb64f04719fcbfe407fa7372b47369bc7bee
+access_token = ctfd_266e6bde4a6a40219b7d40af41f26cf95c9e3fc9d17532de6160576b95173f2b
 
 [challenges]
 
