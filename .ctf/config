@@ -1,6 +1,6 @@
 [config]
 url = https://ctf.tcp1p.com/
-access_token = ctfd_badb4942456471f900a70ef9697f0bccd677ef609558d243cb4e45f2d7c65910
+access_token = ctfd_8fef026473a81d15881d0ae6f3c634d9e2124f84f7d2e6094502001e54020578
 
 [challenges]
 ./Cryptography/Final Consensus = ./Cryptography/Final Consensus
