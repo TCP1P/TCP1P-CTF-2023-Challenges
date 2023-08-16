@@ -6,8 +6,14 @@ name: "Bypassssss"
 author: "daffainfo"
 category: web
 description: I used to have a website but unfortunately my website always gets hacked :(. But now I'm pretty sure they won't break into my website, right? right?!?!
-value: 1000
-type: standard
+value: 0
+type: dynamic
+extra:
+    initial: 1000
+    decay: 20
+    minimum: 100
+
+connection_info: http://ctf.tcp1p.com:45679
 
 # Flags specify answers that your challenge use. You should generally provide
 # at least one.

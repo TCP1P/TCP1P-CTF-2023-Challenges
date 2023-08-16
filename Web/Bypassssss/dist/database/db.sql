@@ -82,7 +82,7 @@ INSERT INTO `item_list` (`id`, `item_name`, `quantity`, `created_by`) VALUES
 (21, 'Beige Ring', 4, ' admin'),
 (22, 'Turquoise Bracelet', 7, ' admin'),
 (23, 'Violet Watch', 13, ' admin'),
-(24, 'TCP1P{fake_flag}', 1337, ' admin'),
+(24, 'TCP1P{wHuT_15_fR4gm3nTEd_SqL_1Nj3ct10N?!?!}', 1337, ' admin'),
 (25, 'Navy Backpack', 16, ' admin'),
 (26, 'Silver Wallet', 19, ' admin'),
 (27, 'Bronze Tie', 10, ' admin'),
