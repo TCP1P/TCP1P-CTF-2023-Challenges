@@ -2,10 +2,10 @@
 # other tools to install and deploy your challenge.
 
 # Required sections
-name: "Final Consensus"
+name: "Jack's Worst Trials"
 author: "Kisanak"
 category: Cryptography
-description: Alice and Bob are speaking in hex, but they seem to understand each other. Will they reach the final consensus?
+description: Jack, a web developer intern, is asked to make a website for his trial probation in his company. Some say a treasure will be given to anyone who is able to log in as an admin, although not a single person is assigned as an admin by Joe, not even himself.
 value: 1000
 type: standard
 
@@ -14,12 +14,12 @@ type: standard
 # Can be removed if unused
 # Accepts strings or dictionaries
 flags:
-    - TCP1P{nothing_ever_lasts_forever_everybody_wants_to_rule_the_world}
+    - TCP1P{im_only_human_after_all_dont_put_your_blame_on_me}
 
 # Provide paths to files from the same directory that this file is in
 # Accepts strings
 files:
-    - peserta/chall.py
+    - peserta/app.py
 
 # The state of the challenge.
 # This is visible by default. It takes two values: hidden, visible.
