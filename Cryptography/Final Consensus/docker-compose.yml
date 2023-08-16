@@ -7,7 +7,7 @@ services:
     container_name: finalconsensus
     restart: always
     ports:
-      - "10001:10001"
+      - "35257:10001"
     dns:
       - 8.8.8.8
       - 8.8.4.4

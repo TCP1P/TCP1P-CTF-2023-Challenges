@@ -13,6 +13,8 @@ extra:
     decay: 20
     minimum: 100
 
+connection_info: nc ctf.tcp1p.com 2223
+
 # Flags specify answers that your challenge use. You should generally provide
 # at least one.
 # Can be removed if unused

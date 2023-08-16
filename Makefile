@@ -1,7 +1,9 @@
 adds:
-	bash ./.ctf/script.sh add
+	bash ./.ctf/ctf.sh add
 installs:
-	bash ./.ctf/script.sh install
-.ONESHELL:
+	bash ./.ctf/ctf.sh install
 syncs:
-	bash ./.ctf/script.sh sync
+	bash ./.ctf/ctf.sh sync
+
+deploy:
+	bash ./.ctf/deploy.sh

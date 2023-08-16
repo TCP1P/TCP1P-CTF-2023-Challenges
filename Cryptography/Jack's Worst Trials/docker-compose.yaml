@@ -6,7 +6,7 @@ services:
       - ./:/app
     ports:
       # public:local
-      - "10002:5000"
+      - "28001:5000"
     container_name: jacksworst
     restart: always
     environment:

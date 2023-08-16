@@ -6,7 +6,7 @@ services:
       - ./:/app
     ports:
       # public:local
-      - "10004:5000"
+      - "54734:5000"
     container_name: spidershamble
     restart: always
     environment:
