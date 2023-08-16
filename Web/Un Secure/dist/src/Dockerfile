@@ -7,6 +7,9 @@ WORKDIR /var/www/html
 # copy all host file in cwd to container cwd
 COPY . .
 
+# move flag to root directory with random name
+RUN mv flag.txt $(cat /dev/urandom | head -c 32 | hex).txt
+
 # add new user named ctf
 RUN useradd -ms /bin/bash ctf
 
