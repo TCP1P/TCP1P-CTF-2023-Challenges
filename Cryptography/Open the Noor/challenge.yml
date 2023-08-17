@@ -7,6 +7,7 @@ author: "Kisanak"
 category: Cryptography
 description: |
     **Author**: `Kisanak`
+
     My boss made a "forgot password" feature only to hardcode password validation. I don't know how his mind works.
 value: 0
 type: dynamic
