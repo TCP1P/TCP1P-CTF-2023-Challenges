@@ -5,7 +5,9 @@
 name: "Open the Noor"
 author: "Kisanak"
 category: Cryptography
-description: My boss made a "forgot password" feature only to hardcode password validation. I don't know how his mind works.
+description: >
+    **Author**: `Kisanak`
+    My boss made a "forgot password" feature only to hardcode password validation. I don't know how his mind works.
 value: 0
 type: dynamic
 extra:

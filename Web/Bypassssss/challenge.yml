@@ -4,8 +4,10 @@
 # Required sections
 name: "Bypassssss"
 author: "daffainfo"
-category: web
-description: I used to have a website but unfortunately my website always gets hacked :(. But now I'm pretty sure they won't break into my website, right? right?!?!
+category: Web
+description: >
+    **Author**: `Daffainfo`
+    I used to have a website but unfortunately my website always gets hacked :(. But now I'm pretty sure they won't break into my website, right? right?!?!
 value: 0
 type: dynamic
 extra:

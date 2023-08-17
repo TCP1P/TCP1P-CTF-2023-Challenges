@@ -5,7 +5,9 @@
 name: "Jack's Worst Trials"
 author: "Kisanak"
 category: Cryptography
-description: Jack, a web developer intern, is asked to make a website for his trial probation in his company. Some say a treasure will be given to anyone who is able to log in as an admin, although not a single person is assigned as an admin by Joe, not even himself.
+description: >
+    **Author**: `Kisanak`
+    Jack, a web developer intern, is asked to make a website for his trial probation in his company. Some say a treasure will be given to anyone who is able to log in as an admin, although not a single person is assigned as an admin by Joe, not even himself.
 value: 0
 type: dynamic
 extra:
