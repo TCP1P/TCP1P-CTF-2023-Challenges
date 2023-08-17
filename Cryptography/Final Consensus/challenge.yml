@@ -5,7 +5,7 @@
 name: "Final Consensus"
 author: "Kisanak"
 category: Cryptography
-description: >
+description: |
     **Author**: `Kisanak`
     Alice and Bob are speaking in hex, but they seem to understand each other. Will they reach the final consensus?
 value: 0

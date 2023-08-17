@@ -5,7 +5,7 @@
 name: "Spider Shambles"
 author: "Kisanak"
 category: Cryptography
-description: >
+description: |
     **Author**: `Kisanak`
     A completely ordinary file scrambler without any purpose of existence or something idk.
 value: 0
