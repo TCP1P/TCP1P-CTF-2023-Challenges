@@ -1,0 +1,1 @@
+since the padding comes after the AES encryption and the encryption is able to go through even before the padding, we can conclude that the plaintext have a length of a multiple of 16 bytes and so the padding will be \x10 * 16 at the end of the ciphertext, xor-ing the last 16 bytes of the ciphertext with \x10 will give us the key
