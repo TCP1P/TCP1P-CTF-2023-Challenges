@@ -1,0 +1,9 @@
+version: "3"
+services:
+  cherryleak:
+    build: ./
+    ports:
+      # public:local
+      - "13339:13339"
+    container_name: cherryleak
+    restart: always

@@ -4,7 +4,7 @@ from math import gcd
 from Crypto.Util.number import long_to_bytes
 
 # context.log_level = "debug"
-r = process(["python3", "./src/cherry_leak.py"])
+r = remote("0.0.0.0", 13339)
 
 r.sendlineafter(b"> ", b"2")
 r.sendlineafter(b"> ", b"-")

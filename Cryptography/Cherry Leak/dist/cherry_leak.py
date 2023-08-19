@@ -47,7 +47,7 @@ while True:
         elif leak == "/":
             print(f"p // q = {pow(p // q, e, n)}") # nuh uh
         elif leak == "%":
-            print(f"{p % q = }`")
+            print(f"{p % q = }")
         else:
             print("What?")
     elif choice == 3:
