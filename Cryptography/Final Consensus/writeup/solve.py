@@ -7,7 +7,6 @@ from tqdm import tqdm
 t = time.time()
 
 
-r = remote('159.65.136.204', 10001)
 # r = remote('localhost', 7777, level='debug')
 r.recvuntil(b"Alice: My message")
 ciphertext = r.recvline().strip().decode()
