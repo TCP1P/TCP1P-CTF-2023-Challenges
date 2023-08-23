@@ -1,0 +1,18 @@
+# Start with a SEQUENCE
+asn1=SEQUENCE:pubkeyinfo
+
+# pubkeyinfo contains an algorithm identifier and the public key wrapped in a BIT STRING
+[pubkeyinfo]
+algorithm=SEQUENCE:rsa_alg
+pubkey=BITWRAP,SEQUENCE:rsapubkey
+
+# algorithm ID for RSA is just an OID and a NULL
+[rsa_alg]
+algorithm=OID:rsaEncryption
+parameter=NULL
+
+# Actual public key: modulus and exponent
+[rsapubkey]
+n=INTEGER:0xac093f13ecc248298f46e6c16267db10fd6a955282165b665a1bbea1dc831651cf3a76eddb72e1ffca011a4664fc8956f9cd592e2c6dec0fb656bb5af4a9c00d3f6bd1e0a116fc1835450fa890d1f48653b18d005d33616e8da4246c98da98ce76d44090ab16c5de9e972cbb84e258b2dfbba47cb09667f31b7195d68887bccf
+
+e=INTEGER:0x010001
