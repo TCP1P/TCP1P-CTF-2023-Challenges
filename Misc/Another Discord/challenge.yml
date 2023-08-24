@@ -16,7 +16,7 @@ extra:
     decay: 20
     minimum: 100
 
-connection_info: ...
+connection_info: https://discord.gg/xwR4xHNvsD
 
 # Flags specify answers that your challenge use. You should generally provide
 # at least one.
