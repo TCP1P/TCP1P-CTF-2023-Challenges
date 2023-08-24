@@ -4,4 +4,4 @@ services:
     build:
       context: ./src
     ports:
-      - "45689:80"
+      - "45689:5000"

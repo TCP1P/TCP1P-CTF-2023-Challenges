@@ -25,7 +25,7 @@ def submit():
             result = subprocess.run(command, capture_output=True, text=True)
             print(result.stdout)
             if 'info' in result.stdout and '/api/v2/echo' in result.stdout and 'custom-templates' in result.stdout:
-                return "fake{flag}"
+                return "TCP1P{fake_flag}"
             else:
                 return "Your website isn't vulnerable"
         except subprocess.CalledProcessError:
@@ -33,4 +33,4 @@ def submit():
     return "Invalid request"
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run(host='0.0.0.0', port=5000)

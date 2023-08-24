@@ -1,6 +1,8 @@
 <?php
 	session_start();
 
+	// Part 2: flag}
+
 	include('config.php');
 
 	if($_SESSION["admin_status"] != "true") {
@@ -166,38 +168,21 @@
                     <h1 class="h3 mb-2 text-gray-800">Items List</h1>
                     <div class="my-2"></div>
 
-                    <!-- DataTales Example -->
-                    <div class="card shadow mb-4">
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-                                            <th>ID</th>
-                                            <th>Item name</th>
-                                            <th>Quantity</th>
-                                        </tr>
-                                    </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>ID</th>
-                                            <th>Item Name</th>
-                                            <th>Quantity</th>
-                                        </tr>
-                                    </tfoot>
-                                    <tbody>
-                                        <?php  
-                                            while($row = mysqli_fetch_array($result)) {
-                                                echo "<tr>";
-                                                echo "<td>".$row['id']."</td>";
-                                                echo "<td>".$row['item_name']."</td>";
-                                                echo "<td>".htmlspecialchars($row['quantity'], ENT_QUOTES)."</td>";    
-                                            }
-                                        ?>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
+                    <div class="row">
+                        <?php  
+                            while($row = mysqli_fetch_array($result)) {
+                                echo '<div class="col-md-4 mb-4">';
+                                echo '<div class="card">';
+                                echo '<div class="card-body">';
+                                echo '<img href="viewer.php?image='.$row["id"].'.png">';
+                                echo '<h5 class="card-title">'.$row['item_name'].'</h5>';
+                                echo '<p class="card-text">ID: '.$row['id'].'</p>';
+                                echo '<p class="card-text">Quantity: '.htmlspecialchars($row['quantity'], ENT_QUOTES).'</p>';
+                                echo '</div>';
+                                echo '</div>';
+                                echo '</div>';
+                            }
+                        ?>
                     </div>
 
                 </div>

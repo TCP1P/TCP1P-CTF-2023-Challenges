@@ -10,15 +10,15 @@ COPY . /app
 RUN apt-get --assume-yes update && apt-get --assume-yes install wget unzip
 
 # Install any needed packages specified in requirements.txt
-RUN pip3 install flask
+RUN pip install flask
 
 # Install nuclei
 RUN wget "https://github.com/projectdiscovery/nuclei/releases/download/v2.9.12/nuclei_2.9.12_linux_amd64.zip"
 RUN unzip nuclei_2.9.12_linux_amd64.zip
 RUN rm nuclei_2.9.12_linux_amd64.zip
 
-# Make port 80 available to the world outside this container
-EXPOSE 80
+# Make port 5000 available to the world outside this container
+EXPOSE 5000
 
 # Run app.py when the container launches
-CMD ["python3", "app.py"]
+CMD ["python", "app.py"]
