@@ -1,0 +1,60 @@
+id: custom-templates
+
+info:
+  name: Testing nuclei templates
+  author: daffainfo
+  severity: info
+  reference: https://daffa.info
+  metadata:
+    max-request: 2
+  tags: ctf,tcp1p
+
+http:
+  - raw:
+      - |
+        GET /api/v1/version HTTP/1.1
+        Host: {{Hostname}}
+        Referer: https://daffa.info/
+
+      - |
+        POST /api/v2/echo HTTP/1.1
+        Host: {{Hostname}}
+        Referer: https://daffa.info
+        Content-Type: application/x-www-form-urlencoded
+
+        name={{randstr}}
+
+    matchers-condition: and
+    matchers:
+      - type: dsl
+        dsl:
+          - compare_versions(version, '< 10.0.5', '> 10.0.1')
+
+      - type: word
+        part: body_1
+        words:
+          - "\"NAME\":\"TCP1P\""
+          - "\"msg\":\"success\""
+        condition: and
+        case-insensitive: true
+
+      - type: regex
+        part: body_2
+        regex:
+          - "{{randstr}}"
+          - "daffainfo"
+          - "TCP1P{.*?}"
+        condition: and
+
+      - type: status
+        status:
+          - 200
+
+    extractors:
+      - type: regex
+        name: version
+        group: 1
+        internal: true
+        part: body_1
+        regex:
+          - "\"version\":\"([0-9.]+)\""
