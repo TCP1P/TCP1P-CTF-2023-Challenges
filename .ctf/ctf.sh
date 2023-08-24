@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 
 export directories=$(find . -maxdepth 2 -type d)
 IFS=$'\n'

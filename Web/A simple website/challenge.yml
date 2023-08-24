@@ -5,9 +5,17 @@
 name: "A simple website"
 author: "daffainfo"
 category: web
-description: It turns out that learning to make websites using NuxtJS is really fun
-value: 1000
-type: standard
+description: |
+    **Author**: `daffainfo`
+
+    It turns out that learning to make websites using NuxtJS is really fun
+value: 0
+type: dynamic
+extra:
+    initial: 1000
+    decay: 20
+    minimum: 100
+
 
 # Flags specify answers that your challenge use. You should generally provide
 # at least one.
