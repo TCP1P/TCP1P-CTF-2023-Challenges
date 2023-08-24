@@ -4,10 +4,19 @@
 # Required sections
 name: "Nuclei"
 author: "daffainfo"
-category: misc
-description: Nuclei is a fast, template based vulnerability scanner focusing on extensive configurability, massive extensibility and ease of use.
-value: 1000
-type: standard
+category: Misc
+description: |
+    **Author**: `daffainfo`
+
+    Nuclei is a fast, template based vulnerability scanner focusing on extensive configurability, massive extensibility and ease of use.
+value: 0
+type: dynamic
+extra:
+    initial: 1000
+    decay: 20
+    minimum: 100
+
+connection_info: ...https://discord.gg/xwR4xHNvsD
 
 # Flags specify answers that your challenge use. You should generally provide
 # at least one.

@@ -25,7 +25,7 @@ def submit():
             result = subprocess.run(command, capture_output=True, text=True)
             print(result.stdout)
             if 'info' in result.stdout and '/api/v2/echo' in result.stdout and 'custom-templates' in result.stdout:
-                return "fake{flag}"
+                return "TCP1P{W00h00_nuclei_can_detect_my_website!!!}"
             else:
                 return "Your website isn't vulnerable"
         except subprocess.CalledProcessError:

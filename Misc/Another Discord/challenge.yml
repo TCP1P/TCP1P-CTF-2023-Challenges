@@ -4,10 +4,19 @@
 # Required sections
 name: "Another Discord"
 author: "daffainfo"
-category: misc
-description: TCP1P has another discord server?
-value: 1000
-type: standard
+category: Misc
+description: |
+    **Author**: `daffainfo`
+
+    TCP1P has another discord server?
+value: 0
+type: dynamic
+extra:
+    initial: 1000
+    decay: 20
+    minimum: 100
+
+connection_info: ...
 
 # Flags specify answers that your challenge use. You should generally provide
 # at least one.
