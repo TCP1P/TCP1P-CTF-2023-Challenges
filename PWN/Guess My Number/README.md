@@ -9,7 +9,7 @@ Difficulty : Medium
 My friend said if i can *guess* the right number, he will give me something. 
 Can you help me?
 
-[guessmynumber](/PWN/Guess%20My%20Number%20%F0%9F%A4%93/attachment/guessmynumber)
+[guessmynumber](../dist/chall.c)
 
 ## Hints
 
