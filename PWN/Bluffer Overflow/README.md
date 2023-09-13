@@ -9,7 +9,7 @@ Difficulty : Easy
 
 Maybe it's your first time pwning? Can you overwrite the variable?
 
-[chall.c](../dist/chall.c)
+[chall.c](./dist/chall.c)
 
 ## Hints
 
