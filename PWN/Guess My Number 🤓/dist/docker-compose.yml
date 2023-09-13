@@ -1,9 +1,0 @@
-version: "3.9"
-
-services:
-    guess:
-        build: guess
-        ports:
-            - "7331:7331"
-        read_only: true
-        command: "socat tcp-l:7331,fork,reuseaddr exec:/home/user/guessmynumber"
