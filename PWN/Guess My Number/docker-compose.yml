@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+    guessmynumber:
+        build: .
+        restart: always
+        ports:
+            - "7331:7331"
+        read_only: true
