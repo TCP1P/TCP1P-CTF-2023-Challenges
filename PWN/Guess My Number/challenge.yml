@@ -1,0 +1,40 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "Guess My Number"
+author: "rennfurukawa"
+category: PWN
+description: |
+    **Author**: `PWN`
+
+    My friend said if i can *guess* the right number, he will give me something.
+    Can you help me?
+value: 0
+type: dynamic
+extra:
+    initial: 1000
+    decay: 20
+    minimum: 100
+
+connection_info: nc ctf.tcp1p.com 17027
+
+# Flags specify answers that your challenge use. You should generally provide
+# at least one.
+# Can be removed if unused
+# Accepts strings or dictionaries
+flags:
+    - TCP1P{r4nd0m_1s_n0t_th4t_r4nd0m_r19ht?_946f38f6ee18476e7a0bff1c1ed4b23b}
+
+# Provide paths to files from the same directory that this file is in
+# Accepts strings
+files:
+    - dist.zip
+
+# The state of the challenge.
+# This is visible by default. It takes two values: hidden, visible.
+state: visible
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"
