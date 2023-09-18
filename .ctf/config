@@ -16,4 +16,6 @@ access_token = ctfd_afcf2f0368dbf8d8ca1abb59c3a9858143dcaee785b93726970f66d4d488
 ./Cryptography/Cherry Leak = ./Cryptography/Cherry Leak
 ./Cryptography/One Pad Time = ./Cryptography/One Pad Time
 ./Web/A simple website = ./Web/A simple website
+./PWN/Guess My Number = ./PWN/Guess My Number
+./PWN/Bluffer Overflow = ./PWN/Bluffer Overflow
 
