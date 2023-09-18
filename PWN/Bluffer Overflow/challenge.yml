@@ -6,7 +6,7 @@ name: "Bluffer Overflow"
 author: "rennfurukawa"
 category: PWN
 description: |
-    **Author**: `PWN`
+    **Author**: `rennfurukawa`
 
     Maybe it's your first time pwning? Can you overwrite the variable?
 value: 0
