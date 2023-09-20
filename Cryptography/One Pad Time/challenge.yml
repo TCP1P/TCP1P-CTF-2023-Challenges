@@ -12,7 +12,7 @@ description: |
 value: 0
 type: dynamic
 extra:
-    initial: 1000
+    initial: 500
     decay: 20
     minimum: 100
 
