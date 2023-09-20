@@ -4,7 +4,7 @@ WORKDIR /home/ctf/app
 
 
 RUN adduser -D ctf
-RUN chown ctf:ctf /home/app
+RUN chown ctf:ctf /home/ctf/app
 
 COPY ./run.sh .
 RUN chmod -x run.sh
