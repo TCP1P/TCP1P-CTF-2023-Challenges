@@ -1,0 +1,5 @@
+degenerator -> function compile
+pac-resolver -> createPacResolver
+pac-proxy-agent -> class PacProxyAgent -> method loadResolver
+proxy-agent -> class ProxyAgent -> method debug
+

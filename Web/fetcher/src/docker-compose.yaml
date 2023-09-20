@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  app:
+    build: ./app
+    restart: always
+    ports:
+      - 56662:8080
+    environment:
+      - FLAG=TCP1P{vm2_sandbox_escape}
+
