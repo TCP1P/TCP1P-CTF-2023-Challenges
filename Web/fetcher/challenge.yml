@@ -23,7 +23,7 @@ connection_info: http://ctf.tcp1p.com:56662
 # Can be removed if unused
 # Accepts strings or dictionaries
 flags:
-    - TCP1P{unserialize in PHP goes brrrrrrrr, ouch}
+    - TCP1P{vm2_sandbox_escape}
 
 # Tags are used to classify your challenge with topics. You should provide at
 # least one.
