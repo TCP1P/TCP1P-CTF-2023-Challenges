@@ -1,10 +1,10 @@
 FROM denoland/deno:alpine
 
-
-COPY main.js .
-RUN deno cache main.js
+WORKDIR /app
 
 COPY . .
+RUN deno cache main.js
+
 RUN mv ./flag.txt /flag.txt
 
 EXPOSE 8080
