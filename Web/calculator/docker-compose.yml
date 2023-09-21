@@ -4,4 +4,4 @@ services:
     build: ./src
     restart: always
     ports:
-        - '38931:8000'
+        - '38931:8080'
