@@ -16,14 +16,14 @@ extra:
     decay: 20
     minimum: 100
 
-connection_info: https://discord.gg/xwR4xHNvsD
+connection_info: https://discord.gg/kzrryCUutP
 
 # Flags specify answers that your challenge use. You should generally provide
 # at least one.
 # Can be removed if unused
 # Accepts strings or dictionaries
 flags:
-    - TCP1P{D1sc0rd_documentation_was_really_helpful}
+    - TCP1P{d15c0RD_d0cUM3n74710n_W45_r341ly_H31pFu1}
 
 # Tags are used to classify your challenge with topics. You should provide at
 # least one.
