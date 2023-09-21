@@ -25,15 +25,6 @@ connection_info: http://ctf.tcp1p.com:56662
 flags:
     - TCP1P{vm2_sandbox_escape}
 
-# Tags are used to classify your challenge with topics. You should provide at
-# least one.
-# Can be removed if unused
-# Accepts strings
-tags:
-    - web
-    - php
-    - unserialize
-
 # Provide paths to files from the same directory that this file is in
 # Accepts strings
 files:
