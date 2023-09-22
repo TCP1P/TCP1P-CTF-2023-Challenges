@@ -8,7 +8,7 @@ category: PWN
 description: |
     **Author**: `HyggeHalcyon`
 
-    let's how well you understand the heap
+    let's see how well you understand the heap
 value: 0
 type: dynamic
 extra:
@@ -23,7 +23,7 @@ connection_info: nc ctf.tcp1p.com 4267
 # Can be removed if unused
 # Accepts strings or dictionaries
 flags:
-    - TCP1P{ez_buff3r_0verflow_l0c4l_v4r1abl3_38763f0c86da16fe14e062cd054d71ca}
+    - TCP1P{k4mu_m4kan_ap4_1ni_k0q_un1qu3_s3k4li_yh_k4kung_chef_0ma1good_r3cyle???}
 
 # Provide paths to files from the same directory that this file is in
 # Accepts strings

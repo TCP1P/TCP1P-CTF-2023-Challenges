@@ -1,3 +1,4 @@
+// gcc -fstack-protector -o chall chall.c 
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -92,11 +93,11 @@ void read_flag(){
     }
 
     for(int i = 0; i < 4; i++){
-        malloc(0x40);
+        flag_chunk = malloc(0x70);
     }
 
-    flag_chunk = malloc(0x40);
-    fgets(flag_chunk, 0x40, f);
+    flag_chunk = malloc(0x70);
+    fgets(flag_chunk, 0x70, f);
     fclose(f);
     puts("[*] flag loaded into memory");
 }
@@ -120,6 +121,7 @@ int menu(){
 
 void main(){
     int choice;
+    setup();
 
     while(1){
         choice = menu();
