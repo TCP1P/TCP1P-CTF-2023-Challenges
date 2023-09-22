@@ -3,5 +3,6 @@ version: "3"
 services:
   web:
     build: ./src
+    restart: always
     ports:
       - "45678:80"
