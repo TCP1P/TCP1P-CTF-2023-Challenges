@@ -2,13 +2,13 @@
 # other tools to install and deploy your challenge.
 
 # Required sections
-name: "Another Discord"
-author: "daffainfo"
-category: Misc
+name: "hide and split"
+author: "underzero"
+category: Forensic
 description: |
-    **Author**: `daffainfo`
+    **Author**: `underzero`
 
-    TCP1P has another discord server?
+    Explore this disk image file, maybe you can find something hidden in it.
 value: 0
 type: dynamic
 extra:
@@ -16,27 +16,24 @@ extra:
     decay: 20
     minimum: 100
 
-connection_info: https://discord.gg/kzrryCUutP
-
 # Flags specify answers that your challenge use. You should generally provide
 # at least one.
 # Can be removed if unused
 # Accepts strings or dictionaries
 flags:
-    - TCP1P{d15c0RD_d0cUM3n74710n_W45_r341ly_H31pFu1}
+    - TCP1P{hidden_flag_in_the_extended_attributes_fea73c5920aa8f1c}
 
 # Tags are used to classify your challenge with topics. You should provide at
 # least one.
 # Can be removed if unused
 # Accepts strings
 tags:
-    - misc
-    - discord
+    - disk forensic
 
 # Provide paths to files from the same directory that this file is in
 # Accepts strings
-# files:
-#     - dist.zip
+files:
+    - dist/challenge.zip
 
 # The state of the challenge.
 # This is visible by default. It takes two values: hidden, visible.

@@ -1,9 +1,9 @@
 version: "3"
 
 services:
-    guessmynumber:
+    rop:
         build: .
         restart: always
         ports:
-            - "7331:7331"
+            - "42069:42069"
         read_only: true

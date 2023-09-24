@@ -1,9 +1,9 @@
 version: "3"
 
 services:
-    guessmynumber:
+    babyheap:
         build: .
         restart: always
         ports:
-            - "7331:7331"
+            - "4267:4267"
         read_only: true

@@ -3,5 +3,6 @@ services:
   nuxt:
     build:
       context: ./src
+    restart: always
     ports:
       - "45681:3000"

@@ -2,13 +2,13 @@
 # other tools to install and deploy your challenge.
 
 # Required sections
-name: "Another Discord"
-author: "daffainfo"
-category: Misc
+name: "rop"
+author: "HyggeHalcyon"
+category: PWN
 description: |
-    **Author**: `daffainfo`
+    **Author**: `HyggeHalcyon`
 
-    TCP1P has another discord server?
+    just another rop
 value: 0
 type: dynamic
 extra:
@@ -16,27 +16,19 @@ extra:
     decay: 20
     minimum: 100
 
-connection_info: https://discord.gg/kzrryCUutP
+connection_info: nc ctf.tcp1p.com 42069
 
 # Flags specify answers that your challenge use. You should generally provide
 # at least one.
 # Can be removed if unused
 # Accepts strings or dictionaries
 flags:
-    - TCP1P{d15c0RD_d0cUM3n74710n_W45_r341ly_H31pFu1}
-
-# Tags are used to classify your challenge with topics. You should provide at
-# least one.
-# Can be removed if unused
-# Accepts strings
-tags:
-    - misc
-    - discord
+    - TCP1P{no_p0pp1ng_n3dded_el_gato}
 
 # Provide paths to files from the same directory that this file is in
 # Accepts strings
-# files:
-#     - dist.zip
+files:
+    - dist.zip
 
 # The state of the challenge.
 # This is visible by default. It takes two values: hidden, visible.

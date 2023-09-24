@@ -10,9 +10,11 @@ services:
       - ./dist/src:/var/www/html
     depends_on:
       - mysql-db
+    restart: always
 
   mysql-db:
     image: mysql:8.0
+    restart: always
     environment:
       MYSQL_USER: ctf
       MYSQL_PASSWORD: VeryRandomPassword
