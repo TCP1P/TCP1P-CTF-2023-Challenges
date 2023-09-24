@@ -25,4 +25,4 @@ WORKDIR /ctf
 
 RUN rm -rf /bin/bash /bin/dash /usr/bin/bash /usr/bin/dash
 
-CMD ["socat", "TCP-LISTEN:19010,reuseaddr,fork","EXEC:/ctf/chall.py,su=nobody"]
+CMD ["socat", "TCP-LISTEN:8000,reuseaddr,fork","EXEC:/ctf/chall.py,su=nobody"]
