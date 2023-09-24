@@ -23,7 +23,7 @@ connection_info: http://ctf.tcp1p.com:52132
 # Can be removed if unused
 # Accepts strings or dictionaries
 flags:
-    - TCP1P{vm2_sandbox_escape}
+    - TCP1P{bypassing_latex_waf_require_some_latex_knowledge}
 
 # Provide paths to files from the same directory that this file is in
 # Accepts strings
