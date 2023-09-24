@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+    rop:
+        build: .
+        restart: always
+        ports:
+            - "42069:42069"
+        read_only: true
