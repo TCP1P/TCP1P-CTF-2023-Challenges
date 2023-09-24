@@ -1,9 +1,7 @@
 version: "3"
-
 services:
   app:
-    build: ./app
+    build: ./src
     restart: always
     ports:
-      - 56662:8080
-
+        - '52132:8080'
