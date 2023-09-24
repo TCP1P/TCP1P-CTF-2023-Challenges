@@ -1,6 +1,6 @@
 FROM ubuntu:lunar
 
-EXPOSE 19010
+EXPOSE 8000
 
 ENV DEBIAN_FRONTEND=noninteractive
 
