@@ -15,7 +15,7 @@ for dir in $directories; do
     # Change to the directory and run docker-compose up --detach
     (
         cd "$dir"
-        sudo docker-compose up --detach
+        sudo docker-compose up --build --detach
     )&
 done
 
