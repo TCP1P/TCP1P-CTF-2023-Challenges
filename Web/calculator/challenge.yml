@@ -10,13 +10,16 @@ description: |
 
     For my college assignment, I was tasked with creating a unique calculator app, not your typical calculator application. Could you give it a try and test it for me? 😎
 value: 0
-type: dynamic
+type: container
 extra:
     initial: 500
     decay: 20
     minimum: 100
-
-connection_info: http://ctf.tcp1p.com:38931
+    command: ""
+    image: "calculator:latest"
+    limit: 0
+    port: 8080
+    volumes: ""
 
 # Flags specify answers that your challenge use. You should generally provide
 # at least one.
