@@ -32,7 +32,7 @@ extra:
     decay: 20
     minimum: 100
     command: ""
-    image: "golang:latest"
+    image: "intention:latest"
     limit: 0
     port: 5900
     volumes: ""
