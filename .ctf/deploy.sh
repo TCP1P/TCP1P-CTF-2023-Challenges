@@ -15,8 +15,9 @@ for dir in $directories; do
     # Change to the directory and run docker-compose up --detach
     (
         cd "$dir"
+        COMPOSE_HTTP_TIMEOUT=999999
         sudo docker-compose up --build --detach
-    )&
+    )
 done
 
 wait
