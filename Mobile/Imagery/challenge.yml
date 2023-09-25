@@ -37,6 +37,7 @@ extra:
     limit: 0
     port: 5900
     volumes: ""
+    conn_format: "nc {HOST} {PORT}"
 
 # Flags specify answers that your challenge use. You should generally provide
 # at least one.
