@@ -3,7 +3,7 @@ adds:
 installs:
 	ctf challenge install
 syncs:
-	bash ./.ctf/ctf.sh sync
+	ctf challenge sync
 
 deploy:
 	bash ./.ctf/deploy.sh
