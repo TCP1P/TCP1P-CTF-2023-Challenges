@@ -2,7 +2,7 @@
 
 DOMAIN="ctf.tcp1p.com"
 LPORT=6666
-TARGET="http://taget"
+TARGET="http://ctf.tcp1p.com:29458/"
 FTP_PORT=2000
 fpt="ftp://ctf.tcp1p.com:$FTP_PORT"
 

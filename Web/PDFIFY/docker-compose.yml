@@ -8,7 +8,7 @@ networks:
   infra:
 
 services:
-  apaci:
+  app:
     build:
       context: ./src/
       dockerfile: ./infra/docker/php/Dockerfile

