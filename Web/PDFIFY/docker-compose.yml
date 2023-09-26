@@ -11,13 +11,10 @@ services:
   apaci:
     build:
       context: ./src/
-      dockerfile: ./src/infra/docker/php/Dockerfile
+      dockerfile: ./infra/docker/php/Dockerfile
     ports:
       - 29458:80
     volumes:
-      - ./backend:/work/backend:ro
-      - writable:/work/backend/writable:rw
-      - cache:/work/backend/writable/cache:rw
       - ./flag.txt:/flag_bb57a3d44z1cc065df271s5d73d35a0983g7c9113c055434fp7667fbb8654e1f.txt:ro
     restart: always
     depends_on:
@@ -35,7 +32,7 @@ services:
   db:
     build:
       context: ./src/
-      dockerfile: ./src/infra/docker/mysql/Dockerfile
+      dockerfile: ./infra/docker/mysql/Dockerfile
     restart: always
     volumes:
       - db-store:/var/lib/mysql

@@ -58,4 +58,7 @@ WORKDIR /work/backend
 
 RUN apt-get clean
 
+COPY ./backend .
+RUN chown www-data:www-data ./writable -R
+
 CMD ["sh", "-c", "supervisord -n"]
