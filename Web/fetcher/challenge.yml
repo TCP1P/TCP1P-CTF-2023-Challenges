@@ -10,13 +10,17 @@ description: |
 
     As the name says, the website will fetch something...
 value: 0
-type: dynamic
+type: container
 extra:
     initial: 500
     decay: 20
     minimum: 100
-
-connection_info: http://ctf.tcp1p.com:56662
+    command: ""
+    image: "fetcher:latest"
+    limit: 0
+    port: 8080
+    volumes: ""
+    conn_format: "http://{HOST}:{PORT}/"
 
 # Flags specify answers that your challenge use. You should generally provide
 # at least one.

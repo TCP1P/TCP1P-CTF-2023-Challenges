@@ -2,8 +2,6 @@ version: "3"
 
 services:
   app:
-    build: ./src/app
-    restart: always
-    ports:
-      - 56662:8080
-
+    build: ./src/app/
+    image: fetcher
+    command: ["sh", '-c', 'exit']

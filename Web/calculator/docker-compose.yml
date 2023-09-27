@@ -3,5 +3,5 @@ version: "3"
 services:
   app:
     build: ./src
-    image: calculator
-    command: ["sh", '-c', 'exit']
+    ports:
+      - 29997:8080
