@@ -1,0 +1,10 @@
+version: '3'
+services:
+  pyjail:
+    container_name: cat-kompani
+    network_mode: bridge
+    restart: always
+    build: .
+    ports:
+      - "45123:8000"
+    read_only: false

@@ -2,10 +2,6 @@ version: "3"
 
 services:
   app:
-    build: ./src/app
-    restart: always
-    ports:
-      - 56662:8080
-    environment:
-      - FLAG=TCP1P{vm2_sandbox_escape}
-
+    build: ./src/app/
+    image: fetcher
+    command: ["sh", '-c', 'exit']

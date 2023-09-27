@@ -16,7 +16,7 @@ COPY ./start.sh /usr/bin/start
 RUN chown -R root:root . && \
     chmod o+rx . && \
     chmod 444 flag.txt && \
-    chmod a+x guess && \
+    # chmod a+x guess && \
     chmod 500 /etc/xinetd.d/xinetd && chmod 500 /usr/bin/start && \
     chmod +x run
 

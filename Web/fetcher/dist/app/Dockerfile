@@ -1,14 +1,21 @@
 FROM node:alpine
 
+RUN adduser -D ctf
+USER ctf
 WORKDIR /home/ctf/app
 
-COPY . .
+USER root
+COPY ./run.sh .
+RUN chmod -x run.sh
 
-RUN adduser -D ctf
-RUN chown ctf:ctf /home/ctf/app/node_modules/* -R
+COPY package.json .
+RUN npm install
+
+COPY . .
+RUN mv ./flag.txt `cat /proc/sys/kernel/random/uuid`.txt
 
 USER ctf
 
 EXPOSE 8080
 
-CMD [ "node", "index.mjs" ]
+CMD [ "/bin/sh", "./run.sh" ]

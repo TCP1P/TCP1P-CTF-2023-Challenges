@@ -1,9 +1,9 @@
 adds:
 	bash ./.ctf/ctf.sh add
 installs:
-	bash ./.ctf/ctf.sh install
+	ctf challenge install
 syncs:
-	bash ./.ctf/ctf.sh sync
+	ctf challenge sync
 
 deploy:
 	bash ./.ctf/deploy.sh
