@@ -14,12 +14,6 @@ description: |
     This challenge requires a malicious application. \
     Make your own malicious/exploit application which you will be installing in the Virtual Android Device.
 
-    **Note**:\
-    To get your own Virtual Android Device, click `Get Connection Info` and wait for the container to run (it can take up to 5 minutes). Then you can use VNC using the connection given to connect to the container. To start your Virtual Android Device, follow this steps:
-    1. Right click on the remote desktop
-    2. Applications > Shells > Dash
-    3. Type `~/start_emu.sh`
-
     Any submissions outside the intented solution will be considered as **INVALID**.
     For example, these types of solution is considered as invalid:
     - Stealing the flag by downloading the challenge .apk from the remote connection

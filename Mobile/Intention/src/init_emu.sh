@@ -43,7 +43,6 @@ function install_challenge() {
   adb shell mkdir /system/app/Challenge
   adb push challenge.apk /system/app/Challenge
   adb shell chmod 755 /system/app/Challenge 
-  rm -f challenge.apk
 
   adb shell reboot
 };
@@ -55,8 +54,12 @@ function hidden_policy() {
  
 function secure_device() {
   echo "Securing device..."
+  adb root
+  sleep 2
+  wait_for_device
+  sleep 2
+
   adb remount
-  adb shell rm /system/bin/reboot
   adb shell rm /system/xbin/su
 };
 
@@ -96,6 +99,4 @@ adb shell pm grant com.android.chrome android.permission.WRITE_EXTERNAL_STORAGE
 
 adb unroot
 
-kill_emulator
-
-rm -rf /opt/android/platform-tools/adb
+kill_emulator()

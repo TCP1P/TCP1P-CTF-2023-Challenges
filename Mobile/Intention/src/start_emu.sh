@@ -4,7 +4,7 @@ emulator_name=${EMULATOR_NAME}
 
 adb devices | grep emulator | cut -f1 | xargs -I {} adb -s "{}" emu kill
 
-nohup emulator -avd "${emulator_name}" -writable-system -noaudio -no-boot-anim -memory 2048 -camera-back none & > /dev/null
+nohup emulator -avd "${emulator_name}" -no-window -writable-system -noaudio -no-boot-anim -memory 2048 -camera-back none & > /dev/null
 
 adb wait-for-device
 
