@@ -1,9 +1,0 @@
-version: "3"
-
-services:
-    babyheap:
-        build: .
-        restart: always
-        ports:
-            - "4267:4267"
-        read_only: true

@@ -1,9 +1,0 @@
-version: "3"
-
-services:
-    blufferoverflow:
-        build: .
-        restart: always
-        ports:
-            - "17027:1337"
-        read_only: true
