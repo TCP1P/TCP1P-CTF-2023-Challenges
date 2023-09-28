@@ -14,11 +14,11 @@ description: |
     This challenge requires a malicious application. \
     Make your own malicious/exploit application which you will be installing in the Virtual Android Device.
 
-    Any submissions outside the intented solution will be considered as **INVALID**.
+    Any submissions outside the intented solution will be considered as **INVALID**.\
     For example, these types of solution is considered as invalid:
-    - Stealing the flag by downloading the challenge .apk from the remote connection
-    - Breaking the device using any unintended exploit
-    - Reading the flag file directly without the malicious application
+    - Downloading the challenge APK from the remote connection
+    - Reading the file that contains the flag without using any exploits
+    - Breaking the device using any unintended exploits
 value: 0
 type: container
 extra:
@@ -28,10 +28,9 @@ extra:
     command: ""
     image: "intention:latest"
     limit: 0
-    port: 5900
+    port: 8000
     volumes: ""
-    conn_format: "nc {HOST} {PORT}"
-
+    conn_format: "http://{HOST}:{PORT}/"
 
 
 # Flags specify answers that your challenge use. You should generally provide

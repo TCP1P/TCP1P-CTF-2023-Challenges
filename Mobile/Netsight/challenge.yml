@@ -1,0 +1,55 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "Netsight"
+author: "Kisanak"
+category: Mobile
+description: |
+    **Author**: `Kisanak`
+
+    Check out this application I made that's capable of opening a website using WebView!\
+    I hope I didn't put any dangerous code though...
+
+    **Guide**:\
+    This challenge requires a malicious application. \
+    Make your own malicious/exploit application which you will be installing in the Virtual Android Device.
+
+    Any submissions outside the intented solution will be considered as **INVALID**.\
+    For example, these types of solution is considered as invalid:
+    - Downloading the challenge APK from the remote connection
+    - Reading the file that contains the flag without using any exploits
+    - Breaking the device using any unintended exploits
+value: 0
+type: container
+extra:
+    initial: 500
+    decay: 20
+    minimum: 100
+    command: ""
+    image: "netsight:latest"
+    limit: 0
+    port: 8000
+    volumes: ""
+    conn_format: "http://{HOST}:{PORT}/"
+
+
+# Flags specify answers that your challenge use. You should generally provide
+# at least one.
+# Can be removed if unused
+# Accepts strings or dictionaries
+flags:
+    - TCP1P{mind_your_webview_pls}
+
+# Provide paths to files from the same directory that this file is in
+# Accepts strings
+files:
+    - dist/netsight.apk
+
+# The state of the challenge.
+# This is visible by default. It takes two values: hidden, visible.
+state: visible
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"
