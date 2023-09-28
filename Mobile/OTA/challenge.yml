@@ -21,11 +21,17 @@ description: |
     - Breaking the device using any unintended exploit
     - Reading the flag file directly without the malicious application
 value: 0
-type: dynamic
+type: container
 extra:
     initial: 500
     decay: 20
     minimum: 100
+    command: ""
+    image: "ota:latest"
+    limit: 0
+    port: 5900
+    volumes: ""
+    conn_format: "http://{HOST}:{PORT}"
 
 # Flags specify answers that your challenge use. You should generally provide
 # at least one.

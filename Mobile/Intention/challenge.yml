@@ -30,7 +30,7 @@ extra:
     limit: 0
     port: 5900
     volumes: ""
-    conn_format: "nc {HOST} {PORT}"
+    conn_format: "http://{HOST}:{PORT}"
 
 
 
