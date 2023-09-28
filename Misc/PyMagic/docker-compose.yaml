@@ -3,6 +3,7 @@ version: "3"
 services:
   server:
     build: src
+    restart: always
     ports:
       - 45214:5000
     privileged: true
