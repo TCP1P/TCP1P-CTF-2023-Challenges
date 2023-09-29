@@ -55,7 +55,7 @@ WORKDIR /ws-scrcpy
 RUN npm install
 
 WORKDIR /
-RUN chmod +x main.sh init_emu.sh start_emu.sh
+RUN chmod +x main.sh
 
 EXPOSE 8000
 CMD ["/bin/bash", "-c", "nohup ./main.sh & while [ ! -f nohup.out ]; do sleep 1; done && tail -f nohup.out"]
