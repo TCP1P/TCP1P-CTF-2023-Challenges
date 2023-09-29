@@ -1,0 +1,16 @@
+# Challenge specific files
+README.md
+WRITEUP.md
+challenge.yml
+
+# Docker files
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Build files
+Makefile
+.gitignore
+
+# Challenge
+src/chall.c
