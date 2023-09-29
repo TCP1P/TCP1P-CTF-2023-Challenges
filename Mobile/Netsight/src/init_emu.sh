@@ -99,4 +99,4 @@ adb shell pm grant com.android.chrome android.permission.WRITE_EXTERNAL_STORAGE
 
 adb unroot
 
-kill_emulator()
+kill_emulator
