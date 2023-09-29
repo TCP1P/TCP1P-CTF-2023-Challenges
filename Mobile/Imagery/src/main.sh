@@ -19,7 +19,7 @@ function kill_emulator() {
 
 function start_emulator() {
   echo "Starting emulator..."
-  nohup emulator -avd "${emulator_name}" -accel on -writable-system -no-window -no-audio -no-boot-anim &
+  nohup emulator -avd "${emulator_name}" -gpu off -writable-system -no-window -no-audio -no-boot-anim &
 };
 
 function wait_for_device() {
@@ -34,7 +34,9 @@ function wait_for_device() {
 function setup_device() {
   echo "Setting up device..."
   adb root
+  sleep 2
   wait_for_device
+  sleep 2
 
   adb shell avbctl disable-verification
   adb disable-verity
@@ -44,7 +46,9 @@ function setup_device() {
 function init_device() {
   echo "Initializing device..."
   adb root
+  sleep 2
   wait_for_device
+  sleep 2
 
   adb remount
 
@@ -56,6 +60,7 @@ function init_device() {
 };
 
 start_emulator
+sleep 2
 
 wait_for_device
 setup_device
