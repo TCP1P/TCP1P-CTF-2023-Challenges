@@ -20,7 +20,7 @@ extra:
     limit: 0
     port: 8080
     volumes: ""
-    conn_format: "http://{HOST}:{PORT}/"
+    connection_format: "http://{HOST}:{PORT}/"
 
 # Flags specify answers that your challenge use. You should generally provide
 # at least one.
