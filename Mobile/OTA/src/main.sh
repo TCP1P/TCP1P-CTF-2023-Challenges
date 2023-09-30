@@ -1,5 +1,4 @@
 #!/bin/bash
-emulator_name=${EMULATOR_NAME}
 
 function kill_emulator() {
   echo "Killing emulator(s)..."
@@ -9,7 +8,6 @@ function kill_emulator() {
       result=$(adb get-state 2>&1)
 
       if [ "$result" == "error: no devices/emulators found" ]; then
-          kill 9 `pidof emulator`
           break
       fi
 
@@ -19,7 +17,7 @@ function kill_emulator() {
 
 function start_emulator() {
   echo "Starting emulator..."
-  nohup emulator -avd "${emulator_name}" -gpu off -writable-system -no-window -no-audio -no-boot-anim &
+  nohup emulator -avd "${EMULATOR_NAME}" -accel on -writable-system -memory 2048 -no-window -no-audio -no-boot-anim > emulator_log.txt 2>&1 &
 };
 
 function wait_for_device() {
@@ -56,12 +54,12 @@ function init_device() {
   adb push challenge.apk /system/app/Challenge
   adb shell chmod 755 /system/app/Challenge
 
-  adb shell /system/xbin/su
+  adb shell rm -f /system/xbin/su
 };
 
-start_emulator
-sleep 2
+adb start-server
 
+start_emulator
 wait_for_device
 setup_device
 
@@ -82,5 +80,5 @@ while true; do
     sleep 1
 done
 
-cd /ws-scrcpy
+cd ./ws-scrcpy
 npm start

@@ -49,13 +49,14 @@ RUN apt-get update -yq \
     && apt-get install nodejs -yq \
     && npm install -g npm
 
-COPY . /
-WORKDIR /ws-scrcpy
+WORKDIR /app
+COPY . .
 
+WORKDIR /app/ws-scrcpy
 RUN npm install
 
-WORKDIR /
+WORKDIR /app
 RUN chmod +x main.sh
 
 EXPOSE 8000
-CMD ["/bin/bash", "-c", "nohup ./main.sh & while [ ! -f nohup.out ]; do sleep 1; done && tail -f nohup.out"]
+ENTRYPOINT [ "/app/main.sh" ]
