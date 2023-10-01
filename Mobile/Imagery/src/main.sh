@@ -1,24 +1,6 @@
 #!/bin/bash
 
-function kill_emulator() {
-  echo "Killing emulator(s)..."
-  adb devices | grep emulator | cut -f1 | xargs -I {} adb -s "{}" emu kill
-
-  while true; do
-      result=$(adb get-state 2>&1)
-
-      if [ "$result" == "error: no devices/emulators found" ]; then
-          break
-      fi
-
-      sleep 1
-  done
-}
-
-function start_emulator() {
-  echo "Starting emulator..."
-  nohup emulator -avd "${EMULATOR_NAME}" -accel on -writable-system -memory 2048 -no-window -no-audio -no-boot-anim > emulator_log.txt 2>&1 &
-};
+(cd /home/androidusr; nohup /home/androidusr/docker-android/mixins/scripts/run.sh &)
 
 function wait_for_device() {
   echo "Waiting for device..."
@@ -31,11 +13,10 @@ function wait_for_device() {
 
 function setup_device() {
   echo "Setting up device..."
-  adb root
-  sleep 2
-  wait_for_device
-  sleep 2
 
+  adb root
+  sleep 5
+  
   adb shell avbctl disable-verification
   adb disable-verity
   adb reboot
@@ -43,11 +24,10 @@ function setup_device() {
 
 function init_device() {
   echo "Initializing device..."
-  adb root
-  sleep 2
-  wait_for_device
-  sleep 2
 
+  adb root
+  sleep 5
+  
   adb remount
 
   adb shell mkdir /system/app/Challenge
@@ -55,19 +35,16 @@ function init_device() {
   adb shell chmod 755 /system/app/Challenge
 
   adb shell rm -f /system/xbin/su
+  adb reboot
 };
 
 adb start-server
 
-start_emulator
 wait_for_device
 setup_device
 
 wait_for_device
 init_device
-
-kill_emulator
-start_emulator
 
 wait_for_device
 while true; do
