@@ -38,4 +38,6 @@ access_token = ctfd_b1ad470287456a08b41c229d23ab8d166c7556ab679f098fb4f6473656d9
 ./Mobile/OTA = ./Mobile/OTA
 ./Mobile/Netsight = ./Mobile/Netsight
 ./Web/love card = ./Web/love card
+./PWN/message = ./PWN/message
+./Blockchain/VIP = ./Blockchain/VIP
 

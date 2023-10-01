@@ -28,9 +28,10 @@ flags:
 # Provide paths to files from the same directory that this file is in
 # Accepts strings
 files:
-  - bin/chall
-  - bin/ld-2.23.so
-  - bin/libc.so.6
+  - dist/chall
+  # - bin/chall
+  # - bin/ld-2.23.so
+  # - bin/libc.so.6
 
 # The state of the challenge.
 # If the field is omitted, the challenge is visible by default.
