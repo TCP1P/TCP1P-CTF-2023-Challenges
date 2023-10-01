@@ -20,6 +20,10 @@ description: |
     - Downloading the challenge APK from the remote connection
     - Reading the file that contains the flag without using any exploits
     - Breaking the device using any unintended exploits
+
+    **Note**:\
+    It might take some time for the instance to be fully initialized, please wait for approximately 5 minutes for the instance to be initialized.
+    If it's already 10 minutes and you can't use the connection, stop the instance and try again.
 value: 0
 type: container
 extra:
