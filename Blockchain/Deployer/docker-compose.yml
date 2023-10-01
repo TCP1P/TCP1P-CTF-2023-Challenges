@@ -1,0 +1,10 @@
+version: '3'
+services:
+  vips:
+    container_name: vips
+    build: .
+    restart: always
+    environment:
+      - TERM=xterm
+    ports:
+      - "23345:23345"
