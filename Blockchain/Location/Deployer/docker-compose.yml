@@ -1,0 +1,10 @@
+version: '3'
+services:
+  location:
+    container_name: location
+    build: .
+    restart: always
+    environment:
+      - TERM=xterm
+    ports:
+      - "20005:20005"

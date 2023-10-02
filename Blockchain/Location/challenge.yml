@@ -1,0 +1,40 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "Location"
+author: "Kiinzu"
+category: Blockchain
+description: |
+    **Author**: `Kiinzu`
+
+    Will you accept the invitation?
+    If so, find the party location now!
+value: 0
+type: dynamic
+extra:
+    initial: 500
+    decay: 20
+    minimum: 100
+
+connection_info: nc ctf.tcp1p.com 20053
+
+# Flags specify answers that your challenge use. You should generally provide
+# at least one.
+# Can be removed if unused
+# Accepts strings or dictionaries
+flags:
+    - TCP1P{W00t_w00t_t0_th3_p4rty_47JHbddc}
+
+# Provide paths to files from the same directory that this file is in
+# Accepts strings
+# files:
+#     
+
+# The state of the challenge.
+# This is visible by default. It takes two values: hidden, visible.
+state: visible
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"
