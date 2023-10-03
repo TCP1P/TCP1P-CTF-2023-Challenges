@@ -26,8 +26,8 @@ flags:
 # Provide paths to files from the same directory that this file is in
 # Accepts strings
 files:
-    - dist/elf-cracker 
-    - dist/flag_in_here
+    - dist/elf-cracker
+    - dist/flag
 
 # The state of the challenge.
 # This is visible by default. It takes two values: hidden, visible.
