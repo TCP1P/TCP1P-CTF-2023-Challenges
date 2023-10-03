@@ -17,7 +17,7 @@ extra:
     decay: 20
     minimum: 100
 
-connection_info: nc ctf.tcp1p.com 20053
+connection_info: nc ctf.tcp1p.com 20005
 
 # Flags specify answers that your challenge use. You should generally provide
 # at least one.
@@ -29,7 +29,7 @@ flags:
 # Provide paths to files from the same directory that this file is in
 # Accepts strings
 # files:
-#     
+#
 
 # The state of the challenge.
 # This is visible by default. It takes two values: hidden, visible.
