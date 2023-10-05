@@ -44,4 +44,6 @@ access_token = ctfd_b1ad470287456a08b41c229d23ab8d166c7556ab679f098fb4f6473656d9
 ./Blockchain/Location = ./Blockchain/Location
 ./Blockchain/Invitation = ./Blockchain/Invitation
 ./Reverse Engineering/ELF Cracker = ./Reverse Engineering/ELF Cracker
+./Misc/Feedback = ./Misc/Feedback
+./PWN/GameChanger = ./PWN/GameChanger
 

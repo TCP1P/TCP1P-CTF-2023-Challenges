@@ -1,0 +1,10 @@
+version: '3'
+services:
+  gamechanger:
+    image: gamechanger
+    build: ./src/
+    restart: always
+    environment:
+      - TERM=xterm
+    ports:
+      - "9254:9254"
