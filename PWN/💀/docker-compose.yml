@@ -1,0 +1,10 @@
+version: '3'
+services:
+  skull:
+    build: .
+    ports:
+      - 10000:10000
+    working_dir: /home/ctf
+    entrypoint: /etc/init.sh
+    init: true
+    restart: always

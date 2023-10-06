@@ -1,0 +1,39 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "💀"
+author: "hyffs"
+category: PWN
+description: |
+    **Author**: `hyffs`
+
+    ![Let him cook](https://i.pinimg.com/originals/22/61/57/226157a62b9da0ab025d71f35e5574e4.jpg)
+value: 0
+type: dynamic
+extra:
+    initial: 500
+    decay: 20
+    minimum: 100
+
+connection_info: nc ctf.tcp1p.com 10000
+
+# Flags specify answers that your challenge use. You should generally provide
+# at least one.
+# Can be removed if unused
+# Accepts strings or dictionaries
+flags:
+    - TCP1P{WHY_DID_YALL_LET_HIM_COOK_!!!!😭😭😭}
+
+# Provide paths to files from the same directory that this file is in
+# Accepts strings
+files:
+    - dist/challenge.zip
+
+# The state of the challenge.
+# This is visible by default. It takes two values: hidden, visible.
+state: visible
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"
