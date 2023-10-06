@@ -9,7 +9,7 @@ description: |
     **Author**: `Dimas`
 
     As the name says, the website will fetch something...
-value: 0
+value: 1
 type: container
 extra:
     initial: 500
