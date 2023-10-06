@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  web:
+    build: ./src
+    restart: always
+    ports:
+      - "23678:1337"
