@@ -1,0 +1,46 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "Hacked"
+author: "daffainfo"
+category: Forensic
+description: |
+    **Author**: `daffainfo`
+
+    I just deployed a website on Linux, but 5 minutes later, suddenly, someone hacked the server, and the attacker managed to gain root access. Can you investigate my server and answer some questions related to this hack?
+
+    Download Link: https://drive.google.com/file/d/1RS-43X1LuebXcoXwGixh_8f2-NPKeevF/view?usp=sharing
+    Download Link 2: https://drive.google.com/file/d/1dM20yfVEabvpjMhVIFS1WNSdN3YbbHLz/view?usp=sharing
+    Download Link 3: https://drive.google.com/file/d/1meyo5G6By1H6XyltK-3LIrDeTv07XuI5/view?usp=sharing
+
+value: 0
+type: dynamic
+extra:
+    initial: 500
+    decay: 20
+    minimum: 100
+
+connection_info: nc ctf.tcp1p.com 23678
+
+# Flags specify answers that your challenge use. You should generally provide
+# at least one.
+# Can be removed if unused
+# Accepts strings or dictionaries
+flags:
+    - TCP1P{y0u_f0und_m3_H4h4hHH44h44_B18DeF73F73FFe}
+
+# Tags are used to classify your challenge with topics. You should provide at
+# least one.
+# Can be removed if unused
+# Accepts strings
+tags:
+    - forensic
+
+# The state of the challenge.
+# This is visible by default. It takes two values: hidden, visible.
+state: visible
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"
