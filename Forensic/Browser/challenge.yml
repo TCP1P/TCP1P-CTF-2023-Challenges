@@ -10,8 +10,8 @@ description: |
 
     Maybe some people in this world have tried forensics on Chrome and Mozilla Firefox. What if we try to do forensics on this unknown browser?
 
-    Download Link: https://drive.google.com/file/d/1CPX94jizEVdL-3OHD54UIid-bWe258fg/view?usp=sharing
-    Alternative Link 1: https://drive.google.com/file/d/1NawvHwh46PvMu4nxpM--r-V0IkQ1OmdJ/view?usp=sharing
+    Download Link: https://drive.google.com/file/d/1CPX94jizEVdL-3OHD54UIid-bWe258fg/view?usp=sharing \
+    Alternative Link 1: https://drive.google.com/file/d/1NawvHwh46PvMu4nxpM--r-V0IkQ1OmdJ/view?usp=sharing \
     Alternative Link 2: https://drive.google.com/file/d/1Bj0izvNIb1k6SiPBEUNfGmScRolxqUye/view?usp=sharing
 
 value: 0
@@ -37,8 +37,8 @@ tags:
 
 # Provide paths to files from the same directory that this file is in
 # Accepts strings
-files:
-    - Browser.zip
+# files:
+    # - Browser.zip
 
 # The state of the challenge.
 # This is visible by default. It takes two values: hidden, visible.

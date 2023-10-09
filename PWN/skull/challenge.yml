@@ -28,7 +28,7 @@ flags:
 # Provide paths to files from the same directory that this file is in
 # Accepts strings
 files:
-    - challenge.zip
+    - ./dist/challenge.zip
 
 # The state of the challenge.
 # This is visible by default. It takes two values: hidden, visible.
