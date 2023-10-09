@@ -1,7 +1,7 @@
 Flask-RESTful==0.3.8
 PyJWT==1.5.0
-Flask-SQLAlchemy
-Werkzeug
+Flask-SQLAlchemy==3.0.5
+Werkzeug==2.3.7
 cryptography==36.0.1
 pycryptodome==3.12.0
-flask_login
+flask_login==0.6.2

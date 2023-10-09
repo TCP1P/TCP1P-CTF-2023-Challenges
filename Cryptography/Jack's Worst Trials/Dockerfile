@@ -14,7 +14,8 @@ RUN chmod -R 755 /home/ctf/challengefiles/
 USER ctf
 EXPOSE 5000
 
-CMD [ "python3", "/home/ctf/app.py" ]
+# CMD [ "python3", "/home/ctf/app.py" ]
+CMD [ "bash", "./run.sh" ]
 
 #sudo docker-compose build
 #sudo docker-compose up -d
