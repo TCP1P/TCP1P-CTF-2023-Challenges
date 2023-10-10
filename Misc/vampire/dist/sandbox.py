@@ -17,7 +17,7 @@ class Nobuffers:
     def __getattr__(self, attr):
         return getattr(self.stream, attr)
 
-banned = re.escape('\\(~}?>{&/%`)<$|*=#!-+\'0123456789;@ ')
+banned = re.escape('\\(~}?>{&/%`)<$|*=#!-+\'0123456789;@, ')
 stdout = Nobuffers(sys.stdout)
 stdout.write('''
         ,-.      _,---._ __  / \\
@@ -38,6 +38,6 @@ prompt = input()
 
 if prompt.isascii() and not re.findall(f'[{banned}]', prompt):
     try:
-        eval(prompt, {'__builtins__': {'re': re, 'sys': sys}})
+        eval(prompt, {'__builtins__': {'re': re}}, {})
     except:
         pass
