@@ -1,0 +1,10 @@
+version: '3'
+services:
+    unsafe_safe:
+        image: unsafe-safe
+        container_name: unsafe-safe
+        build: src/
+        restart: always
+        ports:
+            - "1477:8000"
+        read_only: true
