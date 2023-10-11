@@ -9,3 +9,10 @@ services:
       - '8008:9999'
     entrypoint: /etc/run_xinetd.sh
     read_only: true
+
+networks:
+  default:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.16.1.0/24

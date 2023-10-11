@@ -8,3 +8,10 @@ services:
     ports:
       - "49999:8000"
     read_only: True
+
+networks:
+  default:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.16.1.0/24

@@ -6,6 +6,7 @@ RUN apk --update add socat
 
 WORKDIR /opt/chall
 COPY sandbox.py /opt/chall/sandbox.py
+RUN chmod +x /opt/chall/sandbox.py
 COPY flag.txt /flag.txt
 
 # Securing files

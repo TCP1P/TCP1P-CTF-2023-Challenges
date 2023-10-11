@@ -7,3 +7,10 @@ services:
         ports:
             - "17027:1337"
         read_only: true
+
+networks:
+  default:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.16.1.0/24
