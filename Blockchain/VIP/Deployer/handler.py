@@ -1,4 +1,3 @@
-
 def get_contract():
     with open("log.txt", "r+") as file:
         first_line = file.readline()
