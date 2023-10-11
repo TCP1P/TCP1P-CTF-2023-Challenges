@@ -1,0 +1,10 @@
+version: '3'
+services:
+  hacktoday:
+    container_name: spirit-away
+    network_mode: bridge
+    restart: always
+    build: .
+    ports:
+      - "49999:8000"
+    read_only: True
