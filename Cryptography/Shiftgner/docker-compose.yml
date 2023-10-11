@@ -1,0 +1,9 @@
+version: "3"
+services:
+  shiftgner:
+    build: ./src
+    ports:
+      # public:local
+      - "13342:13342"
+    container_name: shiftgner
+    restart: always
