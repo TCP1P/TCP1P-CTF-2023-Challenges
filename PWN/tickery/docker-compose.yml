@@ -1,7 +1,7 @@
 version: '3'
 services:
-  hacktoday:
-    container_name: spirit-away
+  pwn:
+    container_name: tickery
     network_mode: bridge
     restart: always
     build: .
