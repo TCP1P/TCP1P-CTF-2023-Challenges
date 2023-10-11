@@ -4,6 +4,7 @@ def get_contract():
         if first_line:
             print("Contract Addess:", first_line.strip().split(" ")[3])
             print("RPC URL        : https://eth-sepolia.g.alchemy.com/v2/SMfUKiFXRNaIsjRSccFuYCq8Q3QJgks8")
+            print("To start       : Simply call the help() function, everything is written there")
             print("")
             print("Note: Due it's deployed on Sepolia network, please use your own Private key to do the transaction")
             print("      If you need funds, you can either DM the probset or get it on https://sepoliafaucet.com/")
@@ -29,6 +30,7 @@ def main():
     option = int(input(">> "))
     if option == 1:
         how()
+        exit()
     elif option == 2:
         get_contract()
     else:
