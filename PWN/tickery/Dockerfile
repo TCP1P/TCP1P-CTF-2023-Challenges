@@ -8,6 +8,7 @@ RUN apt-get install -y socat
 RUN mkdir /pwn
 COPY src/flag.txt /pwn/flag.txt
 COPY dist/main /pwn/main
+COPY dist/main /pwn/main
 WORKDIR /pwn
 
 RUN chown -R 755 /pwn
