@@ -1,0 +1,38 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "IOP"
+author: "aimardcr"
+category: Reverse Engineering
+description: |
+    **Author**: `aimardcr`
+
+    I need to hide a secret, so I modified [this](http://www.artpol-software.com/) project for archiving files. 
+    I haven't implemented extract feature though. Pretty sure the archive looks like a normal archive, or is it?
+value: 0
+type: dynamic
+extra:
+    initial: 500
+    decay: 20
+    minimum: 100
+
+# Flags specify answers that your challenge use. You should generally provide
+# at least one.
+# Can be removed if unused
+# Accepts strings or dictionaries
+flags:
+    - TCP1P{PDB_h3lps_al0t_Am1r1t3?}
+
+# Provide paths to files from the same directory that this file is in
+# Accepts strings
+files:
+    - dist/dist.zip
+
+# The state of the challenge.
+# This is visible by default. It takes two values: hidden, visible.
+state: visible
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"
