@@ -34,8 +34,8 @@ tags:
 # Provide paths to files from the same directory that this file is in
 # Accepts strings
 files:
-    - libc.so.6
-    - main
+    - ./dist/libc.so.6
+    - ./dist/main
 
 # The state of the challenge.
 # This is visible by default. It takes two values: hidden, visible.
