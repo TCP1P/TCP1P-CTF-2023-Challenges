@@ -58,4 +58,5 @@ access_token = ctfd_b1ad470287456a08b41c229d23ab8d166c7556ab679f098fb4f6473656d9
 ./Misc/vampire = ./Misc/vampire
 ./Forensic/brokenimg = ./Forensic/brokenimg
 ./PWN/unsafe safe = ./PWN/unsafe safe
+./Forensic/scrambled egg = ./Forensic/scrambled egg
 
