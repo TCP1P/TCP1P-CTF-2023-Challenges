@@ -20,8 +20,7 @@ def get_contract():
             print("No contract addresses found in the file.")
 
 def how():
-    print("Ever Heard of Foundry?")
-    print("You only need the 'cast' tools to solve this challenge!")
+    print("Same as the last challenge, but this time, call the help() function first")
 
 def main():
     print("Welcome to TCP1P Blockchain Challenge")
