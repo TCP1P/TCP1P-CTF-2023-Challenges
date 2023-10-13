@@ -1,0 +1,17 @@
+version: '3'
+services:
+  nakiriayame:
+    container_name: NakiriAyame
+    network_mode: bridge
+    restart: always
+    build: .
+    ports:
+      - "6666:6666"
+    read_only: True
+
+networks:
+  default:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.16.1.0/24
