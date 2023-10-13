@@ -13,9 +13,9 @@ RUN apt-get --assume-yes update && apt-get --assume-yes install wget unzip
 RUN pip install flask
 
 # Install nuclei
-RUN wget "https://github.com/projectdiscovery/nuclei/releases/download/v2.9.12/nuclei_2.9.12_linux_amd64.zip"
-RUN unzip nuclei_2.9.12_linux_amd64.zip
-RUN rm nuclei_2.9.12_linux_amd64.zip
+RUN wget "https://github.com/projectdiscovery/nuclei/releases/download/v2.9.15/nuclei_2.9.15_linux_amd64.zip"
+RUN unzip nuclei_2.9.15_linux_amd64.zip
+RUN rm nuclei_2.9.15_linux_amd64.zip
 
 # Make port 5000 available to the world outside this container
 EXPOSE 5000
