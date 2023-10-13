@@ -32,7 +32,7 @@ contract StorageChallenge3 {
     address[2] private investor;
 }
 """,
-        "a": 1
+        "a": 0
     },
     {
         "q": """
@@ -55,7 +55,7 @@ contract StorageChallenge5 {
     uint64 private password;
 }
 """,
-        "a": 4
+        "a": 3
     },
     {
         "q":"""
@@ -151,7 +151,7 @@ contract Hell_0 {
     bool private is_user;
 }
 """,
-        "a": 30
+        "a": 28
     }
 
 
