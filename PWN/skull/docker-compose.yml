@@ -7,6 +7,10 @@ services:
     working_dir: /home/ctf
     entrypoint: /etc/init.sh
     restart: always
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
 
 networks:
   default:

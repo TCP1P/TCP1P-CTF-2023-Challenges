@@ -9,6 +9,10 @@ services:
       - '8008:9999'
     entrypoint: /etc/run_xinetd.sh
     read_only: true
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
 
 networks:
   default:
