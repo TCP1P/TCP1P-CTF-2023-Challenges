@@ -56,5 +56,8 @@ while true; do
     sleep 1
 done
 
+adb shell pm grant com.android.chrome android.permission.READ_EXTERNAL_STORAGE
+adb shell pm grant com.android.chrome android.permission.WRITE_EXTERNAL_STORAGE
+
 cd ./ws-scrcpy
 npm start
