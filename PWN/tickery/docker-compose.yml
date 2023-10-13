@@ -6,7 +6,7 @@ services:
     restart: always
     build: .
     ports:
-      - "49999:8000"
+      - "44677:8000"
     read_only: True
 
 networks:
@@ -14,4 +14,4 @@ networks:
     driver: bridge
     ipam:
       config:
-        - subnet: 172.16.1.0/24
+        - subnet: 192.168.107.0/24
