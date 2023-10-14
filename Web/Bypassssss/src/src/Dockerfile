@@ -15,6 +15,9 @@ RUN a2enmod rewrite
 # Set the working directory to /var/www/html
 WORKDIR /var/www/html
 
+# Copy the flag.txt file from the build context into the container
+COPY flag.txt /
+
 # Copy the PHP application files from the src directory into the container
 COPY . /var/www/html/
 
