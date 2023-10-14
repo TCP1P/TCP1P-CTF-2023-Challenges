@@ -34,8 +34,7 @@ function init_device() {
   adb push flag.txt /data/data/com.kuro.imagery/files/flag.txt
 
   app_uid=$(adb shell dumpsys package com.kuro.imagery | grep userId= | cut -d "=" -f 2)
-  app_uid=u0_a${app_uid:2}
-  adb shell chown $app_uid:$app_uid /data/data/com.kuro.imagery/files
+  adb shell chown -R $app_uid:$app_uid /data/data/com.kuro.imagery/files
 
   adb shell rm -f /system/xbin/su
   adb reboot
