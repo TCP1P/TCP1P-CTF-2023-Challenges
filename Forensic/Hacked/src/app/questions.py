@@ -5,7 +5,7 @@ def main():
             "format": "example-hostname"
         },
         { 
-            "question": "What applications does system administration implement on this server? Also include the application version",
+            "question": "What applications does the system administrator deploy on this server? Also include the application version",
             "format": "Example:13.37"
         },
         { 
@@ -17,7 +17,7 @@ def main():
             "format": "CVE-2020-13337"
         },
         { 
-            "question": "By utilizing CVE-2023-4521, the attacker seems to have placed another backdoor on this server. What is the full location where the attacker put the file?",
+            "question": "By utilizing CVE-2023-4521, the attacker seems to have placed another PHP backdoor on this server. What is the full location where the attacker put the backdoor? (It looks like there is something suspicious in the WordPress plugins)",
             "format": "/path/to/file"
         },
         { 
