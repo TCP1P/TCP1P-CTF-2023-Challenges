@@ -35,8 +35,7 @@ function init_device() {
 
   app_uid=$(dumpsys package intechfest.cc.ota | grep userId= | cut -d "=" -f 2)
   app_uid=u0_a${app_uid:2}
-  adb shell chown $app_uid:$app_uid /data/data/com.kuro.imagery/files/flag.txt
-
+  adb shell chown $app_uid:$app_uid /data/data/intechfest.cc.ota/files
 
   adb shell rm -f /system/xbin/su
   adb reboot

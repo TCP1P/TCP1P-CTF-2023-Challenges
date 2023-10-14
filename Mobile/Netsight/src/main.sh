@@ -35,8 +35,7 @@ function init_device() {
 
   app_uid=$(dumpsys package com.tcp1p.netsight | grep userId= | cut -d "=" -f 2)
   app_uid=u0_a${app_uid:2}
-  adb shell chown $app_uid:$app_uid /data/data/com.tcp1p.netsight/files/flag.txt
-
+  adb shell chown $app_uid:$app_uid /data/data/com.tcp1p.netsight/files
 
   adb shell rm -f /system/xbin/su
   adb reboot
