@@ -33,6 +33,10 @@ function init_device() {
   adb install challenge.apk
   adb push flag.txt /data/data/com.kuro.imagery/files/flag.txt
 
+  app_uid=$(dumpsys package com.kuro.imagery | grep userId= | cut -d "=" -f 2)
+  app_uid=u0_a${app_uid:2}
+  adb shell chown $app_uid:$app_uid /data/data/com.kuro.imagery/files/flag.txt
+
   adb shell rm -f /system/xbin/su
   adb reboot
 };
