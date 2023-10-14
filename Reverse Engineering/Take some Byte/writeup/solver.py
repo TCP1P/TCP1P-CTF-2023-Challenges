@@ -28,15 +28,18 @@ for i in range(11, 15):
 s.add(flags[16] == ord('i'))
 s.add(flags[17] == ord('s'))
 
+# Add constraints for characters 19 and 20
 s.add(flags[19] == ord("H"))
+s.add(flags[20] == ord("u"))
 
-s.add(flags[20] == 117)
-
-s.add(flags[21] == (flags[2] - 10))
+# Add constraints for character 21
+s.add(flags[21] == flags[2] - 10)
 
 # Ensure it's not the lowercase version of flags[0]
 s.add(flags[22] == flags[0] + 32)
-s.add(flags[22] == flags[23])
+
+# Ensure that character 23 is equal to character 24
+s.add(flags[23] == flags[22])
 
 if s.check() == sat:
     model = s.model()
