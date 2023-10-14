@@ -30,7 +30,7 @@ extra:
     decay: 20
     minimum: 100
     command: ""
-    image: "internal:latest"
+    image: "internals:latest"
     limit: 0
     port: 8000
     volumes: ""
