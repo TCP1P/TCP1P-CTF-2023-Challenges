@@ -33,7 +33,7 @@ function init_device() {
   adb install challenge.apk
   adb push flaggo.txt /data/data/com.tcp1p.netsight/files/flaggo.txt
 
-  app_uid=$(dumpsys package com.tcp1p.netsight | grep userId= | cut -d "=" -f 2)
+  app_uid=$(adb shell dumpsys package com.tcp1p.netsight | grep userId= | cut -d "=" -f 2)
   app_uid=u0_a${app_uid:2}
   adb shell chown $app_uid:$app_uid /data/data/com.tcp1p.netsight/files
 
