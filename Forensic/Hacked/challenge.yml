@@ -8,11 +8,13 @@ category: Forensic
 description: |
     **Author**: `daffainfo`
 
-    I just deployed a website on Linux, but 5 minutes later, suddenly, someone hacked the server, and the attacker managed to gain root access. Can you investigate my server and answer some questions related to this hack?
-
-    Download Link: https://drive.google.com/file/d/1RS-43X1LuebXcoXwGixh_8f2-NPKeevF/view?usp=sharing \
-    Alternative Link 1: https://drive.google.com/file/d/1dM20yfVEabvpjMhVIFS1WNSdN3YbbHLz/view?usp=sharing \
-    Alternative Link 2: https://drive.google.com/file/d/1meyo5G6By1H6XyltK-3LIrDeTv07XuI5/view?usp=sharing
+   I just deployed a website on Linux, but 5 minutes later, suddenly, someone hacked the server, and the attacker managed to gain root access. Can you investigate my server and answer some questions related to this hack?
+   
+   Download Link: https://mega.nz/file/WrQyWSSQ#F1Hp8zz0_izaFpZUp9rB0WJcbLtSrP8v81MDnK_Vxpk
+   
+   Alternative Link: http://144.126.206.182:9999
+   
+   Alternative Link 2: http://68.183.106.234:9999
 
 value: 0
 type: dynamic
