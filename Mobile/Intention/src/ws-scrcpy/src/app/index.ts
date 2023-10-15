@@ -80,30 +80,30 @@ window.onload = async function (): Promise<void> {
     const tools: Tool[] = [];
 
     /// #if INCLUDE_ADB_SHELL
-    // const { ShellClient } = await import('./googDevice/client/ShellClient');
-    // if (action === ShellClient.ACTION && typeof parsedQuery.get('udid') === 'string') {
-    //     ShellClient.start(ShellClient.parseParameters(parsedQuery));
-    //     return;
-    // }
-    // tools.push(ShellClient);
+    const { ShellClient } = await import('./googDevice/client/ShellClient');
+    if (action === ShellClient.ACTION && typeof parsedQuery.get('udid') === 'string') {
+        ShellClient.start(ShellClient.parseParameters(parsedQuery));
+        return;
+    }
+    tools.push(ShellClient);
     /// #endif
 
     /// #if INCLUDE_DEV_TOOLS
-    // const { DevtoolsClient } = await import('./googDevice/client/DevtoolsClient');
-    // if (action === DevtoolsClient.ACTION) {
-    //     DevtoolsClient.start(DevtoolsClient.parseParameters(parsedQuery));
-    //     return;
-    // }
-    // tools.push(DevtoolsClient);
+    const { DevtoolsClient } = await import('./googDevice/client/DevtoolsClient');
+    if (action === DevtoolsClient.ACTION) {
+        DevtoolsClient.start(DevtoolsClient.parseParameters(parsedQuery));
+        return;
+    }
+    tools.push(DevtoolsClient);
     /// #endif
 
     /// #if INCLUDE_FILE_LISTING
-    // const { FileListingClient } = await import('./googDevice/client/FileListingClient');
-    // if (action === FileListingClient.ACTION) {
-    //     FileListingClient.start(FileListingClient.parseParameters(parsedQuery));
-    //     return;
-    // }
-    // tools.push(FileListingClient);
+    const { FileListingClient } = await import('./googDevice/client/FileListingClient');
+    if (action === FileListingClient.ACTION) {
+        FileListingClient.start(FileListingClient.parseParameters(parsedQuery));
+        return;
+    }
+    tools.push(FileListingClient);
     /// #endif
 
     if (tools.length) {
