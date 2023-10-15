@@ -1,0 +1,17 @@
+version: '3'
+services:
+    teleport:
+        image: teleport
+        container_name: teleport
+        build: src/
+        restart: always
+        ports:
+            - "1470:8000"
+        read_only: true
+
+networks:
+  default:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.108.0/24
