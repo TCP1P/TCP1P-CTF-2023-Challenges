@@ -34,7 +34,7 @@ window.onload = async function (): Promise<void> {
         // var q: URLSearchParams = new URLSearchParams(`action=stream&udid=${uid}&player=broadway&ws=ws%3A%2F%2F${ws}%2F%3Faction%3Dproxy-adb%26remote%3Dtcp%253A8886%26udid%3D${uid}`);
         // StreamClientScrcpy.start(q);
         StreamClientScrcpy.start(parsedQuery);
-        // return;
+        return;
     }
 
     /// #if INCLUDE_APPL
