@@ -12,6 +12,9 @@ RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
 RUN a2enmod rewrite
 
+# Copy the flag.txt file from the build context into the container
+COPY flag.txt /
+
 # Set the working directory to /var/www/html
 WORKDIR /var/www/html
 

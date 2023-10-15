@@ -1,0 +1,836 @@
+:root {
+    --main-bg-color: hsl(0, 0%, 100%);
+    --stream-bg-color: hsl(0, 0%, 85%);
+    --shell-bg-color: hsl(0, 0%, 0%);
+    --text-shadow-color: hsl(218, 67%, 95%);
+    --header-bg-color: hsl(0, 0%, 95%);
+    --controls-bg-color: hsla(0, 0%, 95%, 0.8);
+    --control-buttons-bg-color: hsl(0, 0%, 95%);
+    --text-color: hsl(210, 16%, 22%);
+    --text-color-light: hsl(200, 16%, 52%);
+    --link-color: hsl(218, 85%, 43%);
+    --link-color-light: hsl(218, 85%, 73%);
+    --link-color_visited: hsl(271, 68%, 32%);
+    --link-color_visited-light: hsl(271, 68%, 72%);
+    --svg-checkbox-bg-color: hsl(172, 100%, 37%);
+    --svg-button-fill: hsl(199, 17%, 46%);
+    --kill-button-hover-color: hsl(342, 100%, 37%);
+    --url-color: hsl(0, 0%, 60%);
+    --button-text-color: hsl(214, 82%, 51%);
+    --button-border-color: hsl(0, 0%, 70%);
+    --progress-background-color: hsla(225, 100%, 50%, 0.2);
+    --progress-background-error-color: hsla(0, 100%, 50%, 0.2);
+    --font-size: 14px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --main-bg-color: hsl(0, 0%, 14%);
+        --stream-bg-color: hsl(0, 0%, 20%);
+        --shell-bg-color: hsl(0, 0%, 0%);
+        --text-shadow-color: hsl(218, 17%, 18%);
+        --header-bg-color: hsl(0, 0%, 20%);
+        --controls-bg-color: hsla(201, 18%, 19%, 0.8);
+        --control-buttons-bg-color: hsl(201, 18%, 19%);
+        --text-color: hsl(0, 0%, 90%);
+        --text-color-light: hsl(0, 0%, 60%);
+        --link-color: hsl(218, 63%, 70%);
+        --link-color-light: hsl(218, 63%, 50%);
+        --link-color_visited: hsl(267, 31%, 47%);
+        --link-color_visited-light: hsl(267, 31%, 27%);
+        --svg-checkbox-bg-color: hsl(172, 100%, 27%);
+        --svg-button-fill: hsl(0, 0%, 100%);
+        --kill-button-hover-color: hsl(342, 100%, 27%);
+        --url-color: hsl(0, 0%, 60%);
+        --device-list-stripe-color: hsl(0, 0%, 16%);
+        --device-list-default-color: hsl(0, 0%, 14%);
+        --button-text-color: hsl(214, 82%, 76%);
+        --button-border-color: hsl(213, 5%, 39%);
+        --progress-background-color: hsla(225, 100%, 50%, 0.2);
+        --progress-background-error-color: hsla(0, 100%, 50%, 0.2);
+    }
+}
+
+html {
+    font-size: var(--font-size);
+}
+
+a {
+    color: var(--link-color);
+}
+
+a:visited {
+    color: var(--link-color_visited);
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--main-bg-color);
+    position: absolute;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+body.shell {
+    background-color: var(--shell-bg-color);
+}
+
+body.stream {
+    background-color: var(--stream-bg-color);
+}
+
+.terminal-container {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}
+
+:focus {
+    outline: none;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.wait {
+    cursor: wait;
+}
+
+.device-view {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.video-layer {
+    position: absolute;
+    z-index: 0;
+}
+
+.touch-layer {
+    position: absolute;
+    z-index: 1;
+}
+
+.video {
+    float: right;
+    max-height: 100%;
+    max-width: 100%;
+    background-color: #000000;
+}
+
+
+.control-buttons-list {
+    float: right;
+    width: 3.715rem;
+    background-color: var(--control-buttons-bg-color);
+}
+
+.control-button {
+    margin: .357rem .786rem;
+    padding: 0;
+    width: 2.143rem;
+    height: 2.143rem;
+    border: none;
+    opacity: 0.75;
+    background-color: var(--control-buttons-bg-color);
+}
+
+.control-button:hover {
+    opacity: 1;
+}
+
+.control-wrapper > input[type=checkbox] {
+    display: none;
+}
+
+.control-wrapper > label {
+    display: inline-block;
+}
+
+.control-button > svg {
+    fill: var(--svg-button-fill);
+}
+
+.control-wrapper > input[type=checkbox].two-images:checked + label > svg.image-on {
+    display: block;
+}
+
+.control-wrapper > input[type=checkbox].two-images:not(:checked) + label > svg.image-on {
+    display: none;
+}
+
+.control-wrapper > input[type=checkbox].two-images:checked + label > svg.image-off {
+    display: none;
+}
+
+.control-wrapper > input[type=checkbox].two-images:not(:checked) + label > svg.image-off {
+    display: block;
+}
+
+.control-wrapper > input[type=checkbox]:checked + label > svg {
+    fill: var(--svg-checkbox-bg-color);
+}
+
+.text-area {
+    width: 100%;
+    resize: vertical;
+}
+
+.more-box {
+    display: none;
+    position: absolute;
+    background-color: var(--controls-bg-color);
+    z-index: 2;
+    padding: 0 .714rem .714rem .714rem;
+}
+
+.text-with-shadow, .more-box label {
+    color: var(--text-color);
+    text-shadow: var(--text-shadow-color) 0 0 .357rem;
+}
+
+.spoiler > input ~ .box {
+    display: none;
+}
+
+.spoiler > input:checked ~ .box {
+    display: block;
+}
+
+.spoiler > label::before {
+    content: '►';
+    margin-right: 5px;
+}
+
+.spoiler > input:checked ~ label::before {
+    content: '▼';
+}
+
+.spoiler > input:checked ~ div {
+    display: block;
+    padding: 10px;
+}
+
+.spoiler > input {
+    display: none;
+}
+
+:root {
+    --block-top-padding: 0.5rem;
+    --block-bottom-padding: 0.5rem;
+    --button-top-padding: 0.2rem;
+    --button-bottom-padding: 0.2rem;
+    --header-height: 3rem;
+    --footer-height: 1.55rem;
+}
+
+.dialog-background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 3;
+}
+
+.dialog-container {
+    font-family: monospace;
+    width: 75%;
+    max-width: 30rem;
+    min-width: 20rem;
+    background-color: var(--main-bg-color);
+    /*border-radius: 0.3rem;*/
+    overflow: hidden;
+}
+
+.dialog-container.ready {
+    height: 100%;
+    min-height: 100%;
+}
+
+.dialog-container button, .dialog-container select, .dialog-container input {
+    font-family: monospace;
+}
+
+.dialog-container button {
+    font-size: var(--font-size);
+}
+
+.dialog-container select {
+    text-overflow: ellipsis;
+}
+
+.dialog-block {
+}
+
+.dialog-header {
+    background-color: var(--header-bg-color);
+    height: var(--header-height);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    width: auto;
+    position: initial;
+}
+
+.dialog-header span.dialog-title {
+    display: inline-block;
+    padding: 0 0.5rem;
+}
+
+.dialog-body {
+    padding: var(--block-top-padding) 0.5rem var(--block-bottom-padding);
+    background-color: var(--control-buttons-bg-color);
+    overflow: auto;
+}
+
+.dialog-body.hidden {
+    height: 0;
+    padding: 0;
+}
+
+.dialog-body.visible {
+    height: calc(
+            100%
+            - 2 * var(--block-top-padding)
+            - 2 * var(--block-bottom-padding)
+            - var(--header-height)
+            - var(--footer-height)
+    );
+}
+
+.dialog-footer {
+    /*display: flex;*/
+    /*flex-direction: row-reverse;*/
+    padding: var(--block-top-padding) 0.5rem var(--block-bottom-padding);
+    background-color: var(--stream-bg-color);
+    height: var(--footer-height);
+    overflow: hidden;
+}
+
+.dialog-footer span.subtitle {
+    font-weight: lighter;
+    line-height: var(--footer-height);
+    float: left;
+}
+
+.dialog-footer button {
+    padding: var(--button-top-padding) 0.5rem var(--button-bottom-padding);
+    margin: 0 0 0 0.5rem;
+    border-radius: 0.3rem;
+    /*background-color: var(--main-bg-color);*/
+    color: var(--button-text-color);
+    border: 1px solid var(--button-border-color);
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    height: var(--footer-height);
+    float: right;
+}
+
+.dialog-footer button:disabled {
+    cursor: not-allowed;
+    color: var(--text-color-light);
+}
+
+.controls .label {
+    grid-column: labels;
+}
+
+.controls .input {
+    grid-column: controls;
+    box-sizing: border-box;
+    margin: 0;
+    /*height: 2.75ex;*/
+}
+
+.controls .button {
+    grid-column: controls;
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: [labels] 35% [controls] 65%;
+    padding: 1rem;
+    grid-gap: 0.2rem;
+    align-items: center;
+}
+
+:root {
+    --device-border-color: hsl(0, 0%, 82%);
+    --device-list-stripe-color: hsl(0, 0%, 96%);
+    --device-list-default-color: hsl(0, 0%, 100%);
+    --device-list-hover-color: hsl(218, 67%, 95%);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --device-border-color: hsl(0, 0%, 32%);
+        --device-list-stripe-color: hsl(0, 0%, 16%);
+        --device-list-default-color: hsl(0, 0%, 14%);
+        --device-list-hover-color: hsl(218, 17%, 18%);
+    }
+}
+
+
+body.list {
+    height: auto;
+    width: auto;
+    overflow: auto;
+}
+
+#devices {
+    padding: 20px 0;
+    width: 100%;
+    height: calc(100% - 40px);
+    overflow-y: auto;
+}
+
+body.stream #devices {
+    background-color: var(--device-list-default-color);
+    opacity: .8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+body.list #device_list_menu {
+    display: none;
+}
+
+#device_list_menu {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+}
+
+#devices .device-list button {
+    font-size: var(--font-size);
+    color: var(--button-text-color);
+}
+
+#devices .device-list div.device:nth-child(2n+1){
+    background-color: var(--device-list-default-color);
+}
+
+#devices .device-list div.device:nth-child(2n){
+    background-color: var(--device-list-stripe-color);
+}
+
+#devices .device-header {
+    padding: 2px 0;
+}
+
+#devices .device-header div {
+    display: inline-flex;
+}
+
+#devices .device-name {
+    font-size: 120%;
+}
+
+#devices .device-model {
+    font-size: 110%;
+}
+
+#devices .device-serial {
+    color: var(--url-color);
+    font-size: 80%;
+    margin-left: 6px;
+}
+
+#devices .device-version {
+    font-size: 100%;
+    margin-left: 6px;
+    align-items: baseline;
+}
+
+#devices .device-version .sdk-version {
+    font-size: 75%;
+    color: var(--url-color);
+    margin-left: 0.2em;
+}
+
+#devices .device-state {
+    border-radius: 25px;
+    background-color: red;
+    font-size: 80%;
+    margin-left: 6px;
+    width: 1em;
+    height: 1em;
+}
+
+#devices .device.active .device-state {
+    background-color: green;
+}
+
+#devices .device-list {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+#devices .device-list {
+    border-spacing: 0;
+    border-collapse: collapse;
+    font-family: monospace;
+    font-size: var(--font-size);
+}
+
+#devices .device-list div.device {
+    padding: 5px 20px 5px;
+}
+
+#devices .device-list div.device:hover {
+    background-color: var(--device-list-hover-color)
+}
+
+#devices .device-list div.device select {
+    color: var(--text-color);
+    background-color: var(--main-bg-color);
+    margin-left: 0;
+    border: none;
+}
+
+#devices .device-list div.device:hover select {
+    background-color: var(--device-list-hover-color);;
+}
+
+#devices .device-list div.desc-block {
+    margin: .3em;
+    display: inline-flex;
+}
+
+#devices .device-list div.desc-block.hidden {
+    display: none;
+}
+
+#devices .device-list div.desc-block.stream,
+#devices .device-list div.desc-block.server_pid,
+#devices .device-list div.desc-block.net_interface {
+    border: 1px solid var(--device-border-color);
+    border-radius: .3em;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#devices .device-list div.device div.desc-block.stream button.action-button {
+    color: var(--button-text-color);
+}
+
+#devices .device-list div.desc-block button {
+    fill: var(--text-color)
+}
+
+#devices .device-list div.desc-block button > span {
+    padding: 0 .5em;
+}
+
+#devices .device-list div.desc-block button > span,
+#devices .device-list div.desc-block button > svg {
+    vertical-align: middle;
+}
+
+#devices .device-list div.desc-block button > svg {
+    width: var(--font-size);
+    height: var(--font-size);
+}
+
+#devices .device-list div.desc-block button > svg > path {
+    fill: var(--text-color);
+}
+
+#devices .device-list .device.not-active div.desc-block button > svg > path {
+    fill: var(--text-color-light);
+}
+
+#devices .device-list .device.not-active select {
+    color: var(--text-color-light);
+}
+
+#devices .device-list .device.not-active {
+    color: var(--text-color-light);
+}
+
+#devices .device-list .device.not-active a {
+    color: var(--link-color-light);
+}
+
+#devices .device-list .device.not-active a:visited {
+    color: var(--link-color_visited-light);
+}
+
+#devices .device-list div.device div.desc-block .action-button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: inherit;
+}
+
+#devices .device-list div.device div.desc-block .action-button.update-interfaces-button {
+    margin-right: 0;
+}
+
+#devices .device-list div.device div.desc-block .action-button.active {
+    cursor: pointer;
+}
+
+#devices .device-list .device.active div.desc-block .action-button:hover {
+    color: var(--kill-button-hover-color);
+}
+
+#devices .device-list .device.active div.desc-block button.action-button:hover > svg > path {
+    fill: var(--kill-button-hover-color);
+}
+
+#devices .tracker-name {
+    padding: 5px 20px 5px;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+
+body.devtools {
+    font-family: Ubuntu, Arial, sans-serif;
+    font-size: 13px;
+}
+
+body.devtools .device {
+    padding: 20px;
+}
+
+body.devtools .device-header {
+    -webkit-box-align: baseline;
+    -webkit-box-orient: horizontal;
+    display: -webkit-box;
+    margin: 10px 0 0;
+    padding: 2px 0;
+}
+
+body.devtools .device-name {
+    font-size: 150%;
+}
+
+body.devtools .device-serial {
+    color: var(--url-color);
+    font-size: 80%;
+    margin-left: 6px;
+}
+
+body.devtools .browser-header {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    min-height: 33px;
+    padding-top: 10px;
+}
+
+body.devtools .browser-header > .browser-name {
+    font-size: 110%;
+    font-weight: bold;
+}
+
+body.devtools div.list {
+    margin-top: 5px;
+}
+
+body.devtools div.list > .row {
+    padding: 6px 0;
+    position: relative;
+}
+
+body.devtools .properties-box {
+    display: flex;
+}
+
+body.devtools .properties-box > img {
+    flex-shrink: 0;
+    height: 23px;
+    padding-left: 2px;
+    padding-right: 5px;
+    vertical-align: top;
+    width: 23px;
+}
+
+body.devtools .subrow-box {
+    display: inline-block;
+    vertical-align: top;
+}
+
+body.devtools .subrow {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+body.devtools .subrow > div {
+    margin-right: 0.5em;
+}
+
+.body.devtools url {
+    color: var(--url-color);
+    max-width: 200px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+body.devtools .action {
+    color: var(--link-color);
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+body.devtools .action.disabled {
+    color: var(--url-color);
+    cursor: not-allowed;
+}
+
+body.devtools a.action {
+    text-decoration: none;
+}
+
+body.devtools a.action.copy {
+    cursor: copy;
+}
+
+body.devtools .browser-header .action {
+    margin-left: 10px;
+}
+
+body.devtools .open > input {
+    border: 1px solid #aaa;
+    height: 17px;
+    line-height: 17px;
+    margin-left: 20px;
+    padding: 0 2px;
+}
+
+body.devtools .tooltip {
+    z-index: 1;
+    position: absolute;
+    padding: 2px;
+    color: var(--controls-bg-color);
+    background-color: var(--text-color);
+}
+
+body.file-listing {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.file-listing h1 {
+    border-bottom: 1px solid var(--button-border-color);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    white-space: nowrap;
+}
+
+.file-listing tr:hover {
+    background-color: var(--controls-bg-color);
+}
+
+.file-listing .quick-link-box {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.file-listing .quick-link-box.hidden {
+    display: none;
+}
+
+.file-listing a.icon {
+    -webkit-padding-start: 1.5em;
+    -moz-padding-start: 1.5em;
+    text-decoration: none;
+    user-select: auto;
+}
+
+.file-listing a.icon:hover {
+    text-decoration: underline;
+}
+
+.file-listing a.link {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAACAElEQVQ4y4WSzUsVYRjFf897RwUz+wK7LiSIyKCoyEUXDFzcqYhq0R+R4J/gMqilf0VC7VwUuBUxobJumyLTvjDIG0TcO96J7sw8T4t3Rp0kfDYH3o/DOc85Qj4LCwvGPpOmKfPz88zMzEhxFux+cGV8HARE/H2BqopzjpWVV4RhSPNH02YfzkqJwMwwDDHxKIKZR+ccAEmSMDExQZZldLY6Njc3J64gUNVtEswTFsTFdDodFhcXCYKAqakp9ijAjOK5AJbbKJSEYZ3N75t0u10+rK2VCVSVX+0elpfe8mxpHTCvCgM1btw8S71+hupwFYD3q6sAlCw4gXp4jno4ShA4nJNclf43mW0FWZbhHLTbHVZefgUxkiQlTf+QqZKmqd9NvuAsy/ZaqFSMx4+W2fjW5HccY5bgKg7BSNNunpLfjarutfCm8ZEXz9+xFbVRSxg8dIDr1y7m3Sii9lgQBLtb1ni9TqUiiBh9vT1MT9/hePUw/f29iI/KJ4N4S//GqKpUnJd4dzJkaGgQy5Rbt8fY2Pi50wnZ6ce2hVarxfkLJzDg6JEBxi6dBDNEfD9GRo5hlqswo9VqlQmiKKJWO83l2ilU1W9ZduIy9R+LwkVRVLYQxzFOYHLyKp8/NWk0vjA6OszAwT7MBFXfiaKjcRyXCaIo4v6De6WSPHnKvvMXLQgqHcJs3fIAAAAASUVORK5CYII=") left top no-repeat;
+}
+.file-listing a.file {
+    background : url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAABnRSTlMAAAAAAABupgeRAAABHUlEQVR42o2RMW7DIBiF3498iHRJD5JKHurL+CRVBp+i2T16tTynF2gO0KSb5ZrBBl4HHDBuK/WXACH4eO9/CAAAbdvijzLGNE1TVZXfZuHg6XCAQESAZXbOKaXO57eiKG6ft9PrKQIkCQqFoIiQFBGlFIB5nvM8t9aOX2Nd18oDzjnPgCDpn/BH4zh2XZdlWVmWiUK4IgCBoFMUz9eP6zRN75cLgEQhcmTQIbl72O0f9865qLAAsURAAgKBJKEtgLXWvyjLuFsThCSstb8rBCaAQhDYWgIZ7myM+TUBjDHrHlZcbMYYk34cN0YSLcgS+wL0fe9TXDMbY33fR2AYBvyQ8L0Gk8MwREBrTfKe4TpTzwhArXWi8HI84h/1DfwI5mhxJamFAAAAAElFTkSuQmCC ") left top no-repeat;
+}
+
+.file-listing a.dir {
+    background : url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAd5JREFUeNqMU79rFUEQ/vbuodFEEkzAImBpkUabFP4ldpaJhZXYm/RiZWsv/hkWFglBUyTIgyAIIfgIRjHv3r39MePM7N3LcbxAFvZ2b2bn22/mm3XMjF+HL3YW7q28YSIw8mBKoBihhhgCsoORot9d3/ywg3YowMXwNde/PzGnk2vn6PitrT+/PGeNaecg4+qNY3D43vy16A5wDDd4Aqg/ngmrjl/GoN0U5V1QquHQG3q+TPDVhVwyBffcmQGJmSVfyZk7R3SngI4JKfwDJ2+05zIg8gbiereTZRHhJ5KCMOwDFLjhoBTn2g0ghagfKeIYJDPFyibJVBtTREwq60SpYvh5++PpwatHsxSm9QRLSQpEVSd7/TYJUb49TX7gztpjjEffnoVw66+Ytovs14Yp7HaKmUXeX9rKUoMoLNW3srqI5fWn8JejrVkK0QcrkFLOgS39yoKUQe292WJ1guUHG8K2o8K00oO1BTvXoW4yasclUTgZYJY9aFNfAThX5CZRmczAV52oAPoupHhWRIUUAOoyUIlYVaAa/VbLbyiZUiyFbjQFNwiZQSGl4IDy9sO5Wrty0QLKhdZPxmgGcDo8ejn+c/6eiK9poz15Kw7Dr/vN/z6W7q++091/AQYA5mZ8GYJ9K0AAAAAASUVORK5CYII= ") left top no-repeat;
+}
+
+.file-listing a.up {
+    background : url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAmlJREFUeNpsU0toU0EUPfPysx/tTxuDH9SCWhUDooIbd7oRUUTMouqi2iIoCO6lceHWhegy4EJFinWjrlQUpVm0IIoFpVDEIthm0dpikpf3ZuZ6Z94nrXhhMjM3c8895977BBHB2PznK8WPtDgyWH5q77cPH8PpdXuhpQT4ifR9u5sfJb1bmw6VivahATDrxcRZ2njfoaMv+2j7mLDn93MPiNRMvGbL18L9IpF8h9/TN+EYkMffSiOXJ5+hkD+PdqcLpICWHOHc2CC+LEyA/K+cKQMnlQHJX8wqYG3MAJy88Wa4OLDvEqAEOpJd0LxHIMdHBziowSwVlF8D6QaicK01krw/JynwcKoEwZczewroTvZirlKJs5CqQ5CG8pb57FnJUA0LYCXMX5fibd+p8LWDDemcPZbzQyjvH+Ki1TlIciElA7ghwLKV4kRZstt2sANWRjYTAGzuP2hXZFpJ/GsxgGJ0ox1aoFWsDXyyxqCs26+ydmagFN/rRjymJ1898bzGzmQE0HCZpmk5A0RFIv8Pn0WYPsiu6t/Rsj6PauVTwffTSzGAGZhUG2F06hEc9ibS7OPMNp6ErYFlKavo7MkhmTqCxZ/jwzGA9Hx82H2BZSw1NTN9Gx8ycHkajU/7M+jInsDC7DiaEmo1bNl1AMr9ASFgqVu9MCTIzoGUimXVAnnaN0PdBBDCCYbEtMk6wkpQwIG0sn0PQIUF4GsTwLSIFKNqF6DVrQq+IWVrQDxAYQC/1SsYOI4pOxKZrfifiUSbDUisif7XlpGIPufXd/uvdvZm760M0no1FZcnrzUdjw7au3vu/BVgAFLXeuTxhTXVAAAAAElFTkSuQmCC ") left top no-repeat;
+}
+
+.file-listing a.push {
+    color: var(--text-color);
+}
+
+.file-listing .listing {
+    margin: 8px;
+}
+
+.file-listing .foreground {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    z-index: 1000;
+    background-color: var(--controls-bg-color);
+}
+
+.file-listing .foreground-message {
+    flex: auto;
+    font-size: 30px;
+    color: #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    pointer-events: none;
+}
+
+.file-listing .foreground-message.drop-target-message {
+    border: 4px dashed #ddd;
+}
+
+.file-listing .entry-name {
+    position: relative;
+}
+
+.file-listing .background-progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--progress-background-color);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+}
+
+.file-listing .background-progress.error {
+    background-color: var(--progress-background-error-color);
+}
+

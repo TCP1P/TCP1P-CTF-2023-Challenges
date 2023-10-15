@@ -8,3 +8,10 @@ services:
       - TERM=xterm
     ports:
       - "9254:9254"
+
+networks:
+  default:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.103.0/24

@@ -5,3 +5,7 @@ services:
     restart: always
     ports:
         - '52132:8080'
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"

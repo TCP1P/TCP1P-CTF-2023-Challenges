@@ -7,3 +7,14 @@ services:
     working_dir: /home/ctf
     entrypoint: /etc/init.sh
     restart: always
+    deploy:
+      resources:
+        limits:
+          cpus: "2.0"
+
+networks:
+  default:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.106.0/24

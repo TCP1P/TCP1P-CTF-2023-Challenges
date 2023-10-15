@@ -17,7 +17,7 @@ extra:
   minimum: 100
 
 # connection_info is used to provide a link, hostname, or instructions on how to connect to a challenge
-connection_info: nc ctf.tcp1p.com 4267
+connection_info: nc ctf.tcp1p.com 8008
 
 # Flags specify answers that your challenge use. You should generally provide at least one.
 # Can be removed if unused

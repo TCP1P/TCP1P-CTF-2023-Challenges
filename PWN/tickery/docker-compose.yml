@@ -1,0 +1,17 @@
+version: '3'
+services:
+  pwn:
+    container_name: tickery
+    network_mode: bridge
+    restart: always
+    build: .
+    ports:
+      - "44677:8000"
+    read_only: True
+
+networks:
+  default:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.107.0/24

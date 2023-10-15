@@ -7,3 +7,6 @@ syncs:
 
 deploy:
 	bash ./.ctf/deploy.sh
+
+stop:
+	bash ./.ctf/stop.sh

@@ -11,3 +11,7 @@ services:
     restart: always
     environment:
       - APP_NAME=spidershamble
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"

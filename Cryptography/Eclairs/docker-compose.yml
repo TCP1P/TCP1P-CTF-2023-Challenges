@@ -1,0 +1,9 @@
+version: "3"
+services:
+  eclairs:
+    build: ./src
+    ports:
+      # public:local
+      - "13341:13341"
+    container_name: eclairs
+    restart: always

@@ -61,7 +61,7 @@ CREATE TABLE `item_list` (
 INSERT INTO `item_list` (`id`, `item_name`, `quantity`, `created_by`) VALUES
 (1, 'Blue Shirt', 50, ' admin'),
 (2, 'Red Shoes', 25, ' admin'),
-(3, 'TCP1P{fake_', 1337, ' admin');
+(3, 'Black Pants', 1337, ' admin');
 
 --
 -- Indexes for dumped tables

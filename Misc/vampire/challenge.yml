@@ -1,0 +1,45 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+# Required sections
+name: "vampire"
+author: "botanbell"
+category: Misc
+description: |
+    **Author**: `botanbell`
+
+    please give it a try, it seems like it has been done before
+value: 0
+type: dynamic
+extra:
+    initial: 500
+    decay: 20
+    minimum: 100
+
+connection_info: nc ctf.tcp1p.com 23945
+
+# Flags specify answers that your challenge use. You should generally provide
+# at least one.
+# Can be removed if unused
+# Accepts strings or dictionaries
+flags:
+    - TCP1P{2c6c3e9c4b9a2a5d8d3a67b7f9b2b9d6f7f6f2e1d6b2d5e3e1d5f7f7f6f2e9d1_botanbell_1s_here_XD}
+
+# Tags are used to classify your challenge with topics. You should provide at
+# least one.
+# Can be removed if unused
+# Accepts strings
+tags:
+    - misc
+# Provide paths to files from the same directory that this file is in
+# Accepts strings
+files:
+    - ./dist/sandbox.py
+
+# The state of the challenge.
+# This is visible by default. It takes two values: hidden, visible.
+state: visible
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"

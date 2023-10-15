@@ -7,3 +7,9 @@ services:
         ports:
             - "17027:1337"
         read_only: true
+
+networks:
+  default:
+    ipam:
+      config:
+        - subnet: 192.168.102.0/24

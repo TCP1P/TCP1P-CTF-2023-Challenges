@@ -30,9 +30,8 @@ function init_device() {
   
   adb remount
 
-  adb shell mkdir /system/app/Challenge
-  adb push challenge.apk /system/app/Challenge
-  adb shell chmod 755 /system/app/Challenge
+  adb install challenge.apk
+  adb push flag.txt /data/data/com.kuro.intention/files/flag.txt
 
   adb shell rm -f /system/xbin/su
   adb reboot
@@ -56,6 +55,9 @@ while true; do
 
     sleep 1
 done
+
+adb shell pm grant com.android.chrome android.permission.READ_EXTERNAL_STORAGE
+adb shell pm grant com.android.chrome android.permission.WRITE_EXTERNAL_STORAGE
 
 cd ./ws-scrcpy
 npm start

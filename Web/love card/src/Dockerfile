@@ -4,4 +4,8 @@ COPY index.php /var/www/html/
 COPY flag.txt /flag.txt
 RUN mv /flag.txt /flag_$(cat /dev/urandom | tr -dc 'a-z0-9' | fold -w 8 | head -n 1).txt
 
+COPY ./init.sh .
+
 USER www-data
+
+CMD ["bash","./init.sh"]

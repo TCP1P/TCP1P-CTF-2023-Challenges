@@ -8,7 +8,7 @@ WORKDIR /var/www/html
 COPY . .
 
 # move flag to root directory with random name
-RUN mv flag.txt $(cat /dev/urandom | head -c 32 | hex).txt
+RUN mv flag.txt 182939124819238912571292389218129123.txt
 
 # add new user named ctf
 RUN useradd -ms /bin/bash ctf
