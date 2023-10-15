@@ -40,7 +40,7 @@ contract StorageChallenge4 {
     uint64 private password;
     bytes32 private user;
     address[2] private investor;
-    bytes32 immutable  passphrase
+    bytes32 immutable  passphrase;
     address private owner;
 }
 """,
@@ -79,7 +79,7 @@ contract StorageChallenge7 {
     uint256 private Token;
     address private immutable Investor;
     address private Courier;
-    bytes32 private immuatble password;
+    bytes32 private immutable password;
 }
 """,
         "a": 0
@@ -104,7 +104,7 @@ contract StorageChallenge8 {
         "q": """
 contract StorageChallenge9 {
     bytes32 private unique_code;
-    bytes32 private 12_key;
+    bytes32 private key_12;
     address private owner;
     address[20] public player;
     bool private valid;

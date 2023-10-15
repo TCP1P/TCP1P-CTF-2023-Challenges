@@ -29,6 +29,7 @@ access_token = ctfd_b1ad470287456a08b41c229d23ab8d166c7556ab679f098fb4f6473656d9
 ./Mobile/Intention = ./Mobile/Intention
 ./Mobile/Imagery = ./Mobile/Imagery
 ./Mobile/Netsight = ./Mobile/Netsight
+./Mobile/Internals = ./Mobile/Internals
 ./Forensic/hide and split = ./Forensic/hide and split
 ./Forensic/scrambled egg = ./Forensic/scrambled egg
 ./Forensic/brokenimg = ./Forensic/brokenimg
@@ -60,4 +61,8 @@ access_token = ctfd_b1ad470287456a08b41c229d23ab8d166c7556ab679f098fb4f6473656d9
 ./Web/PDFIFY = ./Web/PDFIFY
 ./Web/A simple website = ./Web/A simple website
 ./PWN/NakiriAyame = ./PWN/NakiriAyame
+./Forensic/Compromised = ./Forensic/Compromised
+./Forensic/Reminiscence = ./Forensic/Reminiscence
+./Misc/Certificate = ./Misc/Certificate
+./PWN/digital circuit = ./PWN/digital circuit
 

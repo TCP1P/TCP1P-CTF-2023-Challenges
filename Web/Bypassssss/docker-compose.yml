@@ -3,7 +3,7 @@ version: '3'
 services:
   php-app:
     build:
-      context: ./dist/src
+      context: ./src/src
     ports:
       - "45679:80"
     volumes:

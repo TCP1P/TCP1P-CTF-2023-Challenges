@@ -1,7 +1,7 @@
 def main():
     questions = [
         {
-            "question": "What TCP protocol is recorded in the network packet? Please enter the port as well",
+            "question": "What TCP protocol/service is captured in the network packet? Please enter the port as well",
             "format": "ftp:1337"
         },
         { 
