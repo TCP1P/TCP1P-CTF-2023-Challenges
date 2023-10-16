@@ -62,5 +62,5 @@ print("Result of enterVenue():", result)
 And here is the other way you can do it
 
 ```bash
-cast call --rpc-url https://eth-sepolia.g.alchemy.com/v2/SMfUKiFXRNaIsjRSccFuYCq8Q3QJgks8 "enterVenue()" | xxd -r -p
+cast call --rpc-url https://eth-sepolia.g.alchemy.com/v2/SMfUKiFXRNaIsjRSccFuYCq8Q3QJgks8 0x56b95CD61857A806e7F6E3da73426D1CD6e87303 "enterVenue()" | xxd -r -p
 ```
