@@ -34,7 +34,7 @@ tags:
 
 # The state of the challenge.
 # This is visible by default. It takes two values: hidden, visible.
-state: hidden
+state: visible
 
 # Specifies what version of the challenge specification was used.
 # Subject to change until ctfcli v1.0.0
