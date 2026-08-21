@@ -1,0 +1,19 @@
+name: love card
+author: kiseki
+description: '**Author**: `kiseki`
+
+
+  Make your own love card for your gf <3
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Web/love%20card).'
+type: StaticAttachment
+category: Web
+minScoreRate: 0.2
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{this_is_not_about_love_this_is_about_RCE<3}
+provide: dist

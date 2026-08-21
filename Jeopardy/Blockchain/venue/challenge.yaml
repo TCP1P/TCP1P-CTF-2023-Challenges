@@ -1,0 +1,11 @@
+name: Venue
+author: Kiinzu
+description: "**Author**: `Kiinzu`\n\nLook at the Amazing Party Venue\nSo do you wish to enter?\n\n**contract**: `0x1AC90AFd478F30f2D617b3Cb76ee00Dd73A9E4d3`\n**provider**: `https://eth-sepolia.g.alchemy.com/v2/SMfUKiFXRNaIsjRSccFuYCq8Q3QJgks8`\n**Priv-Key**: `Please use your own private-key, if you need ETH for transact, `\n               `You can either DM the Author, or get it by yourself at https://sepoliafaucet.com/`\n\n---\nHistorical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Blockchain/Venue)."
+type: StaticAttachment
+category: Blockchain
+minScoreRate: 0.2
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{d0_3nj0y_th3_p4rty_bu7_4r3_y0u_4_VIP?}
+provide: dist

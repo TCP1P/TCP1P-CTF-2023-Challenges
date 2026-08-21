@@ -1,0 +1,19 @@
+name: tickery
+author: yqroo
+description: '**Author**: `yqroo`
+
+
+  is this pwn chall?
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/PWN/tickery).'
+type: StaticAttachment
+category: Pwn
+minScoreRate: 0.2
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{If_I_die_tomorrow_I'd_be_all_right_Because_I_believe_That_after_we're_gone_The_SPIRIT_carries_LIBC_0n_and_1-Just_want_to_s33_this_challenge_solved_by_Many_people_sorry_f0R_qu1t3_long_fl4g}
+provide: dist

@@ -1,0 +1,5 @@
+Location
+
+Original source: https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Blockchain/Location
+
+Local archive note: no player attachment files were present.

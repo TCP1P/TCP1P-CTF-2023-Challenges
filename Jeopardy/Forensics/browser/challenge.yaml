@@ -1,0 +1,26 @@
+name: Browser
+author: daffainfo
+description: '**Author**: `daffainfo`
+
+
+  Maybe some people in this world have tried forensics on Chrome and Mozilla Firefox. What if we try to do forensics on this unknown browser?
+
+
+  Download Link: https://drive.google.com/file/d/1CPX94jizEVdL-3OHD54UIid-bWe258fg/view?usp=sharing \
+
+  Alternative Link 1: https://drive.google.com/file/d/1NawvHwh46PvMu4nxpM--r-V0IkQ1OmdJ/view?usp=sharing \
+
+  Alternative Link 2: https://drive.google.com/file/d/1Bj0izvNIb1k6SiPBEUNfGmScRolxqUye/view?usp=sharing
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Forensic/Browser).'
+type: StaticAttachment
+category: Forensics
+minScoreRate: 0.2
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{51m1L4R_t0_Go0gl3_cHr0m3_r1gHT_B35E77F38AB0DEC2}
+provide: dist

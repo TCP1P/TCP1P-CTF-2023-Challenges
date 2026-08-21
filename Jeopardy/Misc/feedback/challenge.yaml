@@ -1,0 +1,19 @@
+name: Feedback
+author: Hackerika
+description: '**Author**: `Hackerika`
+
+
+  Don''t forget to fill our feedback form here: https://docs.google.com/forms/d/e/1FAIpQLSfwLqqhTmwBSprRUQ9xqie4crk6gTlyHgrEhxsgLcL_vubqqw/viewform?usp=sf_link
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Misc/Feedback).'
+type: StaticAttachment
+category: Misc
+minScoreRate: 0.1
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{ThankYouForFillingTheForm}
+provide: dist

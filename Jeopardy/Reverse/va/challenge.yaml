@@ -1,0 +1,19 @@
+name: VA
+author: aimardcr
+description: '**Author**: `aimardcr`
+
+
+  static-analysis might be useless.
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Reverse%20Engineering/VA).'
+type: StaticAttachment
+category: Reverse
+minScoreRate: 0.2
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{1tS_Ju5t_B4siC_R3ve3rS1nG_Br00}
+provide: dist

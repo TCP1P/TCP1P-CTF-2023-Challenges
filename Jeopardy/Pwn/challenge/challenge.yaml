@@ -1,0 +1,19 @@
+name: 💀
+author: hyffs
+description: '**Author**: `hyffs`
+
+
+  ![Let him cook](https://i.pinimg.com/originals/22/61/57/226157a62b9da0ab025d71f35e5574e4.jpg)
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/PWN/skull).'
+type: StaticAttachment
+category: Pwn
+minScoreRate: 0.2
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{WHY_DID_YALL_LET_HIM_COOK_!!!!😭😭😭}
+provide: dist

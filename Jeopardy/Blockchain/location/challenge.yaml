@@ -1,0 +1,21 @@
+name: Location
+author: Kiinzu
+description: '**Author**: `Kiinzu`
+
+
+  Will you accept the invitation?
+
+  If so, find the party location now!
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Blockchain/Location).'
+type: StaticAttachment
+category: Blockchain
+minScoreRate: 0.2
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{W00t_w00t_t0_th3_p4rty_47JHbddc}
+provide: dist

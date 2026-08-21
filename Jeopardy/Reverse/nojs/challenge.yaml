@@ -1,0 +1,19 @@
+name: NoJS
+author: aimardcr
+description: '**Author**: `aimardcr`
+
+
+  i never really liked js, so i made it an executable.
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Reverse%20Engineering/NoJS).'
+type: StaticAttachment
+category: Reverse
+minScoreRate: 0.2
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{Wh4T_4_N1c3_D4y_t0_Us3_JS}
+provide: dist

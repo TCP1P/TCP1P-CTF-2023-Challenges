@@ -1,0 +1,5 @@
+Sanity Check
+
+Original source: https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Misc/Sanity%20Check
+
+Local archive note: no player attachment files were present.

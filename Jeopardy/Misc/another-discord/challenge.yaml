@@ -1,0 +1,19 @@
+name: Another Discord
+author: daffainfo
+description: '**Author**: `daffainfo`
+
+
+  TCP1P has another discord server?
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Misc/Another%20Discord).'
+type: StaticAttachment
+category: Misc
+minScoreRate: 0.2
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{d15c0RD_d0cUM3n74710n_W45_r341ly_H31pFu1}
+provide: dist

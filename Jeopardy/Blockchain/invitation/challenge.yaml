@@ -1,0 +1,24 @@
+name: Invitation
+author: Kiinzu
+description: '**Author**: `Kiinzu`
+
+
+  An Invitation to an amazing party,
+
+  only if you find the right location.
+
+
+  **Note**: Please read the 101.txt.
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Blockchain/Invitation).'
+type: StaticAttachment
+category: Blockchain
+minScoreRate: 0.2
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{4_Bytes_SigNAtuRe_aS_4n_Invitation_congratz}
+provide: dist

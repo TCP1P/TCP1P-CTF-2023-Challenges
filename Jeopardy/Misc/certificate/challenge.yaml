@@ -1,0 +1,27 @@
+name: Certificate
+author: .secre
+description: '**Author**: `.secre`
+
+
+  Don''t forget to claim your certificate right here
+
+  and proudly share your achievement on your social media platforms
+
+  using the hashtags #TCP1P and #TCP1PCTF2023.
+
+  We appreciate your participation in this CTF,
+
+  and we thank each and every one of you for joining this event!
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Misc/Certificate).'
+type: StaticAttachment
+category: Misc
+minScoreRate: 0.25
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{abcdefghijklmnopqrstuvwxyz}
+provide: dist

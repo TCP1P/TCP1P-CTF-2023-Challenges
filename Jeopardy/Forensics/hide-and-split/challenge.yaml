@@ -1,0 +1,19 @@
+name: hide and split
+author: underzero
+description: '**Author**: `underzero`
+
+
+  Explore this disk image file, maybe you can find something hidden in it.
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Forensic/hide%20and%20split).'
+type: StaticAttachment
+category: Forensics
+minScoreRate: 0.2
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{hidden_flag_in_the_extended_attributes_fea73c5920aa8f1c}
+provide: dist

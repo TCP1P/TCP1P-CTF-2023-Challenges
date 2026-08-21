@@ -1,0 +1,697 @@
+{
+  "sourceRepository": "TCP1P/TCP1P-CTF-2023-Challenges",
+  "targetRepository": "TCP1P/TCP1P-CTF-2023-Challenges",
+  "private": false,
+  "events": [
+    "TCP1P CTF 2023"
+  ],
+  "challenges": [
+    {
+      "name": "Invitation",
+      "category": "Blockchain",
+      "source": "Blockchain/Invitation/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Blockchain/Invitation",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Blockchain/invitation/challenge.yaml"
+    },
+    {
+      "name": "Location",
+      "category": "Blockchain",
+      "source": "Blockchain/Location/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Blockchain/Location",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment",
+        "no player attachment files were present"
+      ],
+      "manifest": "Jeopardy/Blockchain/location/challenge.yaml"
+    },
+    {
+      "name": "VIP",
+      "category": "Blockchain",
+      "source": "Blockchain/VIP/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Blockchain/VIP",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment",
+        "no player attachment files were present"
+      ],
+      "manifest": "Jeopardy/Blockchain/vip/challenge.yaml"
+    },
+    {
+      "name": "Venue",
+      "category": "Blockchain",
+      "source": "Blockchain/Venue/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Blockchain/Venue",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Blockchain/venue/challenge.yaml"
+    },
+    {
+      "name": "Cherry Leak",
+      "category": "Crypto",
+      "source": "Cryptography/Cherry Leak/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Cryptography/Cherry%20Leak",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Crypto/cherry-leak/challenge.yaml"
+    },
+    {
+      "name": "Eclairs",
+      "category": "Crypto",
+      "source": "Cryptography/Eclairs/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Cryptography/Eclairs",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Crypto/eclairs/challenge.yaml"
+    },
+    {
+      "name": "Final Consensus",
+      "category": "Crypto",
+      "source": "Cryptography/Final Consensus/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Cryptography/Final%20Consensus",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Crypto/final-consensus/challenge.yaml"
+    },
+    {
+      "name": "Jack's Worst Trials",
+      "category": "Crypto",
+      "source": "Cryptography/Jack's Worst Trials/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Cryptography/Jack%27s%20Worst%20Trials",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Crypto/jack-s-worst-trials/challenge.yaml"
+    },
+    {
+      "name": "One Pad Time",
+      "category": "Crypto",
+      "source": "Cryptography/One Pad Time/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Cryptography/One%20Pad%20Time",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Crypto/one-pad-time/challenge.yaml"
+    },
+    {
+      "name": "Open the Noor",
+      "category": "Crypto",
+      "source": "Cryptography/Open the Noor/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Cryptography/Open%20the%20Noor",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Crypto/open-the-noor/challenge.yaml"
+    },
+    {
+      "name": "Shiftgner",
+      "category": "Crypto",
+      "source": "Cryptography/Shiftgner/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Cryptography/Shiftgner",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Crypto/shiftgner/challenge.yaml"
+    },
+    {
+      "name": "Spider Shambles",
+      "category": "Crypto",
+      "source": "Cryptography/Spider Shambles/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Cryptography/Spider%20Shambles",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Crypto/spider-shambles/challenge.yaml"
+    },
+    {
+      "name": "Browser",
+      "category": "Forensics",
+      "source": "Forensic/Browser/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Forensic/Browser",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment",
+        "no player attachment files were present"
+      ],
+      "manifest": "Jeopardy/Forensics/browser/challenge.yaml"
+    },
+    {
+      "name": "Compromised",
+      "category": "Forensics",
+      "source": "Forensic/Compromised/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Forensic/Compromised",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Forensics/compromised/challenge.yaml"
+    },
+    {
+      "name": "Ez PDF",
+      "category": "Forensics",
+      "source": "Forensic/Ez PDF/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Forensic/Ez%20PDF",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Forensics/ez-pdf/challenge.yaml"
+    },
+    {
+      "name": "Hacked",
+      "category": "Forensics",
+      "source": "Forensic/Hacked/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Forensic/Hacked",
+      "type": "StaticAttachment",
+      "warnings": [
+        "source YAML needed fallback parsing: while parsing a block mapping",
+        "legacy type 'dynamic' converted to StaticAttachment",
+        "no player attachment files were present"
+      ],
+      "manifest": "Jeopardy/Forensics/hacked/challenge.yaml"
+    },
+    {
+      "name": "Reminiscence",
+      "category": "Forensics",
+      "source": "Forensic/Reminiscence/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Forensic/Reminiscence",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Forensics/reminiscence/challenge.yaml"
+    },
+    {
+      "name": "brokenimg",
+      "category": "Forensics",
+      "source": "Forensic/brokenimg/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Forensic/brokenimg",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Forensics/brokenimg/challenge.yaml"
+    },
+    {
+      "name": "hide and split",
+      "category": "Forensics",
+      "source": "Forensic/hide and split/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Forensic/hide%20and%20split",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Forensics/hide-and-split/challenge.yaml"
+    },
+    {
+      "name": "scrambled egg",
+      "category": "Forensics",
+      "source": "Forensic/scrambled egg/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Forensic/scrambled%20egg",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Forensics/scrambled-egg/challenge.yaml"
+    },
+    {
+      "name": "Another Discord",
+      "category": "Misc",
+      "source": "Misc/Another Discord/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Misc/Another%20Discord",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment",
+        "no player attachment files were present"
+      ],
+      "manifest": "Jeopardy/Misc/another-discord/challenge.yaml"
+    },
+    {
+      "name": "Cat Kompani",
+      "category": "Misc",
+      "source": "Misc/Cat Kompani/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Misc/Cat%20Kompani",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Misc/cat-kompani/challenge.yaml"
+    },
+    {
+      "name": "Certificate",
+      "category": "Misc",
+      "source": "Misc/Certificate/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Misc/Certificate",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'standard' converted to StaticAttachment",
+        "no player attachment files were present"
+      ],
+      "manifest": "Jeopardy/Misc/certificate/challenge.yaml"
+    },
+    {
+      "name": "Feedback",
+      "category": "Misc",
+      "source": "Misc/Feedback/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Misc/Feedback",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment",
+        "no player attachment files were present"
+      ],
+      "manifest": "Jeopardy/Misc/feedback/challenge.yaml"
+    },
+    {
+      "name": "Guess My Number",
+      "category": "Misc",
+      "source": "Misc/Guess My Number/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Misc/Guess%20My%20Number",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Misc/guess-my-number/challenge.yaml"
+    },
+    {
+      "name": "Landbox",
+      "category": "Misc",
+      "source": "Misc/Landbox/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Misc/Landbox",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'container' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Misc/landbox/challenge.yaml"
+    },
+    {
+      "name": "Nuclei",
+      "category": "Misc",
+      "source": "Misc/Nuclei/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Misc/Nuclei",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Misc/nuclei/challenge.yaml"
+    },
+    {
+      "name": "PyMagic",
+      "category": "Misc",
+      "source": "Misc/PyMagic/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Misc/PyMagic",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Misc/pymagic/challenge.yaml"
+    },
+    {
+      "name": "Sanity Check",
+      "category": "Misc",
+      "source": "Misc/Sanity Check/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Misc/Sanity%20Check",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment",
+        "no player attachment files were present"
+      ],
+      "manifest": "Jeopardy/Misc/sanity-check/challenge.yaml"
+    },
+    {
+      "name": "vampire",
+      "category": "Misc",
+      "source": "Misc/vampire/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Misc/vampire",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Misc/vampire/challenge.yaml"
+    },
+    {
+      "name": "zipzipzipzip",
+      "category": "Misc",
+      "source": "Misc/zipzipzipzip/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Misc/zipzipzipzip",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Misc/zipzipzipzip/challenge.yaml"
+    },
+    {
+      "name": "Imagery",
+      "category": "Mobile",
+      "source": "Mobile/Imagery/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Mobile/Imagery",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'container' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Mobile/imagery/challenge.yaml"
+    },
+    {
+      "name": "Intention",
+      "category": "Mobile",
+      "source": "Mobile/Intention/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Mobile/Intention",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'container' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Mobile/intention/challenge.yaml"
+    },
+    {
+      "name": "Internals",
+      "category": "Mobile",
+      "source": "Mobile/Internals/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Mobile/Internals",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'container' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Mobile/internals/challenge.yaml"
+    },
+    {
+      "name": "Netsight",
+      "category": "Mobile",
+      "source": "Mobile/Netsight/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Mobile/Netsight",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'container' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Mobile/netsight/challenge.yaml"
+    },
+    {
+      "name": "OTA",
+      "category": "Mobile",
+      "source": "Mobile/OTA/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Mobile/OTA",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'container' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Mobile/ota/challenge.yaml"
+    },
+    {
+      "name": "Bluffer Overflow",
+      "category": "Pwn",
+      "source": "PWN/Bluffer Overflow/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/PWN/Bluffer%20Overflow",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Pwn/bluffer-overflow/challenge.yaml"
+    },
+    {
+      "name": "Game Changer",
+      "category": "Pwn",
+      "source": "PWN/GameChanger/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/PWN/GameChanger",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Pwn/game-changer/challenge.yaml"
+    },
+    {
+      "name": "NakiriAyame",
+      "category": "Pwn",
+      "source": "PWN/NakiriAyame/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/PWN/NakiriAyame",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Pwn/nakiriayame/challenge.yaml"
+    },
+    {
+      "name": "babyheap",
+      "category": "Pwn",
+      "source": "PWN/babyheap/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/PWN/babyheap",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Pwn/babyheap/challenge.yaml"
+    },
+    {
+      "name": "digital circuit",
+      "category": "Pwn",
+      "source": "PWN/digital circuit/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/PWN/digital%20circuit",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Pwn/digital-circuit/challenge.yaml"
+    },
+    {
+      "name": "message",
+      "category": "Pwn",
+      "source": "PWN/message/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/PWN/message",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Pwn/message/challenge.yaml"
+    },
+    {
+      "name": "💀",
+      "category": "Pwn",
+      "source": "PWN/skull/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/PWN/skull",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Pwn/challenge/challenge.yaml"
+    },
+    {
+      "name": "tickery",
+      "category": "Pwn",
+      "source": "PWN/tickery/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/PWN/tickery",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Pwn/tickery/challenge.yaml"
+    },
+    {
+      "name": "unsafe safe",
+      "category": "Pwn",
+      "source": "PWN/unsafe safe/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/PWN/unsafe%20safe",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment",
+        "attachment omitted to stay below the repository size limit"
+      ],
+      "manifest": "Jeopardy/Pwn/unsafe-safe/challenge.yaml"
+    },
+    {
+      "name": "Debug Me",
+      "category": "Reverse",
+      "source": "Reverse Engineering/Debug Me/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Reverse%20Engineering/Debug%20Me",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Reverse/debug-me/challenge.yaml"
+    },
+    {
+      "name": "ELF Cracker",
+      "category": "Reverse",
+      "source": "Reverse Engineering/ELF Cracker/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Reverse%20Engineering/ELF%20Cracker",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Reverse/elf-cracker/challenge.yaml"
+    },
+    {
+      "name": "IOP",
+      "category": "Reverse",
+      "source": "Reverse Engineering/IOP/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Reverse%20Engineering/IOP",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment",
+        "attachment omitted to stay below the repository size limit"
+      ],
+      "manifest": "Jeopardy/Reverse/iop/challenge.yaml"
+    },
+    {
+      "name": "Lock the Lock",
+      "category": "Reverse",
+      "source": "Reverse Engineering/Lock the Lock/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Reverse%20Engineering/Lock%20the%20Lock",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Reverse/lock-the-lock/challenge.yaml"
+    },
+    {
+      "name": "NoJS",
+      "category": "Reverse",
+      "source": "Reverse Engineering/NoJS/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Reverse%20Engineering/NoJS",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment",
+        "attachment omitted to stay below the repository size limit"
+      ],
+      "manifest": "Jeopardy/Reverse/nojs/challenge.yaml"
+    },
+    {
+      "name": "Subject Encallment",
+      "category": "Reverse",
+      "source": "Reverse Engineering/Subject Encallment/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Reverse%20Engineering/Subject%20Encallment",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Reverse/subject-encallment/challenge.yaml"
+    },
+    {
+      "name": "Take some Byte",
+      "category": "Reverse",
+      "source": "Reverse Engineering/Take some Byte/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Reverse%20Engineering/Take%20some%20Byte",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Reverse/take-some-byte/challenge.yaml"
+    },
+    {
+      "name": "VA",
+      "category": "Reverse",
+      "source": "Reverse Engineering/VA/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Reverse%20Engineering/VA",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Reverse/va/challenge.yaml"
+    },
+    {
+      "name": "A simple website",
+      "category": "Web",
+      "source": "Web/A simple website/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Web/A%20simple%20website",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Web/a-simple-website/challenge.yaml"
+    },
+    {
+      "name": "Bypassssss",
+      "category": "Web",
+      "source": "Web/Bypassssss/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Web/Bypassssss",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment",
+        "attachment omitted to stay below the repository size limit"
+      ],
+      "manifest": "Jeopardy/Web/bypassssss/challenge.yaml"
+    },
+    {
+      "name": "Latex",
+      "category": "Web",
+      "source": "Web/Latex/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Web/Latex",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Web/latex/challenge.yaml"
+    },
+    {
+      "name": "PDFIFY",
+      "category": "Web",
+      "source": "Web/PDFIFY/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Web/PDFIFY",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment",
+        "attachment omitted to stay below the repository size limit"
+      ],
+      "manifest": "Jeopardy/Web/pdfify/challenge.yaml"
+    },
+    {
+      "name": "Un Secure",
+      "category": "Web",
+      "source": "Web/Un Secure/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Web/Un%20Secure",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Web/un-secure/challenge.yaml"
+    },
+    {
+      "name": "Calculator",
+      "category": "Web",
+      "source": "Web/calculator/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Web/calculator",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment"
+      ],
+      "manifest": "Jeopardy/Web/calculator/challenge.yaml"
+    },
+    {
+      "name": "fetcher",
+      "category": "Web",
+      "source": "Web/fetcher/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Web/fetcher",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'container' converted to StaticAttachment",
+        "attachment omitted to stay below the repository size limit"
+      ],
+      "manifest": "Jeopardy/Web/fetcher/challenge.yaml"
+    },
+    {
+      "name": "love card",
+      "category": "Web",
+      "source": "Web/love card/challenge.yml",
+      "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Web/love%20card",
+      "type": "StaticAttachment",
+      "warnings": [
+        "legacy type 'dynamic' converted to StaticAttachment",
+        "attachment omitted to stay below the repository size limit"
+      ],
+      "manifest": "Jeopardy/Web/love-card/challenge.yaml"
+    }
+  ]
+}

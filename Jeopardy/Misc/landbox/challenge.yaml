@@ -1,0 +1,19 @@
+name: Landbox
+author: aimardcr
+description: '**Author**: `aimardcr`
+
+
+  who knew lua could be so troublesome.
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Misc/Landbox).'
+type: StaticAttachment
+category: Misc
+minScoreRate: 0.2
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{complex_problem_requires_simple_solution}
+provide: dist

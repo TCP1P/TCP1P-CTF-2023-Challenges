@@ -1,0 +1,19 @@
+name: scrambled egg
+author: zran
+description: '**Author**: `zran`
+
+
+  I accidentally scrambled my egg yesterday while I was looking at a png. Can you help me unscramble my egg?
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Forensic/scrambled%20egg).'
+type: StaticAttachment
+category: Forensics
+minScoreRate: 0.2
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{y0Ur_u5u4L_pN9_cHUnk_ch4LL}
+provide: dist

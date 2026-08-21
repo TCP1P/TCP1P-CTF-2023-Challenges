@@ -1,0 +1,19 @@
+name: zipzipzipzip
+author: botanbell
+description: '**Author**: `botanbell`
+
+
+  unzip me pls
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Misc/zipzipzipzip).'
+type: StaticAttachment
+category: Misc
+minScoreRate: 0.2
+difficulty: 5
+disableBloodBonus: false
+flags:
+- TCP1P{1_TH1NK_U_G00D_4T_SCR1PT1N9_botanbell_1s_h3r3^_^}
+provide: dist
