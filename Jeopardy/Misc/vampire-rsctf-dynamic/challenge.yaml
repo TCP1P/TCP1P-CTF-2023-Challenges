@@ -1,0 +1,22 @@
+name: vampire
+author: botanbell
+description: '**Author**: `botanbell`
+
+
+  please give it a try, it seems like it has been done before
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Misc/vampire).'
+type: DynamicContainer
+category: Misc
+minScoreRate: 0.2
+difficulty: 5
+disableBloodBonus: false
+flagTemplate: TCP1P{vampire______________________________________________________________[TEAM_HASH]}
+container:
+  memoryLimit: 128
+  cpuCount: 1
+  exposePort: 6000
+  enableTrafficCapture: false

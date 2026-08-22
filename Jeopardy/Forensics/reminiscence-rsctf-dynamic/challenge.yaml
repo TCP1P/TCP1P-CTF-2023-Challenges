@@ -1,0 +1,22 @@
+name: Reminiscence
+author: lunaroa
+description: '**Author**: `lunaroa`
+
+
+  We''ve detected unusual network traffic within our network. Upon inspection, it turns out that a malicious actor gained access to one of our staff''s credentials and logged into the server. Could you analyze what actually occurred?
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Forensic/Reminiscence).'
+type: DynamicContainer
+category: Forensics
+minScoreRate: 0.2
+difficulty: 5
+disableBloodBonus: false
+flagTemplate: TCP1P{reminiscence_________________________[TEAM_HASH]}
+container:
+  memoryLimit: 128
+  cpuCount: 1
+  exposePort: 1337
+  enableTrafficCapture: false

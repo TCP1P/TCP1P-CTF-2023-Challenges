@@ -1,0 +1,24 @@
+name: Cherry Leak
+author: Wrth
+description: '**Author**: `Wrth`
+
+
+  Why did the RSA challenge go to the fruit stand?
+
+  To cherry-pick it''s leaks.
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Cryptography/Cherry%20Leak).'
+type: DynamicContainer
+category: Crypto
+minScoreRate: 0.2
+difficulty: 5
+disableBloodBonus: false
+flagTemplate: TCP1P{cherry_leak____________[TEAM_HASH]}
+container:
+  memoryLimit: 128
+  cpuCount: 1
+  exposePort: 13339
+  enableTrafficCapture: false

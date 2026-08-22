@@ -1,5 +1,0 @@
-fetcher
-
-Original source: https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Web/fetcher
-
-Local archive note: attachment omitted to stay below the repository size limit.

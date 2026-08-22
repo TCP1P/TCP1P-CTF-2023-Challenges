@@ -12,8 +12,9 @@
       "source": "Blockchain/Invitation/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Blockchain/Invitation",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "legacy type 'dynamic' imported as StaticAttachment"
       ],
       "manifest": "Jeopardy/Blockchain/invitation/challenge.yaml"
     },
@@ -23,8 +24,9 @@
       "source": "Blockchain/Location/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Blockchain/Location",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment",
+        "legacy type 'dynamic' imported as StaticAttachment",
         "no player attachment files were present"
       ],
       "manifest": "Jeopardy/Blockchain/location/challenge.yaml"
@@ -35,8 +37,9 @@
       "source": "Blockchain/VIP/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Blockchain/VIP",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment",
+        "legacy type 'dynamic' imported as StaticAttachment",
         "no player attachment files were present"
       ],
       "manifest": "Jeopardy/Blockchain/vip/challenge.yaml"
@@ -47,8 +50,9 @@
       "source": "Blockchain/Venue/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Blockchain/Venue",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "legacy type 'dynamic' imported as StaticAttachment"
       ],
       "manifest": "Jeopardy/Blockchain/venue/challenge.yaml"
     },
@@ -57,44 +61,60 @@
       "category": "Crypto",
       "source": "Cryptography/Cherry Leak/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Cryptography/Cherry%20Leak",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "portable single-service Docker runtime promoted from 'dynamic' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{cherry_leak____________[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 2 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Crypto/cherry-leak/challenge.yaml"
+      "manifest": "Jeopardy/Crypto/cherry-leak-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Eclairs",
       "category": "Crypto",
       "source": "Cryptography/Eclairs/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Cryptography/Eclairs",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "portable single-service Docker runtime promoted from 'dynamic' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{eclairs________________[TEAM_HASH]}'",
+        "dynamic flag delivery uses the raw flag artifact adapter",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Crypto/eclairs/challenge.yaml"
+      "manifest": "Jeopardy/Crypto/eclairs-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Final Consensus",
       "category": "Crypto",
       "source": "Cryptography/Final Consensus/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Cryptography/Final%20Consensus",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "portable single-service Docker runtime promoted from 'dynamic' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{final_consensus_____________________________[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Crypto/final-consensus/challenge.yaml"
+      "manifest": "Jeopardy/Crypto/final-consensus-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Jack's Worst Trials",
       "category": "Crypto",
       "source": "Cryptography/Jack's Worst Trials/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Cryptography/Jack%27s%20Worst%20Trials",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "portable single-service Docker runtime promoted from 'dynamic' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{jack_s_worst_trials______________[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Crypto/jack-s-worst-trials/challenge.yaml"
+      "manifest": "Jeopardy/Crypto/jack-s-worst-trials-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "One Pad Time",
@@ -102,8 +122,9 @@
       "source": "Cryptography/One Pad Time/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Cryptography/One%20Pad%20Time",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "legacy type 'dynamic' imported as StaticAttachment"
       ],
       "manifest": "Jeopardy/Crypto/one-pad-time/challenge.yaml"
     },
@@ -112,33 +133,45 @@
       "category": "Crypto",
       "source": "Cryptography/Open the Noor/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Cryptography/Open%20the%20Noor",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "portable single-service Docker runtime promoted from 'dynamic' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{open_the_no[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Crypto/open-the-noor/challenge.yaml"
+      "manifest": "Jeopardy/Crypto/open-the-noor-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Shiftgner",
       "category": "Crypto",
       "source": "Cryptography/Shiftgner/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Cryptography/Shiftgner",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "portable single-service Docker runtime promoted from 'dynamic' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{shiftgner_______[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 2 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Crypto/shiftgner/challenge.yaml"
+      "manifest": "Jeopardy/Crypto/shiftgner-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Spider Shambles",
       "category": "Crypto",
       "source": "Cryptography/Spider Shambles/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Cryptography/Spider%20Shambles",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "portable single-service Docker runtime promoted from 'dynamic' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{spider_shambles_______________[TEAM_HASH]}'",
+        "dynamic flag delivery uses the raw flag artifact adapter",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Crypto/spider-shambles/challenge.yaml"
+      "manifest": "Jeopardy/Crypto/spider-shambles-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Browser",
@@ -146,8 +179,9 @@
       "source": "Forensic/Browser/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Forensic/Browser",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment",
+        "legacy type 'dynamic' imported as StaticAttachment",
         "no player attachment files were present"
       ],
       "manifest": "Jeopardy/Forensics/browser/challenge.yaml"
@@ -158,8 +192,9 @@
       "source": "Forensic/Compromised/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Forensic/Compromised",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "legacy type 'dynamic' imported as StaticAttachment"
       ],
       "manifest": "Jeopardy/Forensics/compromised/challenge.yaml"
     },
@@ -169,8 +204,9 @@
       "source": "Forensic/Ez PDF/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Forensic/Ez%20PDF",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "legacy type 'dynamic' imported as StaticAttachment"
       ],
       "manifest": "Jeopardy/Forensics/ez-pdf/challenge.yaml"
     },
@@ -180,9 +216,10 @@
       "source": "Forensic/Hacked/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Forensic/Hacked",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
         "source YAML needed fallback parsing: while parsing a block mapping",
-        "legacy type 'dynamic' converted to StaticAttachment",
+        "legacy type 'dynamic' imported as StaticAttachment",
         "no player attachment files were present"
       ],
       "manifest": "Jeopardy/Forensics/hacked/challenge.yaml"
@@ -192,11 +229,15 @@
       "category": "Forensics",
       "source": "Forensic/Reminiscence/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Forensic/Reminiscence",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "portable single-service Docker runtime promoted from 'dynamic' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{reminiscence_________________________[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Forensics/reminiscence/challenge.yaml"
+      "manifest": "Jeopardy/Forensics/reminiscence-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "brokenimg",
@@ -204,8 +245,9 @@
       "source": "Forensic/brokenimg/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Forensic/brokenimg",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "legacy type 'dynamic' imported as StaticAttachment"
       ],
       "manifest": "Jeopardy/Forensics/brokenimg/challenge.yaml"
     },
@@ -215,8 +257,9 @@
       "source": "Forensic/hide and split/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Forensic/hide%20and%20split",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "legacy type 'dynamic' imported as StaticAttachment"
       ],
       "manifest": "Jeopardy/Forensics/hide-and-split/challenge.yaml"
     },
@@ -226,8 +269,10 @@
       "source": "Forensic/scrambled egg/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Forensic/scrambled%20egg",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "legacy type 'dynamic' imported as StaticAttachment",
+        "attachment omitted to stay below the repository size limit"
       ],
       "manifest": "Jeopardy/Forensics/scrambled-egg/challenge.yaml"
     },
@@ -237,8 +282,9 @@
       "source": "Misc/Another Discord/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Misc/Another%20Discord",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment",
+        "legacy type 'dynamic' imported as StaticAttachment",
         "no player attachment files were present"
       ],
       "manifest": "Jeopardy/Misc/another-discord/challenge.yaml"
@@ -248,11 +294,15 @@
       "category": "Misc",
       "source": "Misc/Cat Kompani/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Misc/Cat%20Kompani",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "portable single-service Docker runtime promoted from 'dynamic' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{cat_kompani______________________________________________________________________[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Misc/cat-kompani/challenge.yaml"
+      "manifest": "Jeopardy/Misc/cat-kompani-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Certificate",
@@ -260,8 +310,9 @@
       "source": "Misc/Certificate/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Misc/Certificate",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
-        "legacy type 'standard' converted to StaticAttachment",
+        "legacy type 'standard' imported as StaticAttachment",
         "no player attachment files were present"
       ],
       "manifest": "Jeopardy/Misc/certificate/challenge.yaml"
@@ -272,8 +323,9 @@
       "source": "Misc/Feedback/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Misc/Feedback",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment",
+        "legacy type 'dynamic' imported as StaticAttachment",
         "no player attachment files were present"
       ],
       "manifest": "Jeopardy/Misc/feedback/challenge.yaml"
@@ -283,44 +335,60 @@
       "category": "Misc",
       "source": "Misc/Guess My Number/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Misc/Guess%20My%20Number",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "portable single-service Docker runtime promoted from 'dynamic' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{guess_my_number__________________________________[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Misc/guess-my-number/challenge.yaml"
+      "manifest": "Jeopardy/Misc/guess-my-number-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Landbox",
       "category": "Misc",
       "source": "Misc/Landbox/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Misc/Landbox",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "legacy type 'container' converted to StaticAttachment"
+        "portable single-service Docker runtime promoted from 'container' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{landbox_________________[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Misc/landbox/challenge.yaml"
+      "manifest": "Jeopardy/Misc/landbox-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Nuclei",
       "category": "Misc",
       "source": "Misc/Nuclei/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Misc/Nuclei",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "portable single-service Docker runtime promoted from 'dynamic' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{nuclei________________[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived wrapped-flag payload",
+        "dynamic runtime compatibility rewrote 129 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Misc/nuclei/challenge.yaml"
+      "manifest": "Jeopardy/Misc/nuclei-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "PyMagic",
       "category": "Misc",
       "source": "Misc/PyMagic/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Misc/PyMagic",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "portable single-service Docker runtime promoted from 'dynamic' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{pymagic____________________[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Misc/pymagic/challenge.yaml"
+      "manifest": "Jeopardy/Misc/pymagic-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Sanity Check",
@@ -328,8 +396,9 @@
       "source": "Misc/Sanity Check/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Misc/Sanity%20Check",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment",
+        "legacy type 'dynamic' imported as StaticAttachment",
         "no player attachment files were present"
       ],
       "manifest": "Jeopardy/Misc/sanity-check/challenge.yaml"
@@ -339,11 +408,15 @@
       "category": "Misc",
       "source": "Misc/vampire/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Misc/vampire",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "portable single-service Docker runtime promoted from 'dynamic' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{vampire______________________________________________________________[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Misc/vampire/challenge.yaml"
+      "manifest": "Jeopardy/Misc/vampire-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "zipzipzipzip",
@@ -351,8 +424,10 @@
       "source": "Misc/zipzipzipzip/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Misc/zipzipzipzip",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "legacy type 'dynamic' imported as StaticAttachment",
+        "attachment omitted to stay below the repository size limit"
       ],
       "manifest": "Jeopardy/Misc/zipzipzipzip/challenge.yaml"
     },
@@ -361,22 +436,30 @@
       "category": "Mobile",
       "source": "Mobile/Imagery/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Mobile/Imagery",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "legacy type 'container' converted to StaticAttachment"
+        "portable single-service Docker runtime promoted from 'container' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{imagery[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Mobile/imagery/challenge.yaml"
+      "manifest": "Jeopardy/Mobile/imagery-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Intention",
       "category": "Mobile",
       "source": "Mobile/Intention/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Mobile/Intention",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "legacy type 'container' converted to StaticAttachment"
+        "portable single-service Docker runtime promoted from 'container' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{inte[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Mobile/intention/challenge.yaml"
+      "manifest": "Jeopardy/Mobile/intention-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Internals",
@@ -384,8 +467,11 @@
       "source": "Mobile/Internals/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Mobile/Internals",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker service has no provable runtime flag channel; dynamic conversion would create an unsolvable challenge",
       "warnings": [
-        "legacy type 'container' converted to StaticAttachment"
+        "portable single-service Docker runtime promoted from 'container' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{internals____________________________________[TEAM_HASH]}'",
+        "portable Docker service retained as StaticAttachment because no injectable flag channel was proven"
       ],
       "manifest": "Jeopardy/Mobile/internals/challenge.yaml"
     },
@@ -394,122 +480,165 @@
       "category": "Mobile",
       "source": "Mobile/Netsight/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Mobile/Netsight",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "legacy type 'container' converted to StaticAttachment"
+        "portable single-service Docker runtime promoted from 'container' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{netsi[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Mobile/netsight/challenge.yaml"
+      "manifest": "Jeopardy/Mobile/netsight-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "OTA",
       "category": "Mobile",
       "source": "Mobile/OTA/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Mobile/OTA",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "legacy type 'container' converted to StaticAttachment"
+        "portable single-service Docker runtime promoted from 'container' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{ota[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Mobile/ota/challenge.yaml"
+      "manifest": "Jeopardy/Mobile/ota-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Bluffer Overflow",
       "category": "Pwn",
       "source": "PWN/Bluffer Overflow/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/PWN/Bluffer%20Overflow",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "portable single-service Docker runtime promoted from 'dynamic' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{bluffer_overflow__________________________________[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Pwn/bluffer-overflow/challenge.yaml"
+      "manifest": "Jeopardy/Pwn/bluffer-overflow-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Game Changer",
       "category": "Pwn",
       "source": "PWN/GameChanger/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/PWN/GameChanger",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "portable single-service Docker runtime promoted from 'dynamic' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{game_changer________________________________________________________[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Pwn/game-changer/challenge.yaml"
+      "manifest": "Jeopardy/Pwn/game-changer-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "NakiriAyame",
       "category": "Pwn",
       "source": "PWN/NakiriAyame/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/PWN/NakiriAyame",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "portable single-service Docker runtime promoted from 'dynamic' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{nakiriayame________________________[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Pwn/nakiriayame/challenge.yaml"
+      "manifest": "Jeopardy/Pwn/nakiriayame-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "babyheap",
       "category": "Pwn",
       "source": "PWN/babyheap/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/PWN/babyheap",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "portable single-service Docker runtime promoted from 'dynamic' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{babyheap______________________________________________[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Pwn/babyheap/challenge.yaml"
+      "manifest": "Jeopardy/Pwn/babyheap-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "digital circuit",
       "category": "Pwn",
       "source": "PWN/digital circuit/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/PWN/digital%20circuit",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "portable single-service Docker runtime promoted from 'dynamic' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{digital_circ[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Pwn/digital-circuit/challenge.yaml"
+      "manifest": "Jeopardy/Pwn/digital-circuit-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "message",
       "category": "Pwn",
       "source": "PWN/message/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/PWN/message",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "portable single-service Docker runtime promoted from 'dynamic' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{message__________________________________[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Pwn/message/challenge.yaml"
+      "manifest": "Jeopardy/Pwn/message-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "💀",
       "category": "Pwn",
       "source": "PWN/skull/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/PWN/skull",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "portable single-service Docker runtime promoted from 'dynamic' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{challenge_________________[TEAM_HASH]}'",
+        "dynamic flag delivery uses the gzip cpio flag image adapter",
+        "dynamic runtime compatibility rewrote 0 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Pwn/challenge/challenge.yaml"
+      "manifest": "Jeopardy/Pwn/challenge-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "tickery",
       "category": "Pwn",
       "source": "PWN/tickery/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/PWN/tickery",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "portable single-service Docker runtime promoted from 'dynamic' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{tickery_[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Pwn/tickery/challenge.yaml"
+      "manifest": "Jeopardy/Pwn/tickery-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "unsafe safe",
       "category": "Pwn",
       "source": "PWN/unsafe safe/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/PWN/unsafe%20safe",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment",
-        "attachment omitted to stay below the repository size limit"
+        "portable single-service Docker runtime promoted from 'dynamic' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{unsafe_safe________________________________[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Pwn/unsafe-safe/challenge.yaml"
+      "manifest": "Jeopardy/Pwn/unsafe-safe-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Debug Me",
@@ -517,8 +646,9 @@
       "source": "Reverse Engineering/Debug Me/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Reverse%20Engineering/Debug%20Me",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "legacy type 'dynamic' imported as StaticAttachment"
       ],
       "manifest": "Jeopardy/Reverse/debug-me/challenge.yaml"
     },
@@ -528,8 +658,9 @@
       "source": "Reverse Engineering/ELF Cracker/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Reverse%20Engineering/ELF%20Cracker",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "legacy type 'dynamic' imported as StaticAttachment"
       ],
       "manifest": "Jeopardy/Reverse/elf-cracker/challenge.yaml"
     },
@@ -539,9 +670,9 @@
       "source": "Reverse Engineering/IOP/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Reverse%20Engineering/IOP",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment",
-        "attachment omitted to stay below the repository size limit"
+        "legacy type 'dynamic' imported as StaticAttachment"
       ],
       "manifest": "Jeopardy/Reverse/iop/challenge.yaml"
     },
@@ -551,8 +682,9 @@
       "source": "Reverse Engineering/Lock the Lock/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Reverse%20Engineering/Lock%20the%20Lock",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "legacy type 'dynamic' imported as StaticAttachment"
       ],
       "manifest": "Jeopardy/Reverse/lock-the-lock/challenge.yaml"
     },
@@ -562,8 +694,9 @@
       "source": "Reverse Engineering/NoJS/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Reverse%20Engineering/NoJS",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment",
+        "legacy type 'dynamic' imported as StaticAttachment",
         "attachment omitted to stay below the repository size limit"
       ],
       "manifest": "Jeopardy/Reverse/nojs/challenge.yaml"
@@ -574,8 +707,9 @@
       "source": "Reverse Engineering/Subject Encallment/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Reverse%20Engineering/Subject%20Encallment",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "legacy type 'dynamic' imported as StaticAttachment"
       ],
       "manifest": "Jeopardy/Reverse/subject-encallment/challenge.yaml"
     },
@@ -585,8 +719,9 @@
       "source": "Reverse Engineering/Take some Byte/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Reverse%20Engineering/Take%20some%20Byte",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "legacy type 'dynamic' imported as StaticAttachment"
       ],
       "manifest": "Jeopardy/Reverse/take-some-byte/challenge.yaml"
     },
@@ -596,8 +731,9 @@
       "source": "Reverse Engineering/VA/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Reverse%20Engineering/VA",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "legacy type 'dynamic' imported as StaticAttachment"
       ],
       "manifest": "Jeopardy/Reverse/va/challenge.yaml"
     },
@@ -606,11 +742,15 @@
       "category": "Web",
       "source": "Web/A simple website/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Web/A%20simple%20website",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "portable single-service Docker runtime promoted from 'dynamic' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{a_simple_[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Web/a-simple-website/challenge.yaml"
+      "manifest": "Jeopardy/Web/a-simple-website-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Bypassssss",
@@ -618,8 +758,9 @@
       "source": "Web/Bypassssss/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Web/Bypassssss",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment",
+        "legacy type 'dynamic' imported as StaticAttachment",
         "attachment omitted to stay below the repository size limit"
       ],
       "manifest": "Jeopardy/Web/bypassssss/challenge.yaml"
@@ -629,11 +770,15 @@
       "category": "Web",
       "source": "Web/Latex/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Web/Latex",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "portable single-service Docker runtime promoted from 'dynamic' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{latex___________________________[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Web/latex/challenge.yaml"
+      "manifest": "Jeopardy/Web/latex-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "PDFIFY",
@@ -641,8 +786,9 @@
       "source": "Web/PDFIFY/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Web/PDFIFY",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment",
+        "legacy type 'dynamic' imported as StaticAttachment",
         "attachment omitted to stay below the repository size limit"
       ],
       "manifest": "Jeopardy/Web/pdfify/challenge.yaml"
@@ -652,22 +798,30 @@
       "category": "Web",
       "source": "Web/Un Secure/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Web/Un%20Secure",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "portable single-service Docker runtime promoted from 'dynamic' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{un_secure___________[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Web/un-secure/challenge.yaml"
+      "manifest": "Jeopardy/Web/un-secure-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Calculator",
       "category": "Web",
       "source": "Web/calculator/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Web/calculator",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment"
+        "portable single-service Docker runtime promoted from 'dynamic' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{calcu[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Web/calculator/challenge.yaml"
+      "manifest": "Jeopardy/Web/calculator-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "fetcher",
@@ -675,9 +829,9 @@
       "source": "Web/fetcher/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Web/fetcher",
       "type": "StaticAttachment",
+      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
       "warnings": [
-        "legacy type 'container' converted to StaticAttachment",
-        "attachment omitted to stay below the repository size limit"
+        "legacy type 'container' imported as StaticAttachment"
       ],
       "manifest": "Jeopardy/Web/fetcher/challenge.yaml"
     },
@@ -686,12 +840,15 @@
       "category": "Web",
       "source": "Web/love card/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Web/love%20card",
-      "type": "StaticAttachment",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "legacy type 'dynamic' converted to StaticAttachment",
-        "attachment omitted to stay below the repository size limit"
+        "portable single-service Docker runtime promoted from 'dynamic' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{love_card_________________[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Web/love-card/challenge.yaml"
+      "manifest": "Jeopardy/Web/love-card-rsctf-dynamic/challenge.yaml"
     }
   ]
 }

@@ -1,0 +1,59 @@
+id: custom-templRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bftes
+
+info:
+  nRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfme: Testing nuclei templRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bftes
+  RSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfuthor: dRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfffRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfinfo
+  severity: info
+  reference: https://dRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfffRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bf.info
+  metRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfdRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bftRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bf:
+    mRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfx-request: 2
+  tRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfgs: ctf,tcp1p
+
+http:
+  - rRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfw:
+      # Detect API Version
+      - |
+        GET /RSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfpi/v1/version/ HTTP/1.1
+        Host: {{HostnRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfme}}
+        Referer: https://dRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfffRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bf.info/
+
+      # XSS RSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfnd PRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfth TrRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfversRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfl
+      - |
+        GET /RSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfpi/v2/echo/?nRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfme=<script>RSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bflert(1)</script>&file=/etc/pRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfsswd HTTP/1.1
+        Host: {{HostnRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfme}}
+        Referer: https://dRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfffRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bf.info
+
+    req-condition: true
+    mRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bftchers-condition: RSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfnd
+    mRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bftchers:
+      - type: dsl
+        dsl:
+          - compRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfre_versions(version, '<= 10.0.5', '> 10.0.1')
+
+      - type: word
+        pRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfrt: body_1
+        words:
+          - "\"NAME\":\"TCP1P\""
+          - "\"msg\":\"success\""
+        condition: RSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfnd
+        cRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfse-insensitive: true
+
+      - type: dsl
+        dsl:
+          - "regex('RSCTF_DYNAMIC_FLAG_1e880620bfd81cbRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bf41RSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bf0dff67RSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bf', body_2)"
+          - 'contRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfins(body_2, "<script>RSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bflert(1)</script>")'
+          - "stRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bftus_code_2 == 200"
+        condition: RSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfnd
+
+      - type: stRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bftus
+        stRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bftus:
+          - 200
+
+    extrRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfctors:
+      - type: regex
+        nRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfme: version
+        group: 1
+        internRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfl: true
+        pRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfrt: body_1
+        regex:
+          - "\"version\":\"([0-9.]+)\""

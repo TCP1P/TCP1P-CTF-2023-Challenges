@@ -1,0 +1,22 @@
+name: A simple website
+author: daffainfo
+description: '**Author**: `daffainfo`
+
+
+  It turns out that learning to make websites using NuxtJS is really fun
+
+
+  ---
+
+  Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Web/A%20simple%20website).'
+type: DynamicContainer
+category: Web
+minScoreRate: 0.2
+difficulty: 5
+disableBloodBonus: false
+flagTemplate: TCP1P{a_simple_[TEAM_HASH]}
+container:
+  memoryLimit: 128
+  cpuCount: 1
+  exposePort: 3000
+  enableTrafficCapture: false
