@@ -8,7 +8,7 @@ content: 'This event was imported from [TCP1P/TCP1P-CTF-2023-Challenges](https:/
 
   It starts hidden for organizer review. Historical service endpoints may be offline; each challenge links to its source archive.'
 acceptWithoutReview: true
-teamMemberCountLimit: 4
+teamMemberCountLimit: 0
 containerCountLimit: 3
 practiceMode: true
 writeupRequired: false
