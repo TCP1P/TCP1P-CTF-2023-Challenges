@@ -215,14 +215,16 @@
       "category": "Forensics",
       "source": "Forensic/Hacked/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Forensic/Hacked",
-      "type": "StaticAttachment",
-      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
         "source YAML needed fallback parsing: while parsing a block mapping",
-        "legacy type 'dynamic' imported as StaticAttachment",
-        "no player attachment files were present"
+        "portable single-service Docker runtime promoted from 'dynamic' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{hacked__________________[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Forensics/hacked/challenge.yaml"
+      "manifest": "Jeopardy/Forensics/hacked-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "Reminiscence",
@@ -828,12 +830,15 @@
       "category": "Web",
       "source": "Web/fetcher/challenge.yml",
       "sourceUrl": "https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Web/fetcher",
-      "type": "StaticAttachment",
-      "runtimeReason": "Docker context exceeds the portable size/file limits or contains a symlink",
+      "type": "DynamicContainer",
+      "runtimeReason": null,
       "warnings": [
-        "legacy type 'container' imported as StaticAttachment"
+        "portable single-service Docker runtime promoted from 'container' to DynamicContainer",
+        "generated per-team flag template 'TCP1P{fe[TEAM_HASH]}'",
+        "dynamic flag delivery proven through archived full flag literal",
+        "dynamic runtime compatibility rewrote 1 archived flag occurrence(s)"
       ],
-      "manifest": "Jeopardy/Web/fetcher/challenge.yaml"
+      "manifest": "Jeopardy/Web/fetcher-rsctf-dynamic/challenge.yaml"
     },
     {
       "name": "love card",

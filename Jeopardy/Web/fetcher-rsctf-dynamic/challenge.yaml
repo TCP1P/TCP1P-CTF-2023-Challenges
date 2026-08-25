@@ -9,11 +9,14 @@ description: '**Author**: `Dimas`
   ---
 
   Historical archive converted for RSCTF practice. Original service endpoints may no longer be online. [Review the source challenge](https://github.com/TCP1P/TCP1P-CTF-2023-Challenges/tree/main/Web/fetcher).'
-type: StaticAttachment
+type: DynamicContainer
 category: Web
-minScoreRate: 0.2
+minScoreRate: 0.01
 difficulty: 5
-disableBloodBonus: false
-flags:
-- TCP1P{vm2_sandbox_escape}
-provide: dist
+disableBloodBonus: true
+flagTemplate: TCP1P{fe[TEAM_HASH]}
+container:
+  memoryLimit: 128
+  cpuCount: 1
+  exposePort: 8080
+  enableTrafficCapture: false
