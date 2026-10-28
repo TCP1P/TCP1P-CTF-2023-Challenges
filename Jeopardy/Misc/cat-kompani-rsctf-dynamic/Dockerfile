@@ -23,7 +23,9 @@ RUN chmod 400 /flag
 RUN chown -R 555 /ctf/
 WORKDIR /ctf
 
-RUN rm -rf /bin/bash /bin/dash /usr/bin/bash /usr/bin/dash
+# RSCTF's dynamic flag entrypoint uses /bin/sh. Keep dash available as /bin/sh
+# while removing bash so the service still has a restricted shell environment.
+RUN rm -f /bin/bash /usr/bin/bash
 
 CMD ["socat", "TCP-LISTEN:8000,reuseaddr,fork","EXEC:/ctf/chall.py,su=nobody"]
 
