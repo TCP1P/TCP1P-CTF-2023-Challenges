@@ -4,7 +4,7 @@ EXPOSE 8000
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt update && apt upgrade -y && apt update --fix-missing
+RUN sed -i -e 's|archive.ubuntu.com|old-releases.ubuntu.com|g' -e 's|security.ubuntu.com|old-releases.ubuntu.com|g' /etc/apt/sources.list && apt-get update
 RUN apt-get install python3 socat -y
 
 COPY src/cat /bin/cat

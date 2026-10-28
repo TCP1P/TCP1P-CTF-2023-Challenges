@@ -4,7 +4,7 @@ FROM python:3.10.4
 
 RUN useradd -U -m -s /bin/bash ctf
 
-RUN apt-get update && apt-get upgrade -y
+RUN apt-get update
 RUN apt install -y python3 socat
 WORKDIR /home/ctf
 COPY cherry_leak.py ./

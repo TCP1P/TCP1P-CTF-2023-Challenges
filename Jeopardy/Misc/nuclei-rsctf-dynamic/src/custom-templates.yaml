@@ -1,59 +1,59 @@
-id: custom-templRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bftes
+id: custom-templates
 
 info:
-  nRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfme: Testing nuclei templRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bftes
-  RSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfuthor: dRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfffRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfinfo
+  name: Testing nuclei templates
+  author: daffainfo
   severity: info
-  reference: https://dRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfffRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bf.info
-  metRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfdRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bftRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bf:
-    mRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfx-request: 2
-  tRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfgs: ctf,tcp1p
+  reference: https://daffa.info
+  metadata:
+    max-request: 2
+  tags: ctf,tcp1p
 
 http:
-  - rRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfw:
+  - raw:
       # Detect API Version
       - |
-        GET /RSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfpi/v1/version/ HTTP/1.1
-        Host: {{HostnRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfme}}
-        Referer: https://dRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfffRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bf.info/
+        GET /api/v1/version/ HTTP/1.1
+        Host: {{Hostname}}
+        Referer: https://daffa.info/
 
-      # XSS RSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfnd PRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfth TrRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfversRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfl
+      # XSS and Path Traversal
       - |
-        GET /RSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfpi/v2/echo/?nRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfme=<script>RSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bflert(1)</script>&file=/etc/pRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfsswd HTTP/1.1
-        Host: {{HostnRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfme}}
-        Referer: https://dRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfffRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bf.info
+        GET /api/v2/echo/?name=<script>alert(1)</script>&file=/etc/passwd HTTP/1.1
+        Host: {{Hostname}}
+        Referer: https://daffa.info
 
     req-condition: true
-    mRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bftchers-condition: RSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfnd
-    mRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bftchers:
+    matchers-condition: and
+    matchers:
       - type: dsl
         dsl:
-          - compRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfre_versions(version, '<= 10.0.5', '> 10.0.1')
+          - compare_versions(version, '<= 10.0.5', '> 10.0.1')
 
       - type: word
-        pRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfrt: body_1
+        part: body_1
         words:
           - "\"NAME\":\"TCP1P\""
           - "\"msg\":\"success\""
-        condition: RSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfnd
-        cRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfse-insensitive: true
+        condition: and
+        case-insensitive: true
 
       - type: dsl
         dsl:
-          - "regex('RSCTF_DYNAMIC_FLAG_1e880620bfd81cbRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bf41RSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bf0dff67RSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bf', body_2)"
-          - 'contRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfins(body_2, "<script>RSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bflert(1)</script>")'
-          - "stRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bftus_code_2 == 200"
-        condition: RSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfnd
+          - "regex('TCP1P{[a-z]}', body_2)"
+          - 'contains(body_2, "<script>alert(1)</script>")'
+          - "status_code_2 == 200"
+        condition: and
 
-      - type: stRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bftus
-        stRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bftus:
+      - type: status
+        status:
           - 200
 
-    extrRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfctors:
+    extractors:
       - type: regex
-        nRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfme: version
+        name: version
         group: 1
-        internRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfl: true
-        pRSCTF_DYNAMIC_FLAG_a33ff83240b6d0233bfrt: body_1
+        internal: true
+        part: body_1
         regex:
           - "\"version\":\"([0-9.]+)\""

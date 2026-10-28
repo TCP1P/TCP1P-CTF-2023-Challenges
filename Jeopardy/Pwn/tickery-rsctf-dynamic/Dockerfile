@@ -3,7 +3,7 @@ FROM ubuntu:lunar
 
 EXPOSE 8000
 
-RUN apt update && apt upgrade -y && apt update --fix-missing
+RUN sed -i -e 's|archive.ubuntu.com|old-releases.ubuntu.com|g' -e 's|security.ubuntu.com|old-releases.ubuntu.com|g' /etc/apt/sources.list && apt-get update
 RUN apt-get install -y socat
 
 RUN mkdir /pwn
